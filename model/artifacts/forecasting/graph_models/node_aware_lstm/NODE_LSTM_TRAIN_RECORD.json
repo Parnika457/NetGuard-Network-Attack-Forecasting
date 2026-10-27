@@ -1,0 +1,32 @@
+{
+  "model": "NodeAwareLSTM",
+  "input_shape": [
+    10,
+    8,
+    8
+  ],
+  "hidden_dim": 32,
+  "epochs": 12,
+  "batch_size": 256,
+  "learning_rate": 0.001,
+  "seed": 20261027,
+  "graph_sha256": "6fac7cca1bd6423b34fccef56a34072a7fff65a43929efd3762b42166b21b94e",
+  "training_loss": [
+    0.37502062729998603,
+    0.18553075615341216,
+    0.14600829333705662,
+    0.13126221930864698,
+    0.1269514120810547,
+    0.12355905615123307,
+    0.12135517300141795,
+    0.11886809243469416,
+    0.11739966449767586,
+    0.1150005956066146,
+    0.11365257013939174,
+    0.11255002126283213
+  ],
+  "preprocessing": "LOG1P_MEDIAN_IQR_CLIP8",
+  "data_split": "TRAIN_ONLY",
+  "graph_origin": "synthetic_nodes_and_edges",
+  "test_accessed": false
+}

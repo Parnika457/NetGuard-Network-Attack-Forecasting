@@ -1,0 +1,41 @@
+{
+  "dataset": "Synthetic_NAF_v2",
+  "dataset_version": "2.0.0",
+  "feature_names": [
+    "Flow_Count",
+    "Flow_Duration_Mean",
+    "Flow_Duration_Std",
+    "Flow_Duration_Max",
+    "Forward_Packets_Sum",
+    "Backward_Packets_Sum",
+    "Total_Packets",
+    "Forward_Bytes_Sum",
+    "Backward_Bytes_Sum",
+    "Total_Bytes",
+    "Packets_Per_Second",
+    "Bytes_Per_Second",
+    "Forward_Backward_Packet_Ratio",
+    "Forward_Backward_Byte_Ratio"
+  ],
+  "forecast_horizons": [
+    5,
+    10,
+    15
+  ],
+  "history_file": "TCN_V2_CR_FINAL_TRAIN_HISTORY.csv",
+  "history_sha256": "a19ce2f038fd8c1c0124460e59f2d5a131b69cf32dd07c77dd4932c636f929a0",
+  "model_file": "TCN_V2_CR_STATE.pt",
+  "model_name": "TCN_V2_COMPETING_RISK",
+  "model_sha256": "20b26d861dcab10357f7165877e0c5eb4121d511f4b6fca0d67f6eaef12c36dd",
+  "output_classes": 76,
+  "scaler_file": "TCN_V2_CR_FULL_TRAIN_SCALER.json",
+  "scaler_sha256": "d826ad37e5bb05396f127217da27251d19ab9687c632bc71ba8796aa8a5513d0",
+  "selected_configuration": "C02",
+  "selection_protocol_hash": "c59fc32b69e8951dbca7f7aceacdb74e79070dc041788790954d425686bfb1fb",
+  "test_status": "EMBARGOED",
+  "training_epochs": 21,
+  "training_record_file": "TCN_V2_CR_FINAL_TRAIN_RECORD.json",
+  "training_record_sha256": "c23d9680f30689266789d45a66dc043a72f60d653d8077e71f50626d5f917c9c",
+  "training_status": "FINAL_FULL_TRAIN_COMPLETED",
+  "validation_status": "NOT_STARTED"
+}

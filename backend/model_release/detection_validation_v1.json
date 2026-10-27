@@ -1,0 +1,110 @@
+{
+  "evaluation_kind": "SAVED_CHECKPOINT_DEV_VALIDATION_REPLAY_NOT_INDEPENDENT_TEST",
+  "created_utc": "2026-10-27T14:17:12.202674+00:00",
+  "source_dataset": "UNSW-NB15 canonical TRAIN only",
+  "train_dataset_sha256": "bec7dd5ec88dc2a0ccc7a07879d338395ed7421750f675fd0339e07dfe0648fa",
+  "development_train_rows": 140174,
+  "development_validation_rows": 35167,
+  "split": "StratifiedGroupKFold(n_splits=5,shuffle=True,random_state=42), selected fold=4",
+  "official_test_used": false,
+  "weights_modified": false,
+  "match_original_reported_metrics": true,
+  "metrics": {
+    "Accuracy": 0.8167600307106094,
+    "Macro F1": 0.6430739316136387,
+    "Balanced accuracy": 0.655136402436738,
+    "Weighted F1": 0.823378551145442
+  },
+  "original_notebook_metrics": {
+    "Accuracy": 0.8167600307106094,
+    "Macro F1": 0.6430739316136387,
+    "Balanced accuracy": 0.655136402436738,
+    "Weighted F1": 0.823378551145442
+  },
+  "absolute_metric_differences": {
+    "Accuracy": 0.0,
+    "Macro F1": 0.0,
+    "Balanced accuracy": 0.0,
+    "Weighted F1": 0.0
+  },
+  "per_class": {
+    "Analysis": {
+      "support": 423,
+      "precision": 0.5135135135135135,
+      "recall": 0.17966903073286053,
+      "f1": 0.266199649737303
+    },
+    "Backdoor": {
+      "support": 343,
+      "precision": 0.48214285714285715,
+      "recall": 0.15743440233236153,
+      "f1": 0.23736263736263735
+    },
+    "DoS": {
+      "support": 2552,
+      "precision": 0.3648769574944072,
+      "recall": 0.6391065830721003,
+      "f1": 0.4645400170891484
+    },
+    "Exploits": {
+      "support": 6700,
+      "precision": 0.7456463496316142,
+      "recall": 0.6646268656716418,
+      "f1": 0.7028093434343434
+    },
+    "Fuzzers": {
+      "support": 3747,
+      "precision": 0.7096029547553093,
+      "recall": 0.8203896450493728,
+      "f1": 0.7609852704542641
+    },
+    "Generic": {
+      "support": 8040,
+      "precision": 0.9978502781992918,
+      "recall": 0.9814676616915423,
+      "f1": 0.9895911713067469
+    },
+    "Normal": {
+      "support": 11191,
+      "precision": 0.9650744235820605,
+      "recall": 0.8864265927977839,
+      "f1": 0.9240801117838845
+    },
+    "Reconnaissance": {
+      "support": 1920,
+      "precision": 0.8858764186633039,
+      "recall": 0.7317708333333334,
+      "f1": 0.8014831717056474
+    },
+    "Shellcode": {
+      "support": 229,
+      "precision": 0.6149253731343284,
+      "recall": 0.8995633187772926,
+      "f1": 0.7304964539007093
+    },
+    "Worms": {
+      "support": 22,
+      "precision": 0.52,
+      "recall": 0.5909090909090909,
+      "f1": 0.5531914893617021
+    }
+  },
+  "derived_binary_attack": {
+    "attack_average_precision": 0.9966279899485444,
+    "attack_prevalence": 0.6817755281940455,
+    "threshold_0_5_precision": 0.9460604123381813,
+    "threshold_0_5_recall": 0.9875709042375709
+  },
+  "limitations": [
+    "This is the development validation split reused during model selection, not independent testing.",
+    "No threshold tuning or calibration was performed.",
+    "No live traffic or external transfer evaluation was performed."
+  ],
+  "environment": {
+    "python": "3.12.3",
+    "sklearn": "1.6.1",
+    "xgboost": "3.4.1",
+    "pandas": "2.3.3",
+    "numpy": "2.5.4"
+  }
+}

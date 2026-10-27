@@ -1,0 +1,7 @@
+[
+  {"query":"What logs should I check when packet and connection rates suggest a denial of service?", "attack_class":"DoS", "expected_title":"NetGuard UNSW-NB15 attack class: DoS"},
+  {"query":"How do I investigate suspected unauthorized remote access and periodic connections?", "attack_class":"Backdoor", "expected_title":"NetGuard UNSW-NB15 attack class: Backdoor"},
+  {"query":"Why might one source probing many ports indicate reconnaissance?", "attack_class":"Reconnaissance", "expected_title":"NetGuard UNSW-NB15 attack class: Reconnaissance"},
+  {"query":"What evidence distinguishes suspicious fuzz input from approved testing?", "attack_class":"Fuzzers", "expected_title":"NetGuard UNSW-NB15 attack class: Fuzzers"},
+  {"query":"How should a general any-attack H10 prediction be interpreted?", "attack_class":null, "expected_title":"NetGuard model scope and limitations"}
+]

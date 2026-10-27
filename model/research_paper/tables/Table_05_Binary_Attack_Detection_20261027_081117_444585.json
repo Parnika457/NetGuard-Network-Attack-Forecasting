@@ -1,0 +1,130 @@
+{
+  "project": "NetGuard",
+  "publication_table": 5,
+  "title": "Binary attack-detection reliability",
+  "dataset": "UNSW-NB15 canonical TRAIN",
+  "evaluation": "reproduced development validation",
+  "classifier": "Saved XGBoost V1",
+  "validation_records": 35167,
+  "attack_records": 23976,
+  "normal_records": 11191,
+  "summary_metrics": {
+    "average_precision": 0.9966732162624294,
+    "roc_auc": 0.9929236715940317,
+    "brier_score": 0.03087546762158971,
+    "ece_10_bins": 0.00549944040240276,
+    "attack_prevalence": 0.6817755281940455
+  },
+  "operating_thresholds": [
+    {
+      "Threshold": 0.5,
+      "Attack_Precision": 0.9600049326,
+      "Attack_Recall": 0.9740990991,
+      "Binary_F1": 0.9670006625,
+      "False_Positive_Rate": 0.08694486641,
+      "False_Positive_Count": 973,
+      "Missed_Attack_Count": 621,
+      "True_Positive_Count": 23355,
+      "True_Negative_Count": 10218
+    },
+    {
+      "Threshold": 0.7,
+      "Attack_Precision": 0.9812243472,
+      "Attack_Recall": 0.9372706039,
+      "Binary_F1": 0.9587439737,
+      "False_Positive_Rate": 0.03842373336,
+      "False_Positive_Count": 430,
+      "Missed_Attack_Count": 1504,
+      "True_Positive_Count": 22472,
+      "True_Negative_Count": 10761
+    },
+    {
+      "Threshold": 0.8,
+      "Attack_Precision": 0.9902766365,
+      "Attack_Recall": 0.9047797798,
+      "Binary_F1": 0.9455995815,
+      "False_Positive_Rate": 0.01903315164,
+      "False_Positive_Count": 213,
+      "Missed_Attack_Count": 2283,
+      "True_Positive_Count": 21693,
+      "True_Negative_Count": 10978
+    },
+    {
+      "Threshold": 0.9,
+      "Attack_Precision": 0.9964476021,
+      "Attack_Recall": 0.8657407407,
+      "Binary_F1": 0.926507019,
+      "False_Positive_Rate": 0.006612456438,
+      "False_Positive_Count": 74,
+      "Missed_Attack_Count": 3219,
+      "True_Positive_Count": 20757,
+      "True_Negative_Count": 11117
+    },
+    {
+      "Threshold": 0.95,
+      "Attack_Precision": 0.9984484484,
+      "Attack_Recall": 0.8320403737,
+      "Binary_F1": 0.9076804077,
+      "False_Positive_Rate": 0.002770083102,
+      "False_Positive_Count": 31,
+      "Missed_Attack_Count": 4027,
+      "True_Positive_Count": 19949,
+      "True_Negative_Count": 11160
+    }
+  ],
+  "all_confusion_counts_verified": true,
+  "source_files": [
+    {
+      "key": "metrics",
+      "path": "Research_Outputs/03_Metrics/binary_attack_detection_metrics_20261027_073004_429411.json",
+      "sha256": "9017b3dc85f6d4ea88ae1986f9042efb9d959465a7e4491ffc97eda2d159bdbc"
+    },
+    {
+      "key": "thresholds",
+      "path": "Research_Outputs/02_Tables/T20_Binary_Threshold_Metrics_20261027_073004_429411.csv",
+      "sha256": "f02bc0a9736dd264d62141e8855bd5ac9d53e2adb5bfedb2963c567a5f13a674"
+    },
+    {
+      "key": "calibration",
+      "path": "Research_Outputs/02_Tables/T21_Binary_Calibration_Bins_20261027_073004_429411.csv",
+      "sha256": "4a9eeeeaecfba1994e7ff82ad66260aca6dfb2b43d101f46c2b8d2c5c3d0baaa"
+    },
+    {
+      "key": "original_v1",
+      "path": "Current_Attack_Detection/artifacts/xgboost_20261027_023158_885060/validation_metrics.json",
+      "sha256": "83bae20290c862434f18abbfa8c8c2439d6f25446311ecc5ef002a838f9e4ebd"
+    }
+  ],
+  "generated_files": [
+    {
+      "path": "Research_Paper/02_Final_Tables/Table_05_Binary_Attack_Detection_20261027_081117_444585.pdf",
+      "sha256": "b86ed8011bdc909b8d8b1bd042081ae0ee6de77864f180b7fefb930a26ffb051"
+    },
+    {
+      "path": "Research_Paper/02_Final_Tables/Table_05_Binary_Attack_Detection_20261027_081117_444585.svg",
+      "sha256": "3aa660aef93547bda4fa92177948974b160335f116ae1094841248ffcd60d834"
+    },
+    {
+      "path": "Research_Paper/02_Final_Tables/Table_05_Binary_Attack_Detection_20261027_081117_444585.png",
+      "sha256": "0540f7460e307261885b592dd172d42ff64e58b9036be9b15d331d57d7945b91"
+    },
+    {
+      "path": "Research_Paper/02_Final_Tables/Table_05_Binary_Attack_Detection_20261027_081117_444585.csv",
+      "sha256": "97593acdd4a92d3e2036395cc7ebd37db8a338335394a66741f1d7752a015bec"
+    },
+    {
+      "path": "Research_Paper/02_Final_Tables/Table_05_Binary_Attack_Detection_20261027_081117_444585.tex",
+      "sha256": "8104a9978a21c95a090ad21bb4e625b14f19d1f12e94a5d4e9801334515e6eb0"
+    }
+  ],
+  "limitations": [
+    "Repeated use of development validation.",
+    "No independent TEST-set evaluation.",
+    "No live-network deployment.",
+    "Reported ECE uses ten fixed probability bins.",
+    "Binary attack detection differs from ten-class attack classification.",
+    "No confidence intervals are calculated."
+  ],
+  "models_retrained": 0,
+  "official_test_accessed": false
+}

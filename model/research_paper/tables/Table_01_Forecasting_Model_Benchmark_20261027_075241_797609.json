@@ -1,0 +1,60 @@
+{
+  "project": "NetGuard",
+  "publication_table": 1,
+  "title": "Forecasting performance across attack prediction horizons",
+  "dataset": "Synthetic NAF v2",
+  "split": "development validation",
+  "validation_windows": 18839,
+  "model_count": 9,
+  "prediction_horizons": [
+    "H5",
+    "H10",
+    "H15"
+  ],
+  "best_ap_by_horizon": {
+    "H5": 0.76100498,
+    "H10": 0.9060175,
+    "H15": 0.93605927
+  },
+  "source_files": [
+    {
+      "path": "Research_Outputs/02_Tables/T10_Seven_Model_AP_Benchmark_20261027_064511_790770.csv",
+      "sha256": "fec56ab673f0c6a737d34fb37c22600c0fb1ec466227cd7ca9ce2043268609a5"
+    },
+    {
+      "path": "Research_Outputs/02_Tables/T14_Graph_Architecture_Benchmark_20261027_070711_965908.csv",
+      "sha256": "dd9a0741688e8eb3e3a9af7dd88b0c9624c1721258bb9d8797ed7d08fdd30ce5"
+    }
+  ],
+  "generated_files": [
+    {
+      "path": "Research_Paper/02_Final_Tables/Table_01_Forecasting_Model_Benchmark_20261027_075241_797609.pdf",
+      "sha256": "054b700cbc77e9531a9c114e4c89d5b1c8b0fee7000af274f241c845f607a50a"
+    },
+    {
+      "path": "Research_Paper/02_Final_Tables/Table_01_Forecasting_Model_Benchmark_20261027_075241_797609.svg",
+      "sha256": "0830259606d39aaffb5857a18f5690181071b742622979d9ed4127e7a4bcff4f"
+    },
+    {
+      "path": "Research_Paper/02_Final_Tables/Table_01_Forecasting_Model_Benchmark_20261027_075241_797609.png",
+      "sha256": "f68f888bc175fdad65d568072cccc49a5e7a1120bdbd9acc4b2a825f004fb368"
+    },
+    {
+      "path": "Research_Paper/02_Final_Tables/Table_01_Forecasting_Model_Benchmark_20261027_075241_797609.csv",
+      "sha256": "40fba8e0dea0344288324decfe5dcc7704d3493df3ec70724808feb090860b44"
+    },
+    {
+      "path": "Research_Paper/02_Final_Tables/Table_01_Forecasting_Model_Benchmark_20261027_075241_797609.tex",
+      "sha256": "e784a073fa77829cea9d46c538892d6b369cece5d9e26bfab184d9caf6457eb1"
+    }
+  ],
+  "notes": [
+    "AP is not classification accuracy.",
+    "XGBoost H15 is unavailable.",
+    "Shared GCN and GAT AP metrics were cross-verified.",
+    "No statistical significance is implied.",
+    "No official TEST data was accessed."
+  ],
+  "model_training": false,
+  "official_test_accessed": false
+}

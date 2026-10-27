@@ -1,0 +1,10 @@
+{
+  "expected_v3_sha256": {
+    "frontend/src/App.jsx": "33ed1641cc481e4f81f1430243a49cba77e7015592ea621fab58fc3f518931bd",
+    "frontend/src/ModelReplayPanel.jsx": "f00316d1b9b98703b62e5e83322f8188b5f778c35723f99eed4a62065afc0ceb"
+  },
+  "patched_v4_sha256": {
+    "frontend/src/App.jsx": "39cac7415272e540f857c430bb5f5999a3613876c93f9464022e054cf9d1ca66",
+    "frontend/src/ModelReplayPanel.jsx": "3e0160e97b5fb3cff46d87cb7bf903386b8478f64b02b1ca51995de3201c7211"
+  }
+}

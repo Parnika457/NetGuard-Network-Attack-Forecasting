@@ -1,0 +1,836 @@
+{
+  "project": "NetGuard",
+  "purpose": "GitHub model directory staging",
+  "created_utc": "2026-10-27T10:00:38.497906+00:00",
+  "weights": 16,
+  "model_support_files": 35,
+  "cleaned_notebooks": 15,
+  "publication_figures": 5,
+  "publication_tables": 5,
+  "architecture_diagrams": 1,
+  "files": [
+    {
+      "category": "model_weight",
+      "destination": "model/artifacts/current_detection/xgboost_v1/current_attack_xgboost.ubj",
+      "sha256": "f08060801a1548223fd733e61261365689e81461aba8f81fb727ee56db750768",
+      "size_bytes": 4346516,
+      "source_name": "current_attack_xgboost.ubj"
+    },
+    {
+      "category": "model_support",
+      "destination": "model/artifacts/current_detection/xgboost_v1/artifact_hashes.json",
+      "sha256": "64b80c348f0cbfab214322f80bdef986744335cc0ed5e2769cae81de770c594c",
+      "size_bytes": 383,
+      "source_name": "artifact_hashes.json"
+    },
+    {
+      "category": "model_support",
+      "destination": "model/artifacts/current_detection/xgboost_v1/model_schema.json",
+      "sha256": "50ede4e9cfd10d672ca1ad2ba75a41f525790b5bf7776ba9a53caeab5aceefee",
+      "size_bytes": 2118,
+      "source_name": "model_schema.json"
+    },
+    {
+      "category": "model_support",
+      "destination": "model/artifacts/current_detection/xgboost_v1/preprocessor.joblib",
+      "sha256": "8c13a9b122924822314af3ea94376902449bea86ae4cbfaa2a1954143760381f",
+      "size_bytes": 5618,
+      "source_name": "preprocessor.joblib"
+    },
+    {
+      "category": "model_support",
+      "destination": "model/artifacts/current_detection/xgboost_v1/validation_metrics.json",
+      "sha256": "83bae20290c862434f18abbfa8c8c2439d6f25446311ecc5ef002a838f9e4ebd",
+      "size_bytes": 1587,
+      "source_name": "validation_metrics.json"
+    },
+    {
+      "category": "model_weight",
+      "destination": "model/artifacts/current_detection/weighted_xgboost_v2/weighted_xgboost.ubj",
+      "sha256": "e2408ec43ba9233cc5afba5bfde7e68f96f31bce90d0df9bd252488071c2cd23",
+      "size_bytes": 4482870,
+      "source_name": "weighted_xgboost.ubj"
+    },
+    {
+      "category": "model_support",
+      "destination": "model/artifacts/current_detection/weighted_xgboost_v2/artifact_hashes.json",
+      "sha256": "9e1e2ec8781b09211bcebf3053ec12f681666213ef30eceef1e1bd8a368df9c2",
+      "size_bytes": 276,
+      "source_name": "artifact_hashes.json"
+    },
+    {
+      "category": "model_support",
+      "destination": "model/artifacts/current_detection/weighted_xgboost_v2/metadata.json",
+      "sha256": "283f3a61fc676fffd6a76f74e70c222c33b0e7be15d7ca6776c94d62620c530c",
+      "size_bytes": 2665,
+      "source_name": "metadata.json"
+    },
+    {
+      "category": "model_support",
+      "destination": "model/artifacts/current_detection/weighted_xgboost_v2/preprocessor.joblib",
+      "sha256": "8c13a9b122924822314af3ea94376902449bea86ae4cbfaa2a1954143760381f",
+      "size_bytes": 5618,
+      "source_name": "preprocessor.joblib"
+    },
+    {
+      "category": "model_weight",
+      "destination": "model/artifacts/current_detection/conflict_aware_xgboost/conflict_aware_xgboost.ubj",
+      "sha256": "65d66bc00e31061ccf37382d6e0994303900d3b4737b4fdc3d42e3a0fe8992bc",
+      "size_bytes": 4402690,
+      "source_name": "conflict_aware_xgboost.ubj"
+    },
+    {
+      "category": "model_support",
+      "destination": "model/artifacts/current_detection/conflict_aware_xgboost/artifact_hashes.json",
+      "sha256": "f4b2ec850d57bffec4ed6969a194f339bf46e3beee7c8e1ade060adde644e848",
+      "size_bytes": 282,
+      "source_name": "artifact_hashes.json"
+    },
+    {
+      "category": "model_support",
+      "destination": "model/artifacts/current_detection/conflict_aware_xgboost/metadata.json",
+      "sha256": "feadc10e264bf82e6884b4b85c2b40d88799fbeadb54dad9c8ab7ea19179a81a",
+      "size_bytes": 2631,
+      "source_name": "metadata.json"
+    },
+    {
+      "category": "model_support",
+      "destination": "model/artifacts/current_detection/conflict_aware_xgboost/preprocessor.joblib",
+      "sha256": "8c13a9b122924822314af3ea94376902449bea86ae4cbfaa2a1954143760381f",
+      "size_bytes": 5618,
+      "source_name": "preprocessor.joblib"
+    },
+    {
+      "category": "model_weight",
+      "destination": "model/artifacts/current_detection/catboost/catboost_10class.cbm",
+      "sha256": "6e24ace65cce1998cbbe9bba85f13c9fda9d23aad251191afd1a43e1950fb975",
+      "size_bytes": 5718584,
+      "source_name": "catboost_10class.cbm"
+    },
+    {
+      "category": "model_support",
+      "destination": "model/artifacts/current_detection/catboost/metadata.json",
+      "sha256": "6f429491483191d15636412f50eb520fbfa4b9baeba76052592a550fac09bab7",
+      "size_bytes": 1419,
+      "source_name": "metadata.json"
+    },
+    {
+      "category": "model_weight",
+      "destination": "model/artifacts/current_detection/dos_specialist/dos_exploits_xgboost.ubj",
+      "sha256": "d46751b292acde33d01afe96dc04dde7ad01a70510c5d1177fa45f1bbc04a551",
+      "size_bytes": 466207,
+      "source_name": "dos_exploits_xgboost.ubj"
+    },
+    {
+      "category": "model_support",
+      "destination": "model/artifacts/current_detection/dos_specialist/artifact_hashes.json",
+      "sha256": "e7dc421a7093345641c051e4540fb5ecc74887f293e837cb2689de0684f64575",
+      "size_bytes": 196,
+      "source_name": "artifact_hashes.json"
+    },
+    {
+      "category": "model_support",
+      "destination": "model/artifacts/current_detection/dos_specialist/specialist_config.json",
+      "sha256": "c4235162f9af7a88ac039c5a799ce81f6b3a635d54210fef9641255a092f70a9",
+      "size_bytes": 1021,
+      "source_name": "specialist_config.json"
+    },
+    {
+      "category": "model_weight",
+      "destination": "model/artifacts/forecasting/single_lstm/LSTM_V2_SINGLE_LAYER_STATE.pt",
+      "sha256": "99e19e455b9a94fd32590ff401d90ea1cf0d8c1f9eab3c03b9d182a7cd0b1bf2",
+      "size_bytes": 94423,
+      "source_name": "LSTM_V2_SINGLE_LAYER_STATE.pt"
+    },
+    {
+      "category": "model_support",
+      "destination": "model/artifacts/forecasting/single_lstm/LSTM_V2_SINGLE_LAYER_SCALER.json",
+      "sha256": "c15cec50bb7852c6558e72ac282dc40132435fec8eca9d009fa371a25ed5452a",
+      "size_bytes": 1105,
+      "source_name": "LSTM_V2_SINGLE_LAYER_SCALER.json"
+    },
+    {
+      "category": "model_support",
+      "destination": "model/artifacts/forecasting/single_lstm/LSTM_V2_SINGLE_LAYER_TRAIN_RECORD.json",
+      "sha256": "2919de3304fb77b029c360158e51083ed042f7c2dfd15f6798accfd42d0ba523",
+      "size_bytes": 1205,
+      "source_name": "LSTM_V2_SINGLE_LAYER_TRAIN_RECORD.json"
+    },
+    {
+      "category": "model_weight",
+      "destination": "model/artifacts/forecasting/stacked_lstm/LSTM_V2_MONOTONIC_HORIZON_STATE.pt",
+      "sha256": "c44227e823986baae57ccd10fa70fa3d00b63501bc4ee8fe70d5666af0f6799a",
+      "size_bytes": 228783,
+      "source_name": "LSTM_V2_MONOTONIC_HORIZON_STATE.pt"
+    },
+    {
+      "category": "model_support",
+      "destination": "model/artifacts/forecasting/stacked_lstm/LSTM_V2_FINAL_MODEL_REGISTRY.json",
+      "sha256": "0a385c4958a5ab40a51c8c51da18fa6e01512b4f75d41cb05a0f3c414955bab6",
+      "size_bytes": 1145,
+      "source_name": "LSTM_V2_FINAL_MODEL_REGISTRY.json"
+    },
+    {
+      "category": "model_support",
+      "destination": "model/artifacts/forecasting/stacked_lstm/LSTM_V2_FINAL_TRAIN_HISTORY.csv",
+      "sha256": "1d94e084396548512860e5b8e949c77b5c56d736e1e24d2dd5c4fb85eb80b558",
+      "size_bytes": 601,
+      "source_name": "LSTM_V2_FINAL_TRAIN_HISTORY.csv"
+    },
+    {
+      "category": "model_support",
+      "destination": "model/artifacts/forecasting/stacked_lstm/LSTM_V2_FINAL_TRAIN_RECORD.json",
+      "sha256": "007f4c1442235652b5d85e950463b375229bbc49189cec2d279373704c0bbc13",
+      "size_bytes": 2296,
+      "source_name": "LSTM_V2_FINAL_TRAIN_RECORD.json"
+    },
+    {
+      "category": "model_support",
+      "destination": "model/artifacts/forecasting/stacked_lstm/LSTM_V2_FULL_TRAIN_SCALER.json",
+      "sha256": "d826ad37e5bb05396f127217da27251d19ab9687c632bc71ba8796aa8a5513d0",
+      "size_bytes": 1104,
+      "source_name": "LSTM_V2_FULL_TRAIN_SCALER.json"
+    },
+    {
+      "category": "model_weight",
+      "destination": "model/artifacts/forecasting/competing_risk_lstm/LSTM_V2_CR_STATE.pt",
+      "sha256": "062f8dda7b0045c605bb4b2e52de927e576661c88e4c7fb9009fb367fb9717fd",
+      "size_bytes": 238049,
+      "source_name": "LSTM_V2_CR_STATE.pt"
+    },
+    {
+      "category": "model_support",
+      "destination": "model/artifacts/forecasting/competing_risk_lstm/LSTM_V2_CR_FINAL_TRAIN_HISTORY.csv",
+      "sha256": "23a03677dd9f693a0a67b5c9cdffe59bbe26776e6c50edaae865295388874e7c",
+      "size_bytes": 830,
+      "source_name": "LSTM_V2_CR_FINAL_TRAIN_HISTORY.csv"
+    },
+    {
+      "category": "model_support",
+      "destination": "model/artifacts/forecasting/competing_risk_lstm/LSTM_V2_CR_FINAL_TRAIN_RECORD.json",
+      "sha256": "a6a18bab676847adc6cdd2ce31328cc031b2d00604b617178a139289ce03857e",
+      "size_bytes": 2939,
+      "source_name": "LSTM_V2_CR_FINAL_TRAIN_RECORD.json"
+    },
+    {
+      "category": "model_support",
+      "destination": "model/artifacts/forecasting/competing_risk_lstm/LSTM_V2_CR_FULL_TRAIN_SCALER.json",
+      "sha256": "d826ad37e5bb05396f127217da27251d19ab9687c632bc71ba8796aa8a5513d0",
+      "size_bytes": 1104,
+      "source_name": "LSTM_V2_CR_FULL_TRAIN_SCALER.json"
+    },
+    {
+      "category": "model_support",
+      "destination": "model/artifacts/forecasting/competing_risk_lstm/LSTM_V2_CR_MODEL_REGISTRY.json",
+      "sha256": "3c1163504e0cfef783586bbb27e8e142717e542e6427cbf5931c008e38fd74f4",
+      "size_bytes": 1319,
+      "source_name": "LSTM_V2_CR_MODEL_REGISTRY.json"
+    },
+    {
+      "category": "model_weight",
+      "destination": "model/artifacts/forecasting/competing_risk_tcn/TCN_V2_CR_STATE.pt",
+      "sha256": "20b26d861dcab10357f7165877e0c5eb4121d511f4b6fca0d67f6eaef12c36dd",
+      "size_bytes": 90093,
+      "source_name": "TCN_V2_CR_STATE.pt"
+    },
+    {
+      "category": "model_support",
+      "destination": "model/artifacts/forecasting/competing_risk_tcn/TCN_V2_CR_FINAL_TRAIN_HISTORY.csv",
+      "sha256": "a19ce2f038fd8c1c0124460e59f2d5a131b69cf32dd07c77dd4932c636f929a0",
+      "size_bytes": 1049,
+      "source_name": "TCN_V2_CR_FINAL_TRAIN_HISTORY.csv"
+    },
+    {
+      "category": "model_support",
+      "destination": "model/artifacts/forecasting/competing_risk_tcn/TCN_V2_CR_FINAL_TRAIN_RECORD.json",
+      "sha256": "c23d9680f30689266789d45a66dc043a72f60d653d8077e71f50626d5f917c9c",
+      "size_bytes": 2920,
+      "source_name": "TCN_V2_CR_FINAL_TRAIN_RECORD.json"
+    },
+    {
+      "category": "model_support",
+      "destination": "model/artifacts/forecasting/competing_risk_tcn/TCN_V2_CR_FULL_TRAIN_SCALER.json",
+      "sha256": "d826ad37e5bb05396f127217da27251d19ab9687c632bc71ba8796aa8a5513d0",
+      "size_bytes": 1104,
+      "source_name": "TCN_V2_CR_FULL_TRAIN_SCALER.json"
+    },
+    {
+      "category": "model_support",
+      "destination": "model/artifacts/forecasting/competing_risk_tcn/TCN_V2_CR_MODEL_REGISTRY.json",
+      "sha256": "a5b3d602076024673e20e185d7f14e72556bfa87221d4f4b2449e278e5329de7",
+      "size_bytes": 1411,
+      "source_name": "TCN_V2_CR_MODEL_REGISTRY.json"
+    },
+    {
+      "category": "model_weight",
+      "destination": "model/artifacts/forecasting/xgboost_v2/XGBoost_V2_FLAT140_H5.json",
+      "sha256": "42506384b4e445e33afeb4aa0d7e7a5a302aa36358280deb2bd00772affe4843",
+      "size_bytes": 2973361,
+      "source_name": "XGBoost_V2_FLAT140_H5.json"
+    },
+    {
+      "category": "model_weight",
+      "destination": "model/artifacts/forecasting/xgboost_v2/XGBoost_V2_FLAT140_H10.json",
+      "sha256": "3a21e3ad1f38fb7ac9cf839984f725d3bdeb6833287ecc4e80c7a52bf084b9e9",
+      "size_bytes": 2028140,
+      "source_name": "XGBoost_V2_FLAT140_H10.json"
+    },
+    {
+      "category": "model_support",
+      "destination": "model/artifacts/forecasting/xgboost_v2/XGBOOST_V2_FINAL_TRAIN_REGISTRY.json",
+      "sha256": "d4b0a7dc158495e0b2daf69b21f7e1634774720c014d3dd07c6ab7cdb75a41d9",
+      "size_bytes": 912,
+      "source_name": "XGBOOST_V2_FINAL_TRAIN_REGISTRY.json"
+    },
+    {
+      "category": "model_support",
+      "destination": "model/artifacts/forecasting/xgboost_v2/XGBoost_V2_FLAT140_H10_TRAIN_RECORD.json",
+      "sha256": "70e77df0cef87bebe56e8fc4f1f885df3ddee99fa0685c5d5de7885a5cca3749",
+      "size_bytes": 6431,
+      "source_name": "XGBoost_V2_FLAT140_H10_TRAIN_RECORD.json"
+    },
+    {
+      "category": "model_support",
+      "destination": "model/artifacts/forecasting/xgboost_v2/XGBoost_V2_FLAT140_H5_TRAIN_RECORD.json",
+      "sha256": "301561d31f0bcf87d1c46b366f6e080205f608838f5f4576ab006029ae3de204",
+      "size_bytes": 6432,
+      "source_name": "XGBoost_V2_FLAT140_H5_TRAIN_RECORD.json"
+    },
+    {
+      "category": "model_weight",
+      "destination": "model/artifacts/forecasting/graph_models/original_graph_lstm/GRAPH_LSTM_STATE.pt",
+      "sha256": "153654fc03d764b879b3339183766981c3bea4c3a4397b7f914e57f58b7b88e9",
+      "size_bytes": 159865,
+      "source_name": "GRAPH_LSTM_STATE.pt"
+    },
+    {
+      "category": "model_support",
+      "destination": "model/artifacts/forecasting/graph_models/original_graph_lstm/GRAPH_LSTM_TRAIN_RECORD.json",
+      "sha256": "312c3296483c9fb716b9e20d9a8c8ed246ce4d30bc4a62161a035a454b5a07b7",
+      "size_bytes": 1239,
+      "source_name": "GRAPH_LSTM_TRAIN_RECORD.json"
+    },
+    {
+      "category": "model_weight",
+      "destination": "model/artifacts/forecasting/graph_models/optimized_graph_lstm/GRAPH_LSTM_C02_OPTIMIZED_STATE.pt",
+      "sha256": "56bb048089e0211bf2ce10c970f80b682adda22c8786588ebce903181a98c403",
+      "size_bytes": 252911,
+      "source_name": "GRAPH_LSTM_C02_OPTIMIZED_STATE.pt"
+    },
+    {
+      "category": "model_support",
+      "destination": "model/artifacts/forecasting/graph_models/optimized_graph_lstm/GRAPH_LSTM_C02_TRAIN_RECORD.json",
+      "sha256": "b62be6d89f24ce3df99acb28cc4928531b42f2e07467ea5103f9a91047e4bd8c",
+      "size_bytes": 935,
+      "source_name": "GRAPH_LSTM_C02_TRAIN_RECORD.json"
+    },
+    {
+      "category": "model_weight",
+      "destination": "model/artifacts/forecasting/graph_models/gcn_lstm/GCN_LSTM_STATE.pt",
+      "sha256": "e5a0d1930253b73fb02d1b98deac0dcaf1132a62ecbd8f3ce0c3b12380ed46c9",
+      "size_bytes": 153395,
+      "source_name": "GCN_LSTM_STATE.pt"
+    },
+    {
+      "category": "model_support",
+      "destination": "model/artifacts/forecasting/graph_models/gcn_lstm/GCN_LSTM_TRAIN_RECORD.json",
+      "sha256": "7d9265cd59b13ff1f2217d9ace7fe9811ff3938bf52b5a74b61837bacb136d78",
+      "size_bytes": 1171,
+      "source_name": "GCN_LSTM_TRAIN_RECORD.json"
+    },
+    {
+      "category": "model_weight",
+      "destination": "model/artifacts/forecasting/graph_models/gat_lstm/GAT_LSTM_STATE.pt",
+      "sha256": "c73decd09b71b338c4e479eef0e6f534458c634c484cfab5da097d93ae7df129",
+      "size_bytes": 162987,
+      "source_name": "GAT_LSTM_STATE.pt"
+    },
+    {
+      "category": "model_support",
+      "destination": "model/artifacts/forecasting/graph_models/gat_lstm/GAT_LSTM_TRAIN_RECORD.json",
+      "sha256": "1c31fe3b1e12d2c18eb0aaa764dccf9a5ce3aa348bece2664bbae270826ce52d",
+      "size_bytes": 1301,
+      "source_name": "GAT_LSTM_TRAIN_RECORD.json"
+    },
+    {
+      "category": "model_weight",
+      "destination": "model/artifacts/forecasting/graph_models/node_aware_lstm/NODE_LSTM_STATE.pt",
+      "sha256": "021e99c4cfa9ad98db6f8346e3bd863979ebe2d30cee539f7dcd5d1dcbcab9fd",
+      "size_bytes": 31493,
+      "source_name": "NODE_LSTM_STATE.pt"
+    },
+    {
+      "category": "model_support",
+      "destination": "model/artifacts/forecasting/graph_models/node_aware_lstm/NODE_LSTM_TRAIN_RECORD.json",
+      "sha256": "c55ac03d74f47f40a87b797dd7def8167921d6c753eb976c8c2202f2ec84492a",
+      "size_bytes": 735,
+      "source_name": "NODE_LSTM_TRAIN_RECORD.json"
+    },
+    {
+      "category": "cleaned_notebook",
+      "destination": "model/notebooks/current_detection/Current_Attack_Detection.ipynb",
+      "sha256": "a8a21e7fea42efbd41f1643eb5cceef82de5727446af7a01944464f0a681000a",
+      "size_bytes": 215215,
+      "source_name": "Current_Attack_Detection.ipynb"
+    },
+    {
+      "category": "cleaned_notebook",
+      "destination": "model/notebooks/graph/Graph_Node_Data_Audit.ipynb",
+      "sha256": "60f7c2365cf364cc211484f7614847a76adffa58cf68ba37dcbb3c7aae3bde5d",
+      "size_bytes": 45072,
+      "source_name": "Graph_Node_Data_Audit.ipynb"
+    },
+    {
+      "category": "cleaned_notebook",
+      "destination": "model/notebooks/graph/Graph_V2_Data_Builder.ipynb",
+      "sha256": "2de34fef4c6d687b7a83d950b2e660852c3f30ca31a149b410e37ccf734921ee",
+      "size_bytes": 316535,
+      "source_name": "Graph_V2_Data_Builder.ipynb"
+    },
+    {
+      "category": "cleaned_notebook",
+      "destination": "model/notebooks/forecasting/LSTM_V2_SingleLayer_READY.ipynb",
+      "sha256": "4a0b995b2c7b1685a51ccdcfc351a09fc5029c4feb262962fbb7fca7b33254d1",
+      "size_bytes": 27950,
+      "source_name": "LSTM_V2_SingleLayer_READY.ipynb"
+    },
+    {
+      "category": "cleaned_notebook",
+      "destination": "model/notebooks/mini_project/Dataset_Audit/dataset_audit.ipynb",
+      "sha256": "5efe8450ac061ee2ed00bc43d2e609f5103f7b651ca0c9e4516c38393433f1eb",
+      "size_bytes": 3067951,
+      "source_name": "dataset_audit.ipynb"
+    },
+    {
+      "category": "cleaned_notebook",
+      "destination": "model/notebooks/mini_project/Dataset_Audit/dataset_audit_2.ipynb",
+      "sha256": "54f6a28f5101f4458e4b146964696454f7ea06f4f32d45d837ae70a6e0c685f3",
+      "size_bytes": 142650,
+      "source_name": "dataset_audit_2.ipynb"
+    },
+    {
+      "category": "cleaned_notebook",
+      "destination": "model/notebooks/mini_project/LSTM_Forecasting/LSTM V2 Competing-Risk.ipynb",
+      "sha256": "026d004ecf5788d344f7a4d623d4397835aa0a8731016881c8174f4e691430ba",
+      "size_bytes": 174816,
+      "source_name": "LSTM V2 Competing-Risk.ipynb"
+    },
+    {
+      "category": "cleaned_notebook",
+      "destination": "model/notebooks/mini_project/LSTM_Forecasting/LSTM_Forecasting.ipynb",
+      "sha256": "d3fc0eb85007aab1f9f6babce477a148f2f8f6a6ca318f72a8bec5ae28974563",
+      "size_bytes": 642456,
+      "source_name": "LSTM_Forecasting.ipynb"
+    },
+    {
+      "category": "cleaned_notebook",
+      "destination": "model/notebooks/mini_project/LSTM_Forecasting/LSTM_V2_Forecasting.ipynb",
+      "sha256": "b9d0ce1444ad29ee5f1835ef473db4a099b7e41a26ab34021febcb7fc9a0fff6",
+      "size_bytes": 167889,
+      "source_name": "LSTM_V2_Forecasting.ipynb"
+    },
+    {
+      "category": "cleaned_notebook",
+      "destination": "model/notebooks/mini_project/TCN_V2_Competing_Risk.ipynb",
+      "sha256": "f1990090960076a75c41c00b1df8a497b202eea42b9af7305fc48b31386377c5",
+      "size_bytes": 288808,
+      "source_name": "TCN_V2_Competing_Risk.ipynb"
+    },
+    {
+      "category": "cleaned_notebook",
+      "destination": "model/notebooks/mini_project/XGBoost_Forecasting/XGBoost_Forecasting.ipynb",
+      "sha256": "ffa96a464d25b29140148ad7bbefddeb294e713f1b59f64219817c58a6f8ec17",
+      "size_bytes": 259305,
+      "source_name": "XGBoost_Forecasting.ipynb"
+    },
+    {
+      "category": "cleaned_notebook",
+      "destination": "model/notebooks/mini_project/XGBoost_Forecasting/XGBoost_V2_Forecasting.ipynb",
+      "sha256": "79b16401475fd13f6e367c7b00a6fd07de7d66d6d8f60d5b1c3541e04475be2f",
+      "size_bytes": 92847,
+      "source_name": "XGBoost_V2_Forecasting.ipynb"
+    },
+    {
+      "category": "cleaned_notebook",
+      "destination": "model/notebooks/forecasting/Network_Attack_Forecasting_Pipeline.ipynb",
+      "sha256": "19fd62487f2fb506a7cb6fbe4e2c5ebf41e54fa7ebdb2d9f26e6a89e58792dc4",
+      "size_bytes": 356729,
+      "source_name": "Network_Attack_Forecasting_Pipeline.ipynb"
+    },
+    {
+      "category": "cleaned_notebook",
+      "destination": "model/notebooks/research/Research_Outputs.ipynb",
+      "sha256": "df77ba02284fb00874f89ffc24951742fdd70712b98a5da066eb2010d8fe2341",
+      "size_bytes": 534958,
+      "source_name": "Research_Outputs.ipynb"
+    },
+    {
+      "category": "cleaned_notebook",
+      "destination": "model/notebooks/research/Research_Paper.ipynb",
+      "sha256": "144b3e38839919fd431bf599ee43f5c11b08f69515324cf68440b17dffa3609a",
+      "size_bytes": 364088,
+      "source_name": "Research_Paper.ipynb"
+    },
+    {
+      "category": "publication_asset",
+      "destination": "model/research_paper/figures/Figure_01_Condensed_Temporal_Forecasting_20261027_082127_304330.pdf",
+      "sha256": "f508eacb553442bbf3e1e95f3ed87e70951291210f04fcb3fe10f89f9dce39ca",
+      "size_bytes": 50454,
+      "source_name": "Figure_01_Condensed_Temporal_Forecasting_20261027_082127_304330.pdf"
+    },
+    {
+      "category": "publication_asset",
+      "destination": "model/research_paper/figures/Figure_01_Condensed_Temporal_Forecasting_20261027_082127_304330.svg",
+      "sha256": "7a7f77f029d381bd64d0e84a3eaad251a31cae88a86da65896fe777a03e88dc0",
+      "size_bytes": 160326,
+      "source_name": "Figure_01_Condensed_Temporal_Forecasting_20261027_082127_304330.svg"
+    },
+    {
+      "category": "publication_asset",
+      "destination": "model/research_paper/figures/Figure_01_Condensed_Temporal_Forecasting_20261027_082127_304330.png",
+      "sha256": "964ca8d2bb9c9a5f26265e4cc0486811c7eb5fdf2031c9d8905dae94967ba1ec",
+      "size_bytes": 1458806,
+      "source_name": "Figure_01_Condensed_Temporal_Forecasting_20261027_082127_304330.png"
+    },
+    {
+      "category": "publication_asset",
+      "destination": "model/research_paper/figures/Figure_02_Multi_Horizon_Precision_Recall_20261027_083057_795260.pdf",
+      "sha256": "c4a1b2aaac3f73056ee891147dc4df1419066010a985076d7d76bcc1cc474f13",
+      "size_bytes": 208236,
+      "source_name": "Figure_02_Multi_Horizon_Precision_Recall_20261027_083057_795260.pdf"
+    },
+    {
+      "category": "publication_asset",
+      "destination": "model/research_paper/figures/Figure_02_Multi_Horizon_Precision_Recall_20261027_083057_795260.svg",
+      "sha256": "3cd52c8a2d08d71fb155f520e865a52e52c406bbd13df8f69757f45d0aaf55ed",
+      "size_bytes": 635924,
+      "source_name": "Figure_02_Multi_Horizon_Precision_Recall_20261027_083057_795260.svg"
+    },
+    {
+      "category": "publication_asset",
+      "destination": "model/research_paper/figures/Figure_02_Multi_Horizon_Precision_Recall_20261027_083057_795260.png",
+      "sha256": "9bc2c7d5ecad76bbe5e8848f4e1a053d9e6065ae16ffe1cfe6db57f73f8243ce",
+      "size_bytes": 1113242,
+      "source_name": "Figure_02_Multi_Horizon_Precision_Recall_20261027_083057_795260.png"
+    },
+    {
+      "category": "publication_asset",
+      "destination": "model/research_paper/figures/Figure_03_Source_Dependent_Family_Confusion_FINAL_V2_20261027_084034_451508.pdf",
+      "sha256": "fccbc2f3f6bb60e8651b78ffe706bb6998585f5617ea210422da91d0fa72cd16",
+      "size_bytes": 41011,
+      "source_name": "Figure_03_Source_Dependent_Family_Confusion_FINAL_V2_20261027_084034_451508.pdf"
+    },
+    {
+      "category": "publication_asset",
+      "destination": "model/research_paper/figures/Figure_03_Source_Dependent_Family_Confusion_FINAL_V2_20261027_084034_451508.svg",
+      "sha256": "d3c9e657f1fa1370ad83447f4f1848189c9efb752a1d4d7e8dcacf7a1aea7ec9",
+      "size_bytes": 83474,
+      "source_name": "Figure_03_Source_Dependent_Family_Confusion_FINAL_V2_20261027_084034_451508.svg"
+    },
+    {
+      "category": "publication_asset",
+      "destination": "model/research_paper/figures/Figure_03_Source_Dependent_Family_Confusion_FINAL_V2_20261027_084034_451508.png",
+      "sha256": "7e3821df38e621f9cfdc154fbd996766c97d22330d6596763b17d811c4ebb8fb",
+      "size_bytes": 1460596,
+      "source_name": "Figure_03_Source_Dependent_Family_Confusion_FINAL_V2_20261027_084034_451508.png"
+    },
+    {
+      "category": "publication_asset",
+      "destination": "model/research_paper/figures/Figure_04_Conditional_Time_To_Attack_20261027_085013_697818.pdf",
+      "sha256": "a194f755874dbed47a27cf50bf462f6866c08bd00fb97a1b7289d1f57aaf69fc",
+      "size_bytes": 52944,
+      "source_name": "Figure_04_Conditional_Time_To_Attack_20261027_085013_697818.pdf"
+    },
+    {
+      "category": "publication_asset",
+      "destination": "model/research_paper/figures/Figure_04_Conditional_Time_To_Attack_20261027_085013_697818.svg",
+      "sha256": "81ea8b9d6b8798362ad2e2d695e294e6c62e9a249ad00668af973a49a1bba5f5",
+      "size_bytes": 273322,
+      "source_name": "Figure_04_Conditional_Time_To_Attack_20261027_085013_697818.svg"
+    },
+    {
+      "category": "publication_asset",
+      "destination": "model/research_paper/figures/Figure_04_Conditional_Time_To_Attack_20261027_085013_697818.png",
+      "sha256": "7823821bda7965337707d5186ad24d194f3e0880a0bb160fd3ef8043fb9a5dad",
+      "size_bytes": 1711187,
+      "source_name": "Figure_04_Conditional_Time_To_Attack_20261027_085013_697818.png"
+    },
+    {
+      "category": "publication_asset",
+      "destination": "model/research_paper/figures/Figure_05_Current_Attack_Detection_FINAL_V3_20261027_091027_266144.pdf",
+      "sha256": "2e00e3f51d7c5d5b6741ac411d11d4395712d0056bc8d7ece15e537eba7a3ed5",
+      "size_bytes": 59211,
+      "source_name": "Figure_05_Current_Attack_Detection_FINAL_V3_20261027_091027_266144.pdf"
+    },
+    {
+      "category": "publication_asset",
+      "destination": "model/research_paper/figures/Figure_05_Current_Attack_Detection_FINAL_V3_20261027_091027_266144.svg",
+      "sha256": "ac4bd0b84aa289425f85c27d76ac157f25fd293a02dd9292f92d6ff0164523a2",
+      "size_bytes": 142165,
+      "source_name": "Figure_05_Current_Attack_Detection_FINAL_V3_20261027_091027_266144.svg"
+    },
+    {
+      "category": "publication_asset",
+      "destination": "model/research_paper/figures/Figure_05_Current_Attack_Detection_FINAL_V3_20261027_091027_266144.png",
+      "sha256": "93bd497b18ba2be51122e7121dc1028877a1da8b432e791dbdf5a280b19c39e7",
+      "size_bytes": 1476166,
+      "source_name": "Figure_05_Current_Attack_Detection_FINAL_V3_20261027_091027_266144.png"
+    },
+    {
+      "category": "publication_asset",
+      "destination": "model/research_paper/tables/Table_01_Forecasting_Model_Benchmark_20261027_075241_797609.pdf",
+      "sha256": "054b700cbc77e9531a9c114e4c89d5b1c8b0fee7000af274f241c845f607a50a",
+      "size_bytes": 26330,
+      "source_name": "Table_01_Forecasting_Model_Benchmark_20261027_075241_797609.pdf"
+    },
+    {
+      "category": "publication_asset",
+      "destination": "model/research_paper/tables/Table_01_Forecasting_Model_Benchmark_20261027_075241_797609.svg",
+      "sha256": "0830259606d39aaffb5857a18f5690181071b742622979d9ed4127e7a4bcff4f",
+      "size_bytes": 21721,
+      "source_name": "Table_01_Forecasting_Model_Benchmark_20261027_075241_797609.svg"
+    },
+    {
+      "category": "publication_asset",
+      "destination": "model/research_paper/tables/Table_01_Forecasting_Model_Benchmark_20261027_075241_797609.png",
+      "sha256": "f68f888bc175fdad65d568072cccc49a5e7a1120bdbd9acc4b2a825f004fb368",
+      "size_bytes": 718711,
+      "source_name": "Table_01_Forecasting_Model_Benchmark_20261027_075241_797609.png"
+    },
+    {
+      "category": "publication_asset",
+      "destination": "model/research_paper/tables/Table_01_Forecasting_Model_Benchmark_20261027_075241_797609.csv",
+      "sha256": "40fba8e0dea0344288324decfe5dcc7704d3493df3ec70724808feb090860b44",
+      "size_bytes": 917,
+      "source_name": "Table_01_Forecasting_Model_Benchmark_20261027_075241_797609.csv"
+    },
+    {
+      "category": "publication_asset",
+      "destination": "model/research_paper/tables/Table_01_Forecasting_Model_Benchmark_20261027_075241_797609.tex",
+      "sha256": "e784a073fa77829cea9d46c538892d6b369cece5d9e26bfab184d9caf6457eb1",
+      "size_bytes": 1666,
+      "source_name": "Table_01_Forecasting_Model_Benchmark_20261027_075241_797609.tex"
+    },
+    {
+      "category": "publication_asset",
+      "destination": "model/research_paper/tables/Table_01_Forecasting_Model_Benchmark_20261027_075241_797609.json",
+      "sha256": "a5ba530d84c5d47620273256ad461a792510a7ffa423c5e2b611783741222b56",
+      "size_bytes": 2197,
+      "source_name": "Table_01_Forecasting_Model_Benchmark_20261027_075241_797609.json"
+    },
+    {
+      "category": "publication_asset",
+      "destination": "model/research_paper/tables/Table_02_Source_Family_ETA_20261027_075814_177566.pdf",
+      "sha256": "61bf4145550b91c71f2000854171bdf779dca0347a2f81553ef96aa084b6603f",
+      "size_bytes": 28635,
+      "source_name": "Table_02_Source_Family_ETA_20261027_075814_177566.pdf"
+    },
+    {
+      "category": "publication_asset",
+      "destination": "model/research_paper/tables/Table_02_Source_Family_ETA_20261027_075814_177566.svg",
+      "sha256": "d23d7b82f0582445798313da104c666bf621eb10c40b578ca87b3c04f19df328",
+      "size_bytes": 19364,
+      "source_name": "Table_02_Source_Family_ETA_20261027_075814_177566.svg"
+    },
+    {
+      "category": "publication_asset",
+      "destination": "model/research_paper/tables/Table_02_Source_Family_ETA_20261027_075814_177566.png",
+      "sha256": "3a037b0b8dfc1fbb67ad1d2deb495739dafd11be3f6deb95295f6c5b4a3b2c77",
+      "size_bytes": 693242,
+      "source_name": "Table_02_Source_Family_ETA_20261027_075814_177566.png"
+    },
+    {
+      "category": "publication_asset",
+      "destination": "model/research_paper/tables/Table_02_Source_Family_ETA_20261027_075814_177566.csv",
+      "sha256": "ee8405daa7c86cdee1f8b7ffbf255617d15ea4bc34866e74f9e810125212ae13",
+      "size_bytes": 697,
+      "source_name": "Table_02_Source_Family_ETA_20261027_075814_177566.csv"
+    },
+    {
+      "category": "publication_asset",
+      "destination": "model/research_paper/tables/Table_02_Source_Family_ETA_20261027_075814_177566.tex",
+      "sha256": "95217d5e4f6894743d50126f390e7c7ea0ba8328f2187cf8608846c61dd360cf",
+      "size_bytes": 1807,
+      "source_name": "Table_02_Source_Family_ETA_20261027_075814_177566.tex"
+    },
+    {
+      "category": "publication_asset",
+      "destination": "model/research_paper/tables/Table_02_Source_Family_ETA_20261027_075814_177566.json",
+      "sha256": "4b4b49812b65b4804109304f8aadb2eeb388c37373ba0c34777730b45296b82b",
+      "size_bytes": 2157,
+      "source_name": "Table_02_Source_Family_ETA_20261027_075814_177566.json"
+    },
+    {
+      "category": "publication_asset",
+      "destination": "model/research_paper/tables/Table_03_Operational_Forecasting_20261027_080312_332769.pdf",
+      "sha256": "77f2789f7c5bbe070fceccd1b1539beda29c453025b8ade434d3b68dfa9c5160",
+      "size_bytes": 27036,
+      "source_name": "Table_03_Operational_Forecasting_20261027_080312_332769.pdf"
+    },
+    {
+      "category": "publication_asset",
+      "destination": "model/research_paper/tables/Table_03_Operational_Forecasting_20261027_080312_332769.svg",
+      "sha256": "513e57b126ef295a1c6f42a7f8324576a1803fa2e473f4bed81a52e663d1a91e",
+      "size_bytes": 26467,
+      "source_name": "Table_03_Operational_Forecasting_20261027_080312_332769.svg"
+    },
+    {
+      "category": "publication_asset",
+      "destination": "model/research_paper/tables/Table_03_Operational_Forecasting_20261027_080312_332769.png",
+      "sha256": "9121f7e54b2246ac5f0e4b5364d96a0d2bfa37c4b07297492f88c311f5abb567",
+      "size_bytes": 851420,
+      "source_name": "Table_03_Operational_Forecasting_20261027_080312_332769.png"
+    },
+    {
+      "category": "publication_asset",
+      "destination": "model/research_paper/tables/Table_03_Operational_Forecasting_20261027_080312_332769.csv",
+      "sha256": "2f4ccb3ebe3bb8c03361a677690e7a645965434e3ef3842fb7c9f9bb19af64f3",
+      "size_bytes": 1259,
+      "source_name": "Table_03_Operational_Forecasting_20261027_080312_332769.csv"
+    },
+    {
+      "category": "publication_asset",
+      "destination": "model/research_paper/tables/Table_03_Operational_Forecasting_20261027_080312_332769.tex",
+      "sha256": "88b7cdab07e39be3ee78535b4e7bfec6dae1447b0c1800515ec6441099329c0f",
+      "size_bytes": 1902,
+      "source_name": "Table_03_Operational_Forecasting_20261027_080312_332769.tex"
+    },
+    {
+      "category": "publication_asset",
+      "destination": "model/research_paper/tables/Table_03_Operational_Forecasting_20261027_080312_332769.json",
+      "sha256": "09170a09927bb799a313c37f22a32b11c1a03938a6737422631a9ea86f920780",
+      "size_bytes": 2104,
+      "source_name": "Table_03_Operational_Forecasting_20261027_080312_332769.json"
+    },
+    {
+      "category": "publication_asset",
+      "destination": "model/research_paper/tables/Table_04_Current_Attack_Classification_20261027_080659_311623.pdf",
+      "sha256": "a941cd33a7a43f3bdb994668974a20fbf89922fa3a85c7a8e1e7fec7b26805f8",
+      "size_bytes": 27706,
+      "source_name": "Table_04_Current_Attack_Classification_20261027_080659_311623.pdf"
+    },
+    {
+      "category": "publication_asset",
+      "destination": "model/research_paper/tables/Table_04_Current_Attack_Classification_20261027_080659_311623.svg",
+      "sha256": "9d709479b4c134514cfd4968bbf7502e03bdc4df51d0b131034c6d0d8b49fee3",
+      "size_bytes": 13511,
+      "source_name": "Table_04_Current_Attack_Classification_20261027_080659_311623.svg"
+    },
+    {
+      "category": "publication_asset",
+      "destination": "model/research_paper/tables/Table_04_Current_Attack_Classification_20261027_080659_311623.png",
+      "sha256": "bea86d59d36165c292703d4972cd4be1318175cc9c1a15d7134098d799f10460",
+      "size_bytes": 641266,
+      "source_name": "Table_04_Current_Attack_Classification_20261027_080659_311623.png"
+    },
+    {
+      "category": "publication_asset",
+      "destination": "model/research_paper/tables/Table_04_Current_Attack_Classification_20261027_080659_311623.csv",
+      "sha256": "c31794bf8de30959d36cf8eed983dcebc12eac07be75cc60c69640819f12097d",
+      "size_bytes": 705,
+      "source_name": "Table_04_Current_Attack_Classification_20261027_080659_311623.csv"
+    },
+    {
+      "category": "publication_asset",
+      "destination": "model/research_paper/tables/Table_04_Current_Attack_Classification_20261027_080659_311623.tex",
+      "sha256": "4deb5076bca29fd1cf3a7696f494f09a5fd8a03d060eb0f36be837379a3f4ada",
+      "size_bytes": 1309,
+      "source_name": "Table_04_Current_Attack_Classification_20261027_080659_311623.tex"
+    },
+    {
+      "category": "publication_asset",
+      "destination": "model/research_paper/tables/Table_04_Current_Attack_Classification_20261027_080659_311623.json",
+      "sha256": "b0eadf12125ff1098d29dbafa80417979e8187e6f662d86fbe273f5e6b92f002",
+      "size_bytes": 3632,
+      "source_name": "Table_04_Current_Attack_Classification_20261027_080659_311623.json"
+    },
+    {
+      "category": "publication_asset",
+      "destination": "model/research_paper/tables/Table_05_Binary_Attack_Detection_20261027_081117_444585.pdf",
+      "sha256": "b86ed8011bdc909b8d8b1bd042081ae0ee6de77864f180b7fefb930a26ffb051",
+      "size_bytes": 28518,
+      "source_name": "Table_05_Binary_Attack_Detection_20261027_081117_444585.pdf"
+    },
+    {
+      "category": "publication_asset",
+      "destination": "model/research_paper/tables/Table_05_Binary_Attack_Detection_20261027_081117_444585.svg",
+      "sha256": "3aa660aef93547bda4fa92177948974b160335f116ae1094841248ffcd60d834",
+      "size_bytes": 14792,
+      "source_name": "Table_05_Binary_Attack_Detection_20261027_081117_444585.svg"
+    },
+    {
+      "category": "publication_asset",
+      "destination": "model/research_paper/tables/Table_05_Binary_Attack_Detection_20261027_081117_444585.png",
+      "sha256": "0540f7460e307261885b592dd172d42ff64e58b9036be9b15d331d57d7945b91",
+      "size_bytes": 666784,
+      "source_name": "Table_05_Binary_Attack_Detection_20261027_081117_444585.png"
+    },
+    {
+      "category": "publication_asset",
+      "destination": "model/research_paper/tables/Table_05_Binary_Attack_Detection_20261027_081117_444585.csv",
+      "sha256": "97593acdd4a92d3e2036395cc7ebd37db8a338335394a66741f1d7752a015bec",
+      "size_bytes": 1021,
+      "source_name": "Table_05_Binary_Attack_Detection_20261027_081117_444585.csv"
+    },
+    {
+      "category": "publication_asset",
+      "destination": "model/research_paper/tables/Table_05_Binary_Attack_Detection_20261027_081117_444585.tex",
+      "sha256": "8104a9978a21c95a090ad21bb4e625b14f19d1f12e94a5d4e9801334515e6eb0",
+      "size_bytes": 1277,
+      "source_name": "Table_05_Binary_Attack_Detection_20261027_081117_444585.tex"
+    },
+    {
+      "category": "publication_asset",
+      "destination": "model/research_paper/tables/Table_05_Binary_Attack_Detection_20261027_081117_444585.json",
+      "sha256": "740481fff9350efb84d0b1aa1532e4e9696649b5dc4986e68953ed4625a383e2",
+      "size_bytes": 4641,
+      "source_name": "Table_05_Binary_Attack_Detection_20261027_081117_444585.json"
+    },
+    {
+      "category": "publication_asset",
+      "destination": "model/research_paper/architecture/NetGuard_Academic_Architecture_MONO_V2_20261027_093205_212761.pdf",
+      "sha256": "372997452a3499b53405f75ee1f35be74c38bd4ba76d779dd0dc4746fd7aecb3",
+      "size_bytes": 33701,
+      "source_name": "NetGuard_Academic_Architecture_MONO_V2_20261027_093205_212761.pdf"
+    },
+    {
+      "category": "publication_asset",
+      "destination": "model/research_paper/architecture/NetGuard_Academic_Architecture_MONO_V2_20261027_093205_212761.svg",
+      "sha256": "73509f3139adc72b345b392432fe27de6b34e8893328cfdd7727e9ba8e543c08",
+      "size_bytes": 41155,
+      "source_name": "NetGuard_Academic_Architecture_MONO_V2_20261027_093205_212761.svg"
+    },
+    {
+      "category": "publication_asset",
+      "destination": "model/research_paper/architecture/NetGuard_Academic_Architecture_MONO_V2_20261027_093205_212761.png",
+      "sha256": "808f8beabf6f4ed567a306833d2faf66bde869baeed451f03ba884a43ed1a40b",
+      "size_bytes": 826230,
+      "source_name": "NetGuard_Academic_Architecture_MONO_V2_20261027_093205_212761.png"
+    },
+    {
+      "category": "publication_asset",
+      "destination": "model/research_paper/architecture/NetGuard_Academic_Architecture_MONO_V2_20261027_093205_212761.dot",
+      "sha256": "187ac2bfb7325604cc555d35a40e490fb84b3a1769736cb9613b169f51dd602b",
+      "size_bytes": 12701,
+      "source_name": "NetGuard_Academic_Architecture_MONO_V2_20261027_093205_212761.dot"
+    },
+    {
+      "category": "publication_caption",
+      "destination": "model/research_paper/architecture/NetGuard_Academic_Architecture_MONO_V2_20261027_093205_212761_Caption.txt",
+      "sha256": "ace8e7cd7161bc4fa79a24542e886cbcff8950a23113aeb9b3884f3853ed7449",
+      "size_bytes": 1332,
+      "source_name": "NetGuard_Academic_Architecture_MONO_V2_20261027_093205_212761_Caption.txt"
+    },
+    {
+      "category": "publication_caption",
+      "destination": "model/research_paper/figures/Figure_05_Current_Attack_Detection_FINAL_V3_20261027_091027_266144_Caption.txt",
+      "sha256": "baa921e446394c50ccf38b8cd5d70eed0055c62839b44d1e033bc08651d272e4",
+      "size_bytes": 536,
+      "source_name": "Figure_05_Current_Attack_Detection_FINAL_V3_20261027_091027_266144_Caption.txt"
+    }
+  ],
+  "original_sources_modified": false,
+  "official_test_accessed": false,
+  "github_push_performed": false,
+  "inference_integration_verified": false
+}

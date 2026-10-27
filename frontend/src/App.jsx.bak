@@ -1,0 +1,1323 @@
+import { useState } from "react";
+import {
+  AreaChart,
+  Area,
+  BarChart,
+  Bar,
+  PieChart,
+  Pie,
+  Cell,
+  ResponsiveContainer,
+  XAxis,
+  YAxis,
+  Tooltip,
+  CartesianGrid,
+} from "recharts";
+
+import {
+  networkData,
+  attackHistory,
+  attackDictionary,
+  protocolData,
+} from "./data/mockData";
+
+import "./index.css";
+import ModelReplayPanel from "./ModelReplayPanel.jsx";
+
+
+
+function App() {
+  const [activePage, setActivePage] = useState("monitor");
+  const [sidebarOpen, setSidebarOpen] = useState(true);
+  const [authMode, setAuthMode] = useState("login");
+  const [monitoring, setMonitoring] = useState(true);
+  const [defenseMode, setDefenseMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
+  const [sensitivity, setSensitivity] = useState("medium");
+  const [selectedAttack, setSelectedAttack] = useState(null);
+  const [selectedDictionaryAttack, setSelectedDictionaryAttack] =
+    useState(null);
+
+
+
+  const themeClass = darkMode ? "dark-theme" : "light-theme";
+
+
+  return (
+    <div className={`app ${themeClass} ${sidebarOpen ? "sidebar-is-open" : "sidebar-is-closed"}`}>
+
+      {/* ================= HEADER ================= */}
+
+      <header className="header">
+
+        <div className="header-left">
+
+          <button
+            className="menu-toggle"
+            onClick={() => setSidebarOpen(!sidebarOpen)}
+            aria-label="Toggle navigation"
+          >
+            ☰
+          </button>
+
+          <div className="brand">
+
+            <div className="brand-icon">
+              ◉
+            </div>
+
+            <div>
+              <h1>NetGuard</h1>
+
+              <span>
+                Network Attack Forecasting
+              </span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <button
+          className={`status ${
+            monitoring ? "active" : "inactive"
+          }`}
+          onClick={() => setMonitoring(!monitoring)}
+        >
+
+          <span className="status-dot"></span>
+
+          {monitoring ? "REPLAY ON" : "REPLAY PAUSED"}
+
+        </button>
+
+      </header>
+
+      {/* =====================================================
+            SIDEBAR NAVIGATION
+        ===================================================== */}
+
+        <aside className={`sidebar ${sidebarOpen ? "open" : ""}`}>
+
+          <div className="sidebar-top">
+
+            <button
+              className={`sidebar-item ${
+                activePage === "monitor" ? "selected" : ""
+              }`}
+              onClick={() => {
+                setActivePage("monitor");
+              }}
+            >
+              <span>◉</span>
+              <label>Monitor</label>
+            </button>
+
+
+            <button
+              className={`sidebar-item ${
+                activePage === "history" ||
+                activePage === "report"
+                  ? "selected"
+                  : ""
+              }`}
+              onClick={() => {
+                setActivePage("history");
+              }}
+            >
+              <span>◷</span>
+              <label>History</label>
+            </button>
+
+
+            <button
+              className={`sidebar-item ${
+                activePage === "dictionary" ||
+                activePage === "dictionary-detail"
+                  ? "selected"
+                  : ""
+              }`}
+              onClick={() => {
+                setActivePage("dictionary");
+              }}
+            >
+              <span>▣</span>
+              <label>Attack Dictionary</label>
+            </button>
+
+
+            <button
+              className={`sidebar-item ${
+                activePage === "system"
+                  ? "selected"
+                  : ""
+              }`}
+              onClick={() => {
+                setActivePage("system");
+              }}
+            >
+              <span>⚙</span>
+              <label>Settings</label>
+            </button>
+
+          </div>
+
+
+          <div className="sidebar-bottom">
+
+            <button
+              className={`sidebar-item login-item ${
+                activePage === "login" ? "selected" : ""
+              }`}
+              onClick={() => {
+                setActivePage("login");
+              }}
+            >
+              <span>♙</span>
+              <label>Login</label>
+            </button>
+
+          </div>
+
+        </aside>
+
+                    
+
+
+      {/* ================= CONTENT ================= */}
+
+      <main className="content">
+
+
+        {/* =====================================================
+            MONITOR
+        ===================================================== */}
+
+        {activePage === "monitor" && (
+
+          <div>
+
+            <div className="page-heading">
+
+              <h2>Network Monitor</h2>
+
+              <p>
+                Frozen-model forecasts on synthetic validation replay
+              </p>
+
+            </div>
+
+
+            {/* Frozen-model replay predictions. No hardcoded countdown. */}
+            <ModelReplayPanel enabled={monitoring} />
+
+            {/* NETWORK ACTIVITY */}
+
+          <section className="network-monitor">
+
+            <div className="network-header">
+
+              <div>
+                <span className="subheading">
+                  SAMPLE NETWORK CHARTS
+                </span>
+
+                <h3>
+                  Illustrative Traffic Activity (static sample)
+                </h3>
+              </div>
+
+              <span className="live-indicator">
+                ● DEMO DATA
+              </span>
+
+            </div>
+
+
+            {/* TRAFFIC GRAPH */}
+
+            <div className="traffic-chart-card">
+
+              <div className="chart-title">
+
+                <div>
+                  <strong>Traffic Flow</strong>
+                  <span>Inbound vs outbound throughput</span>
+                </div>
+
+                <div className="chart-legend">
+
+                  <span>
+                    <i className="legend-inbound"></i>
+                    Inbound
+                  </span>
+
+                  <span>
+                    <i className="legend-outbound"></i>
+                    Outbound
+                  </span>
+
+                </div>
+
+              </div>
+
+
+              <div className="chart">
+
+                <ResponsiveContainer
+                  width="100%"
+                  height={190}
+                >
+
+                  <AreaChart data={networkData}>
+
+                    <defs>
+
+                      <linearGradient
+                        id="inboundGradient"
+                        x1="0"
+                        y1="0"
+                        x2="0"
+                        y2="1"
+                      >
+
+                        <stop
+                          offset="0%"
+                          stopColor="#69d596"
+                          stopOpacity={0.28}
+                        />
+
+                        <stop
+                          offset="100%"
+                          stopColor="#69d596"
+                          stopOpacity={0}
+                        />
+
+                      </linearGradient>
+
+
+                      <linearGradient
+                        id="outboundGradient"
+                        x1="0"
+                        y1="0"
+                        x2="0"
+                        y2="1"
+                      >
+
+                        <stop
+                          offset="0%"
+                          stopColor="#78aef5"
+                          stopOpacity={0.22}
+                        />
+
+                        <stop
+                          offset="100%"
+                          stopColor="#78aef5"
+                          stopOpacity={0}
+                        />
+
+                      </linearGradient>
+
+                    </defs>
+
+
+                    <CartesianGrid
+                      vertical={false}
+                      stroke="currentColor"
+                      opacity={0.08}
+                    />
+
+                    <XAxis
+                      dataKey="time"
+                      tick={{ fontSize: 8 }}
+                      axisLine={false}
+                      tickLine={false}
+                    />
+
+                    <YAxis
+                      tick={{ fontSize: 8 }}
+                      axisLine={false}
+                      tickLine={false}
+                      width={25}
+                    />
+
+                    <Tooltip />
+
+
+                    <Area
+                      type="monotone"
+                      dataKey="inbound"
+                      stroke="#69d596"
+                      strokeWidth={2}
+                      fill="url(#inboundGradient)"
+                    />
+
+                    <Area
+                      type="monotone"
+                      dataKey="outbound"
+                      stroke="#78aef5"
+                      strokeWidth={2}
+                      fill="url(#outboundGradient)"
+                    />
+
+                  </AreaChart>
+
+                </ResponsiveContainer>
+
+              </div>
+
+            </div>
+
+
+            {/* METRICS */}
+
+            <div className="network-metrics">
+
+              <div className="network-metric">
+
+                <span>PACKETS / SEC</span>
+
+                <strong>850</strong>
+
+                <small>Static sample value</small>
+
+              </div>
+
+
+              <div className="network-metric">
+
+                <span>THROUGHPUT</span>
+
+                <strong>2.4 MB/s</strong>
+
+                <small>Static sample value</small>
+
+              </div>
+
+
+              <div className="network-metric">
+
+                <span>FLOWS / MIN</span>
+
+                <strong>120</strong>
+
+                <small>Static sample value</small>
+
+              </div>
+
+
+              <div className="network-metric">
+
+                <span>CONNECTIONS</span>
+
+                <strong>34</strong>
+
+                <small>Static sample value</small>
+
+              </div>
+
+            </div>
+
+
+            {/* LOWER VISUALS */}
+
+            <div className="network-visual-grid">
+
+
+              {/* PROTOCOL DISTRIBUTION */}
+
+              <div className="mini-chart-card">
+
+                <div className="mini-chart-header">
+
+                  <strong>Protocol Distribution</strong>
+
+                  <span>Current</span>
+
+                </div>
+
+
+                <div className="protocol-chart">
+
+                  <ResponsiveContainer
+                    width="100%"
+                    height={145}
+                  >
+
+                    <PieChart>
+
+                      <Pie
+                        data={protocolData}
+                        dataKey="value"
+                        nameKey="name"
+                        cx="50%"
+                        cy="50%"
+                        innerRadius={38}
+                        outerRadius={58}
+                        paddingAngle={3}
+                      >
+
+                        <Cell fill="#69d596" />
+                        <Cell fill="#78aef5" />
+                        <Cell fill="#e6bf69" />
+                        <Cell fill="#8b96a3" />
+
+                      </Pie>
+
+                      <Tooltip />
+
+                    </PieChart>
+
+                  </ResponsiveContainer>
+
+
+                  <div className="protocol-center">
+                    <strong>68%</strong>
+                    <span>TCP</span>
+                  </div>
+
+                </div>
+
+
+                <div className="protocol-list">
+
+                  {protocolData.map((protocol, index) => (
+
+                    <div
+                      key={protocol.name}
+                      className="protocol-item"
+                    >
+
+                      <span>
+                        <i className={`protocol-dot dot-${index}`} />
+                        {protocol.name}
+                      </span>
+
+                      <strong>
+                        {protocol.value}%
+                      </strong>
+
+                    </div>
+
+                  ))}
+
+                </div>
+
+              </div>
+
+
+              {/* ACTIVITY / RISK */}
+
+              <div className="mini-chart-card">
+
+                <div className="mini-chart-header">
+
+                  <strong>Activity Risk</strong>
+
+                  <span>
+                    Last 9 min
+                  </span>
+
+                </div>
+
+
+                <div className="risk-chart">
+
+                  <ResponsiveContainer
+                    width="100%"
+                    height={180}
+                  >
+
+                    <BarChart data={networkData}>
+
+                      <XAxis
+                        dataKey="time"
+                        hide
+                      />
+
+                      <YAxis
+                        hide
+                        domain={[0, 100]}
+                      />
+
+                      <Tooltip />
+
+                      <Bar
+                        dataKey="risk"
+                        radius={[4, 4, 0, 0]}
+                        fill="#c63d45"
+                      />
+
+                    </BarChart>
+
+                  </ResponsiveContainer>
+
+                </div>
+
+
+                <div className="risk-summary">
+
+                  <span>
+                    Example risk (not model output)
+                  </span>
+
+                  <strong>
+                    87 / 100
+                  </strong>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </section>
+
+          </div>
+
+        )}
+
+
+        {/* =====================================================
+            HISTORY
+        ===================================================== */}
+
+        {activePage === "history" && (
+
+          <div>
+
+            <div className="page-heading">
+
+              <h2>Attack History</h2>
+
+              <p>
+                Sample history records; database integration pending
+              </p>
+
+            </div>
+
+
+            <section className="card history-list">
+
+              {attackHistory.map((attack) => (
+
+                <button
+                  className="history-item"
+                  key={attack.id}
+                  onClick={() => {
+                    setSelectedAttack(attack);
+                    setActivePage("report");
+                  }}
+                >
+
+                  <div className="history-main">
+
+                    <div className="history-icon">
+                      ⚠
+                    </div>
+
+                    <div>
+
+                      <strong>
+                        {attack.attackType}
+                      </strong>
+
+                      <span>
+                        {attack.category}
+                      </span>
+
+                      <small>
+                        {attack.date} • {attack.time}
+                      </small>
+
+                    </div>
+
+                  </div>
+
+
+                  <div className="history-right">
+
+                    <span
+                      className={`severity-text ${
+                        attack.severity.toLowerCase()
+                      }`}
+                    >
+                      {attack.severity}
+                    </span>
+
+                    <span className="arrow">
+                      →
+                    </span>
+
+                  </div>
+
+                </button>
+
+              ))}
+
+            </section>
+
+          </div>
+
+        )}
+
+
+        {/* =====================================================
+            ATTACK REPORT
+        ===================================================== */}
+
+        {activePage === "report" &&
+          selectedAttack && (
+
+            <div>
+
+              <button
+                className="back-button"
+                onClick={() => {
+                  setSelectedAttack(null);
+                  setActivePage("history");
+                }}
+              >
+                ← Back to History
+              </button>
+
+
+              <div className="page-heading">
+
+                <h2>
+                  Attack Report
+                </h2>
+
+                <p>
+                  Detailed security event information
+                </p>
+
+              </div>
+
+
+              <section className="card report-card">
+
+                <div className="report-title">
+
+                  <div>
+                    <span className="subheading">
+                      {selectedAttack.category}
+                    </span>
+
+                    <h2>
+                      {selectedAttack.attackType}
+                    </h2>
+                  </div>
+
+                  <span
+                    className={`severity-badge ${
+                      selectedAttack.severity.toLowerCase()
+                    }`}
+                  >
+                    {selectedAttack.severity}
+                  </span>
+
+                </div>
+
+
+                <div className="report-grid">
+
+                  <div>
+                    <span>Date</span>
+                    <strong>
+                      {selectedAttack.date}
+                    </strong>
+                  </div>
+
+                  <div>
+                    <span>Time</span>
+                    <strong>
+                      {selectedAttack.time}
+                    </strong>
+                  </div>
+
+                  <div>
+                    <span>Confidence</span>
+                    <strong>
+                      {selectedAttack.confidence}%
+                    </strong>
+                  </div>
+
+                  <div>
+                    <span>Risk Score</span>
+                    <strong>
+                      {selectedAttack.riskScore}
+                    </strong>
+                  </div>
+
+                  <div>
+                    <span>Lead Time</span>
+                    <strong>
+                      {selectedAttack.leadTime}
+                    </strong>
+                  </div>
+
+                  <div>
+                    <span>Status</span>
+                    <strong>
+                      {selectedAttack.status}
+                    </strong>
+                  </div>
+
+                </div>
+
+
+                <div className="report-section">
+
+                  <span className="subheading">
+                    EXAMPLE ACTION (STATIC RECORD)
+                  </span>
+
+                  <p>
+                    {selectedAttack.action}
+                  </p>
+
+                </div>
+
+              </section>
+
+            </div>
+
+          )}
+
+
+        {/* =====================================================
+            DICTIONARY
+        ===================================================== */}
+
+        {activePage === "dictionary" && (
+
+          <div>
+
+            <div className="page-heading">
+
+              <div className="dictionary-heading">
+
+                <div className="book-icon">
+                  ▣
+                </div>
+
+                <div>
+
+                  <h2>
+                    Attack Dictionary
+                  </h2>
+
+                  <p>
+                    Understand common network threats
+                  </p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div className="dictionary-grid">
+
+              {attackDictionary.map((attack) => (
+
+                <button
+                  className="dictionary-card"
+                  key={attack.type}
+                  onClick={() => {
+                    setSelectedDictionaryAttack(attack);
+                    setActivePage("dictionary-detail");
+                  }}
+                >
+
+                  <div className="dictionary-icon">
+                    {attack.icon}
+                  </div>
+
+                  <span className="dictionary-category">
+                    {attack.category}
+                  </span>
+
+                  <h3>
+                    {attack.type}
+                  </h3>
+
+                  <p>
+                    {attack.description}
+                  </p>
+
+                  <span className="view-details">
+                    View details →
+                  </span>
+
+                </button>
+
+              ))}
+
+            </div>
+
+          </div>
+
+        )}
+
+
+        {/* =====================================================
+            DICTIONARY DETAIL
+        ===================================================== */}
+
+        {activePage === "dictionary-detail" &&
+          selectedDictionaryAttack && (
+
+            <div>
+
+              <button
+                className="back-button"
+                onClick={() => {
+                  setSelectedDictionaryAttack(null);
+                  setActivePage("dictionary");
+                }}
+              >
+                ← Back to Dictionary
+              </button>
+
+
+              <div className="page-heading">
+
+                <span className="dictionary-category">
+                  {selectedDictionaryAttack.category}
+                </span>
+
+                <h2>
+                  {selectedDictionaryAttack.type}
+                </h2>
+
+                <p>
+                  {selectedDictionaryAttack.description}
+                </p>
+
+              </div>
+
+
+              <section className="card dictionary-detail">
+
+                <div className="detail-section">
+
+                  <span className="subheading">
+                    COMMON INDICATORS
+                  </span>
+
+                  {selectedDictionaryAttack.indicators.map(
+                    (indicator) => (
+
+                      <div
+                        className="detail-row"
+                        key={indicator}
+                      >
+                        <span>•</span>
+                        {indicator}
+                      </div>
+
+                    )
+                  )}
+
+                </div>
+
+
+                <div className="detail-section">
+
+                  <span className="subheading">
+                    POSSIBLE DEFENSES
+                  </span>
+
+                  {selectedDictionaryAttack.defenses.map(
+                    (defense) => (
+
+                      <div
+                        className="detail-row"
+                        key={defense}
+                      >
+                        <span>✓</span>
+                        {defense}
+                      </div>
+
+                    )
+                  )}
+
+                </div>
+
+              </section>
+
+            </div>
+
+          )}
+          {/* =====================================================
+            LOGIN
+        ===================================================== */}
+
+        
+        {activePage === "login" && (
+
+          <div className="auth-page">
+
+            <div className="auth-card">
+
+              <div className="auth-logo">
+                ◉
+              </div>
+
+              {authMode === "login" ? (
+
+                <>
+                  <h2>Welcome back</h2>
+
+                  <p className="auth-subtitle">
+                    Sign in to access your NetGuard dashboard.
+                  </p>
+
+                  <form
+                    className="auth-form"
+                    onSubmit={(e) => e.preventDefault()}
+                  >
+
+                    <label>Email</label>
+
+                    <input
+                      type="email"
+                      placeholder="Enter your email"
+                    />
+
+                    <label>Password</label>
+
+                    <input
+                      type="password"
+                      placeholder="Enter your password"
+                    />
+
+                    <button
+                      type="submit"
+                      className="auth-submit"
+                    >
+                      Sign In
+                    </button>
+
+                  </form>
+
+                  <div className="auth-switch">
+
+                    <span>
+                      Don't have an account?
+                    </span>
+
+                    <button
+                      onClick={() => setAuthMode("signup")}
+                    >
+                      Create one
+                    </button>
+
+                  </div>
+                </>
+
+              ) : (
+
+                <>
+                  <h2>Create your account</h2>
+
+                  <p className="auth-subtitle">
+                    Set up your NetGuard security profile.
+                  </p>
+
+                  <form
+                    className="auth-form"
+                    onSubmit={(e) => e.preventDefault()}
+                  >
+
+                    <label>Name</label>
+
+                    <input
+                      type="text"
+                      placeholder="Enter your name"
+                    />
+
+                    <label>Email</label>
+
+                    <input
+                      type="email"
+                      placeholder="Enter your email"
+                    />
+
+                    <label>Password</label>
+
+                    <input
+                      type="password"
+                      placeholder="Create a password"
+                    />
+
+                    <label>Confirm Password</label>
+
+                    <input
+                      type="password"
+                      placeholder="Confirm your password"
+                    />
+
+                    <button
+                      type="submit"
+                      className="auth-submit"
+                    >
+                      Create Account
+                    </button>
+
+                  </form>
+
+                  <div className="auth-switch">
+
+                    <span>
+                      Already have an account?
+                    </span>
+
+                    <button
+                      onClick={() => setAuthMode("login")}
+                    >
+                      Sign in
+                    </button>
+
+                  </div>
+                </>
+
+              )}
+
+              <div className="auth-demo-note">
+                Authentication will be connected to FastAPI later.
+              </div>
+
+            </div>
+
+          </div>
+
+        )}
+
+        {/* =====================================================
+            SETTINGS
+        ===================================================== */}
+
+        {activePage === "system" && (
+
+          <div>
+
+            <div className="page-heading">
+
+              <h2>
+                Settings
+              </h2>
+
+              <p>
+                Configure how NetGuard behaves
+              </p>
+
+            </div>
+
+
+            <section className="card settings-card">
+
+              {/* Monitoring */}
+
+              <div className="setting">
+
+                <div>
+
+                  <strong>
+                    Network Monitoring
+                  </strong>
+
+                  <span>
+                    Enable replay forecast requests (not live monitoring)
+                  </span>
+
+                </div>
+
+                <button
+                  className={`toggle ${
+                    monitoring ? "on" : ""
+                  }`}
+                  onClick={() =>
+                    setMonitoring(!monitoring)
+                  }
+                >
+                  <span />
+                </button>
+
+              </div>
+
+
+              {/* Notifications */}
+
+              <div className="setting">
+
+                <div>
+
+                  <strong>
+                    Threat Notifications
+                  </strong>
+
+                  <span>
+                    Receive alerts for relevant forecasts
+                  </span>
+
+                </div>
+
+                <button className="toggle on">
+                  <span />
+                </button>
+
+              </div>
+
+
+              {/* Theme */}
+
+              <div className="setting">
+
+                <div>
+
+                  <strong>
+                    Dark Mode
+                  </strong>
+
+                  <span>
+                    Switch between light and dark appearance
+                  </span>
+
+                </div>
+
+                <button
+                  className={`toggle ${
+                    darkMode ? "on" : ""
+                  }`}
+                  onClick={() =>
+                    setDarkMode(!darkMode)
+                  }
+                >
+                  <span />
+                </button>
+
+              </div>
+
+
+              {/* Sensitivity */}
+
+              <div className="sensitivity-setting">
+
+                <div>
+
+                  <strong>
+                    Threat Sensitivity
+                  </strong>
+
+                  <span>
+                    Choose which threat levels should
+                    trigger attention
+                  </span>
+
+                </div>
+
+
+                <div className="sensitivity-options">
+
+                  {[
+                    ["critical", "Critical only"],
+                    ["high", "High & Critical"],
+                    ["medium", "Medium & above"],
+                    ["all", "All activity"],
+                  ].map(([value, label]) => (
+
+                    <button
+                      key={value}
+                      className={
+                        sensitivity === value
+                          ? "selected"
+                          : ""
+                      }
+                      onClick={() =>
+                        setSensitivity(value)
+                      }
+                    >
+                      {label}
+                    </button>
+
+                  ))}
+
+                </div>
+
+              </div>
+
+
+              {/* Defense */}
+
+              <div className="setting">
+
+                <div>
+
+                  <strong>
+                    Defense Mode
+                  </strong>
+
+                  <span>
+                    Future automatic response capability
+                  </span>
+
+                </div>
+
+                <button
+                  className={`toggle ${
+                    defenseMode ? "on" : ""
+                  }`}
+                  onClick={() =>
+                    setDefenseMode(!defenseMode)
+                  }
+                >
+                  <span />
+                </button>
+
+              </div>
+
+
+              {/* Status */}
+
+              <div className="setting">
+
+                <div>
+
+                  <strong>
+                    Backend Status
+                  </strong>
+
+                  <span>
+                    Connection status is displayed on the Monitor page
+                  </span>
+
+                </div>
+
+                <span className="connected">
+                  SEE MONITOR
+                </span>
+
+              </div>
+
+            </section>
+
+          </div>
+
+        )}
+
+      </main>
+
+    </div>
+
+    
+
+  );
+}
+
+
+export default App;

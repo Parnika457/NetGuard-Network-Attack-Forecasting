@@ -1,0 +1,8 @@
+FIGURE 5 — CURRENT ATTACK DETECTION
+
+Figure 5. Current attack detection is evaluated separately from ten-class attack identification. Binary scores use the saved XGBoost V1 attack probability, 1 - P(Normal).
+
+The red-outlined confusion cell denotes DoS misclassified as Exploits (2,309 / 2,552). Weighted V2 class recalls are rounded values previously reported in Cell 22.
+
+UNSW-NB15 development validation; repeatedly examined during model selection. These results do not establish independent TEST-set or live-network performance.
+

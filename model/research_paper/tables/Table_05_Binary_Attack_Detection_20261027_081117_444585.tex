@@ -1,0 +1,27 @@
+% Requires \usepackage{booktabs}
+\begin{table*}[t]
+\centering
+\caption{Binary attack-detection performance and decision-threshold characteristics.}
+\label{tab:binary_attack_detection}
+\small
+\begin{tabular}{lrrrrrr}
+\toprule
+\multicolumn{7}{l}{\textbf{A. Threshold-independent discrimination and calibration}} \\
+\midrule
+Metric & AP & ROC-AUC & Brier & ECE & Attack prevalence & Records \\
+Value & 0.9967 & 0.9929 & 0.0309 & 0.0055 & 0.6818 & 35,167 \\
+\midrule
+\multicolumn{7}{l}{\textbf{B. Fixed decision thresholds}} \\
+\midrule
+Threshold & Precision (\%) & Recall (\%) & F1 (\%) & FPR (\%) & FP & FN \\
+\midrule
+0.50 & 96.00 & 97.41 & 96.70 & 8.69 & 973 & 621 \\
+0.70 & 98.12 & 93.73 & 95.87 & 3.84 & 430 & 1504 \\
+0.80 & 99.03 & 90.48 & 94.56 & 1.90 & 213 & 2283 \\
+0.90 & 99.64 & 86.57 & 92.65 & 0.66 & 74 & 3219 \\
+0.95 & 99.84 & 83.20 & 90.77 & 0.28 & 31 & 4027 \\
+\bottomrule
+\end{tabular}
+\vspace{3pt}
+\parbox{\textwidth}{\footnotesize AP = average precision; ROC-AUC = area under the ROC curve; ECE = expected calibration error; FPR = false-positive rate; FP = false positives; FN = false negatives. Attack probability is $1-P(\mathrm{Normal})$. Results reflect 35,167 UNSW-NB15 development-validation records, not independent final TEST performance.}
+\end{table*}

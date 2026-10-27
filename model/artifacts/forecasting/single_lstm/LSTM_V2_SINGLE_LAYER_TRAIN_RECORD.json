@@ -1,0 +1,38 @@
+{
+  "model_name": "LSTM_V2_SingleLayer",
+  "architecture": {
+    "input_dim": 14,
+    "hidden_dim": 64,
+    "num_layers": 1,
+    "dropout": 0.1,
+    "dense_dim": 32
+  },
+  "training_rows": 88186,
+  "training_unique_episodes": 1400,
+  "training_epochs": 12,
+  "batch_size": 512,
+  "learning_rate": 0.001,
+  "weight_decay": 0.001,
+  "loss_function": "mean_unweighted_BCE_on_three_cumulative_horizons",
+  "final_train_bce": 0.10175602853783482,
+  "train_loss_by_epoch": [
+    0.43999713471116797,
+    0.16598251974582942,
+    0.13558339777197298,
+    0.12462586045820785,
+    0.11741525802637205,
+    0.11287445063260408,
+    0.11080709135017616,
+    0.10832456751194236,
+    0.1065307317073389,
+    0.10556527064880467,
+    0.10394333847882789,
+    0.10175602853783482
+  ],
+  "data_manifest_sha256": "e438b0234ac23f03cdbdd720bc39b30f01bf2fd21dfc8b1b9dd0d0f12e7829fa",
+  "model_sha256": "99e19e455b9a94fd32590ff401d90ea1cf0d8c1f9eab3c03b9d182a7cd0b1bf2",
+  "scaler_sha256": "c15cec50bb7852c6558e72ac282dc40132435fec8eca9d009fa371a25ed5452a",
+  "official_validation_used_for_selection": false,
+  "official_test_accessed": false,
+  "note": "Fixed baseline; no hyperparameter tuning or early stopping on VAL."
+}

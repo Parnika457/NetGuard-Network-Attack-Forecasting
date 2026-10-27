@@ -1,0 +1,8 @@
+# Private configuration, local generated indexes and temporary Python files
+.env
+.venv/
+data/
+__pycache__/
+.pytest_cache/
+*.pyc
+.DS_Store

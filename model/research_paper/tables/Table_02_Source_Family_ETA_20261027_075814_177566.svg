@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="951.84pt" height="435.744pt" viewBox="0 0 951.84 435.744" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-27T07:58:14.928795</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 435.744 
+L 951.84 435.744 
+L 951.84 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="line2d_1">
+    <path d="M 58.7592 62.817408 
+L 907.1424 62.817408 
+" clip-path="url(#pf0b8a52dcd)" style="fill: none; stroke: #292929; stroke-width: 1.15; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 365.392508 93.154176 
+L 575.957809 93.154176 
+" clip-path="url(#pf0b8a52dcd)" style="fill: none; stroke: #292929; stroke-width: 0.6; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 589.081969 93.154176 
+L 730.539957 93.154176 
+" clip-path="url(#pf0b8a52dcd)" style="fill: none; stroke: #292929; stroke-width: 0.6; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 58.7592 127.704384 
+L 907.1424 127.704384 
+" clip-path="url(#pf0b8a52dcd)" style="fill: none; stroke: #292929; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_5">
+    <path d="M 58.7592 192.59136 
+L 907.1424 192.59136 
+" clip-path="url(#pf0b8a52dcd)" style="fill: none; stroke: #292929; stroke-width: 0.55; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_6">
+    <path d="M 58.7592 254.107584 
+L 907.1424 254.107584 
+" clip-path="url(#pf0b8a52dcd)" style="fill: none; stroke: #292929; stroke-width: 0.55; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_7">
+    <path d="M 58.7592 316.045152 
+L 907.1424 316.045152 
+" clip-path="url(#pf0b8a52dcd)" style="fill: none; stroke: #292929; stroke-width: 1.15; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'DejaVu Serif'; text-anchor: start" x="58.7592" y="29.042948" transform="rotate(-0 58.7592 29.042948)">Table 2</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 12.8px; font-family: 'DejaVu Serif'; text-anchor: start" x="58.7592" y="46.033896" transform="rotate(-0 58.7592 46.033896)">Source-dependent forecasting, attack-family classification and time-to-attack performance</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Serif'; text-anchor: middle" x="124.68394" y="82.009199" transform="rotate(-0 124.68394 82.009199)">Dataset</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Serif'; text-anchor: middle" x="240.62055" y="82.009199" transform="rotate(-0 240.62055 82.009199)">Model</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 9.3px; font-family: 'DejaVu Serif'" transform="translate(296.741331 76.60906)">True-event</text>
+    <text style="font-weight: 700; font-size: 9.3px; font-family: 'DejaVu Serif'" transform="translate(302.608324 87.023026)">windows</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Serif'; text-anchor: middle" x="470.675159" y="79.481135" transform="rotate(-0 470.675159 79.481135)">Forecast discrimination</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Serif'; text-anchor: middle" x="659.810963" y="79.410041" transform="rotate(-0 659.810963 79.410041)">Attack-family prediction</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 9.7px; font-family: 'DejaVu Serif'; text-anchor: middle" x="782.567375" y="79.398354" transform="rotate(-0 782.567375 79.398354)">Conditional ETA</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 9.7px; font-family: 'DejaVu Serif'; text-anchor: middle" x="867.587556" y="79.398354" transform="rotate(-0 867.587556 79.398354)">Joint fit</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 9.7px; font-family: 'DejaVu Serif'; text-anchor: middle" x="396.112005" y="114.369906" transform="rotate(-0 396.112005 114.369906)">H5 AP</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 9.7px; font-family: 'DejaVu Serif'; text-anchor: middle" x="470.675159" y="114.369906" transform="rotate(-0 470.675159 114.369906)">H10 AP</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 9.7px; font-family: 'DejaVu Serif'; text-anchor: middle" x="545.238313" y="114.369906" transform="rotate(-0 545.238313 114.369906)">H15 AP</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 9.7px; font-family: 'DejaVu Serif'; text-anchor: middle" x="621.165426" y="114.231984" transform="rotate(-0 621.165426 114.231984)">Accuracy</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 9.7px; font-family: 'DejaVu Serif'; text-anchor: middle" x="698.4565" y="114.369906" transform="rotate(-0 698.4565 114.369906)">Macro F1</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 9.7px; font-family: 'DejaVu Serif'; text-anchor: middle" x="782.567375" y="114.369906" transform="rotate(-0 782.567375 114.369906)">MAE (min)</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 9.7px; font-family: 'DejaVu Serif'; text-anchor: middle" x="867.587556" y="114.369906" transform="rotate(-0 867.587556 114.369906)">NLL</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 10.2px; font-family: 'DejaVu Serif'; text-anchor: start" x="65.32128" y="164.226466" transform="rotate(-0 65.32128 164.226466)">CIC-IDS2017</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 10.2px; font-family: 'DejaVu Serif'; text-anchor: start" x="65.32128" y="225.74269" transform="rotate(-0 65.32128 225.74269)">UNSW-NB15</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 10.2px; font-family: 'DejaVu Serif'; text-anchor: start" x="65.32128" y="287.258914" transform="rotate(-0 65.32128 287.258914)">Pooled</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 10px; font-family: 'DejaVu Serif'; text-anchor: middle" x="240.62055" y="151.109615" transform="rotate(-0 240.62055 151.109615)">CR-LSTM</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 9.8px; font-family: 'DejaVu Serif'; text-anchor: middle" x="324.731425" y="151.054427" transform="rotate(-0 324.731425 151.054427)">1,710</text>
+   </g>
+   <g id="text_22">
+    <text style="font-weight: 700; font-size: 9.9px; font-family: 'DejaVu Serif'; text-anchor: middle" x="396.112005" y="151.082021" transform="rotate(-0 396.112005 151.082021)">0.7492</text>
+   </g>
+   <g id="text_23">
+    <text style="font-weight: 700; font-size: 9.9px; font-family: 'DejaVu Serif'; text-anchor: middle" x="470.675159" y="151.082021" transform="rotate(-0 470.675159 151.082021)">0.9034</text>
+   </g>
+   <g id="text_24">
+    <text style="font-weight: 700; font-size: 9.9px; font-family: 'DejaVu Serif'; text-anchor: middle" x="545.238313" y="151.082021" transform="rotate(-0 545.238313 151.082021)">0.9358</text>
+   </g>
+   <g id="text_25">
+    <text style="font-weight: 700; font-size: 9.9px; font-family: 'DejaVu Serif'; text-anchor: middle" x="621.165426" y="151.082021" transform="rotate(-0 621.165426 151.082021)">0.9105</text>
+   </g>
+   <g id="text_26">
+    <text style="font-weight: 700; font-size: 9.9px; font-family: 'DejaVu Serif'; text-anchor: middle" x="698.4565" y="151.082021" transform="rotate(-0 698.4565 151.082021)">0.7252</text>
+   </g>
+   <g id="text_27">
+    <text style="font-size: 9.9px; font-family: 'DejaVu Serif'; text-anchor: middle" x="782.567375" y="151.082021" transform="rotate(-0 782.567375 151.082021)">2.470</text>
+   </g>
+   <g id="text_28">
+    <text style="font-weight: 700; font-size: 9.9px; font-family: 'DejaVu Serif'; text-anchor: middle" x="867.587556" y="151.082021" transform="rotate(-0 867.587556 151.082021)">0.6117</text>
+   </g>
+   <g id="text_29">
+    <text style="font-size: 10px; font-family: 'DejaVu Serif'; text-anchor: middle" x="240.62055" y="177.232943" transform="rotate(-0 240.62055 177.232943)">CR-TCN</text>
+   </g>
+   <g id="text_30">
+    <text style="font-size: 9.8px; font-family: 'DejaVu Serif'; text-anchor: middle" x="324.731425" y="177.177755" transform="rotate(-0 324.731425 177.177755)">1,710</text>
+   </g>
+   <g id="text_31">
+    <text style="font-size: 9.9px; font-family: 'DejaVu Serif'; text-anchor: middle" x="396.112005" y="177.205349" transform="rotate(-0 396.112005 177.205349)">0.7256</text>
+   </g>
+   <g id="text_32">
+    <text style="font-size: 9.9px; font-family: 'DejaVu Serif'; text-anchor: middle" x="470.675159" y="177.205349" transform="rotate(-0 470.675159 177.205349)">0.8953</text>
+   </g>
+   <g id="text_33">
+    <text style="font-size: 9.9px; font-family: 'DejaVu Serif'; text-anchor: middle" x="545.238313" y="177.205349" transform="rotate(-0 545.238313 177.205349)">0.9341</text>
+   </g>
+   <g id="text_34">
+    <text style="font-size: 9.9px; font-family: 'DejaVu Serif'; text-anchor: middle" x="621.165426" y="177.205349" transform="rotate(-0 621.165426 177.205349)">0.8643</text>
+   </g>
+   <g id="text_35">
+    <text style="font-size: 9.9px; font-family: 'DejaVu Serif'; text-anchor: middle" x="698.4565" y="177.205349" transform="rotate(-0 698.4565 177.205349)">0.6915</text>
+   </g>
+   <g id="text_36">
+    <text style="font-weight: 700; font-size: 9.9px; font-family: 'DejaVu Serif'; text-anchor: middle" x="782.567375" y="177.205349" transform="rotate(-0 782.567375 177.205349)">2.364</text>
+   </g>
+   <g id="text_37">
+    <text style="font-size: 9.9px; font-family: 'DejaVu Serif'; text-anchor: middle" x="867.587556" y="177.205349" transform="rotate(-0 867.587556 177.205349)">0.6256</text>
+   </g>
+   <g id="text_38">
+    <text style="font-size: 10px; font-family: 'DejaVu Serif'; text-anchor: middle" x="240.62055" y="212.625839" transform="rotate(-0 240.62055 212.625839)">CR-LSTM</text>
+   </g>
+   <g id="text_39">
+    <text style="font-size: 9.8px; font-family: 'DejaVu Serif'; text-anchor: middle" x="324.731425" y="212.570651" transform="rotate(-0 324.731425 212.570651)">1,665</text>
+   </g>
+   <g id="text_40">
+    <text style="font-size: 9.9px; font-family: 'DejaVu Serif'; text-anchor: middle" x="396.112005" y="212.598245" transform="rotate(-0 396.112005 212.598245)">0.7288</text>
+   </g>
+   <g id="text_41">
+    <text style="font-size: 9.9px; font-family: 'DejaVu Serif'; text-anchor: middle" x="470.675159" y="212.598245" transform="rotate(-0 470.675159 212.598245)">0.9017</text>
+   </g>
+   <g id="text_42">
+    <text style="font-weight: 700; font-size: 9.9px; font-family: 'DejaVu Serif'; text-anchor: middle" x="545.238313" y="212.598245" transform="rotate(-0 545.238313 212.598245)">0.9396</text>
+   </g>
+   <g id="text_43">
+    <text style="font-size: 9.9px; font-family: 'DejaVu Serif'; text-anchor: middle" x="621.165426" y="212.598245" transform="rotate(-0 621.165426 212.598245)">0.7045</text>
+   </g>
+   <g id="text_44">
+    <text style="font-weight: 700; font-size: 9.9px; font-family: 'DejaVu Serif'; text-anchor: middle" x="698.4565" y="212.598245" transform="rotate(-0 698.4565 212.598245)">0.5309</text>
+   </g>
+   <g id="text_45">
+    <text style="font-size: 9.9px; font-family: 'DejaVu Serif'; text-anchor: middle" x="782.567375" y="212.598245" transform="rotate(-0 782.567375 212.598245)">2.605</text>
+   </g>
+   <g id="text_46">
+    <text style="font-size: 9.9px; font-family: 'DejaVu Serif'; text-anchor: middle" x="867.587556" y="212.598245" transform="rotate(-0 867.587556 212.598245)">0.6879</text>
+   </g>
+   <g id="text_47">
+    <text style="font-size: 10px; font-family: 'DejaVu Serif'; text-anchor: middle" x="240.62055" y="238.749167" transform="rotate(-0 240.62055 238.749167)">CR-TCN</text>
+   </g>
+   <g id="text_48">
+    <text style="font-size: 9.8px; font-family: 'DejaVu Serif'; text-anchor: middle" x="324.731425" y="238.693979" transform="rotate(-0 324.731425 238.693979)">1,665</text>
+   </g>
+   <g id="text_49">
+    <text style="font-weight: 700; font-size: 9.9px; font-family: 'DejaVu Serif'; text-anchor: middle" x="396.112005" y="238.721573" transform="rotate(-0 396.112005 238.721573)">0.7332</text>
+   </g>
+   <g id="text_50">
+    <text style="font-weight: 700; font-size: 9.9px; font-family: 'DejaVu Serif'; text-anchor: middle" x="470.675159" y="238.721573" transform="rotate(-0 470.675159 238.721573)">0.9033</text>
+   </g>
+   <g id="text_51">
+    <text style="font-size: 9.9px; font-family: 'DejaVu Serif'; text-anchor: middle" x="545.238313" y="238.721573" transform="rotate(-0 545.238313 238.721573)">0.9383</text>
+   </g>
+   <g id="text_52">
+    <text style="font-weight: 700; font-size: 9.9px; font-family: 'DejaVu Serif'; text-anchor: middle" x="621.165426" y="238.721573" transform="rotate(-0 621.165426 238.721573)">0.7351</text>
+   </g>
+   <g id="text_53">
+    <text style="font-size: 9.9px; font-family: 'DejaVu Serif'; text-anchor: middle" x="698.4565" y="238.721573" transform="rotate(-0 698.4565 238.721573)">0.5139</text>
+   </g>
+   <g id="text_54">
+    <text style="font-weight: 700; font-size: 9.9px; font-family: 'DejaVu Serif'; text-anchor: middle" x="782.567375" y="238.721573" transform="rotate(-0 782.567375 238.721573)">2.602</text>
+   </g>
+   <g id="text_55">
+    <text style="font-weight: 700; font-size: 9.9px; font-family: 'DejaVu Serif'; text-anchor: middle" x="867.587556" y="238.721573" transform="rotate(-0 867.587556 238.721573)">0.6712</text>
+   </g>
+   <g id="text_56">
+    <text style="font-size: 10px; font-family: 'DejaVu Serif'; text-anchor: middle" x="240.62055" y="274.142063" transform="rotate(-0 240.62055 274.142063)">CR-LSTM</text>
+   </g>
+   <g id="text_57">
+    <text style="font-size: 9.8px; font-family: 'DejaVu Serif'; text-anchor: middle" x="324.731425" y="274.086875" transform="rotate(-0 324.731425 274.086875)">3,375</text>
+   </g>
+   <g id="text_58">
+    <text style="font-weight: 700; font-size: 9.9px; font-family: 'DejaVu Serif'; text-anchor: middle" x="396.112005" y="274.114469" transform="rotate(-0 396.112005 274.114469)">0.7248</text>
+   </g>
+   <g id="text_59">
+    <text style="font-weight: 700; font-size: 9.9px; font-family: 'DejaVu Serif'; text-anchor: middle" x="470.675159" y="274.114469" transform="rotate(-0 470.675159 274.114469)">0.8991</text>
+   </g>
+   <g id="text_60">
+    <text style="font-weight: 700; font-size: 9.9px; font-family: 'DejaVu Serif'; text-anchor: middle" x="545.238313" y="274.114469" transform="rotate(-0 545.238313 274.114469)">0.9361</text>
+   </g>
+   <g id="text_61">
+    <text style="font-weight: 700; font-size: 9.9px; font-family: 'DejaVu Serif'; text-anchor: middle" x="621.165426" y="274.114469" transform="rotate(-0 621.165426 274.114469)">0.8089</text>
+   </g>
+   <g id="text_62">
+    <text style="font-weight: 700; font-size: 9.9px; font-family: 'DejaVu Serif'; text-anchor: middle" x="698.4565" y="274.114469" transform="rotate(-0 698.4565 274.114469)">0.7958</text>
+   </g>
+   <g id="text_63">
+    <text style="font-size: 9.9px; font-family: 'DejaVu Serif'; text-anchor: middle" x="782.567375" y="274.114469" transform="rotate(-0 782.567375 274.114469)">2.537</text>
+   </g>
+   <g id="text_64">
+    <text style="font-size: 9.9px; font-family: 'DejaVu Serif'; text-anchor: middle" x="867.587556" y="274.114469" transform="rotate(-0 867.587556 274.114469)">0.6493</text>
+   </g>
+   <g id="text_65">
+    <text style="font-size: 10px; font-family: 'DejaVu Serif'; text-anchor: middle" x="240.62055" y="300.265391" transform="rotate(-0 240.62055 300.265391)">CR-TCN</text>
+   </g>
+   <g id="text_66">
+    <text style="font-size: 9.8px; font-family: 'DejaVu Serif'; text-anchor: middle" x="324.731425" y="300.210203" transform="rotate(-0 324.731425 300.210203)">3,375</text>
+   </g>
+   <g id="text_67">
+    <text style="font-size: 9.9px; font-family: 'DejaVu Serif'; text-anchor: middle" x="396.112005" y="300.237797" transform="rotate(-0 396.112005 300.237797)">0.7174</text>
+   </g>
+   <g id="text_68">
+    <text style="font-size: 9.9px; font-family: 'DejaVu Serif'; text-anchor: middle" x="470.675159" y="300.237797" transform="rotate(-0 470.675159 300.237797)">0.8939</text>
+   </g>
+   <g id="text_69">
+    <text style="font-size: 9.9px; font-family: 'DejaVu Serif'; text-anchor: middle" x="545.238313" y="300.237797" transform="rotate(-0 545.238313 300.237797)">0.9318</text>
+   </g>
+   <g id="text_70">
+    <text style="font-size: 9.9px; font-family: 'DejaVu Serif'; text-anchor: middle" x="621.165426" y="300.237797" transform="rotate(-0 621.165426 300.237797)">0.8006</text>
+   </g>
+   <g id="text_71">
+    <text style="font-size: 9.9px; font-family: 'DejaVu Serif'; text-anchor: middle" x="698.4565" y="300.237797" transform="rotate(-0 698.4565 300.237797)">0.7864</text>
+   </g>
+   <g id="text_72">
+    <text style="font-weight: 700; font-size: 9.9px; font-family: 'DejaVu Serif'; text-anchor: middle" x="782.567375" y="300.237797" transform="rotate(-0 782.567375 300.237797)">2.482</text>
+   </g>
+   <g id="text_73">
+    <text style="font-weight: 700; font-size: 9.9px; font-family: 'DejaVu Serif'; text-anchor: middle" x="867.587556" y="300.237797" transform="rotate(-0 867.587556 300.237797)">0.6481</text>
+   </g>
+   <g id="text_74">
+    <text style="font-size: 9.1px; font-family: 'DejaVu Serif'; text-anchor: start" x="58.7592" y="337.533696" transform="rotate(-0 58.7592 337.533696)">Notes: AP = average precision; MAE = mean absolute error; NLL = negative log-likelihood. Bold indicates the better of the two models within each dataset.</text>
+   </g>
+   <g id="text_75">
+    <text style="font-size: 9.1px; font-family: 'DejaVu Serif'; text-anchor: start" x="58.7592" y="352.280736" transform="rotate(-0 58.7592 352.280736)">The event-window column counts true future-event windows; pooled horizon AP is evaluated over 18,839 aligned decision windows.</text>
+   </g>
+   <g id="text_76">
+    <text style="font-size: 9.1px; font-family: 'DejaVu Serif'; text-anchor: start" x="58.7592" y="367.027776" transform="rotate(-0 58.7592 367.027776)">Future attack-family and ETA metrics are conditional on a true future event. Source-specific support differs and some attack families are absent in individual sources.</text>
+   </g>
+   <g id="text_77">
+    <text style="font-size: 9.1px; font-family: 'DejaVu Serif'; text-anchor: start; fill: #555555" x="58.7592" y="381.774816" transform="rotate(-0 58.7592 381.774816)">Synthetic NAF v2 development validation. Source-specific and pooled aggregate scores are reported as saved; no confidence intervals are implied.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pf0b8a52dcd">
+   <rect x="7.2" y="7.2" width="937.44" height="421.344"/>
+  </clipPath>
+ </defs>
+</svg>

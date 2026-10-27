@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="879.3pt" height="446.832pt" viewBox="0 0 879.3 446.832" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-27T07:52:46.481980</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 446.832 
+L 879.3 446.832 
+L 879.3 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="line2d_1">
+    <path d="M 54.7695 65.57832 
+L 837.504 65.57832 
+" clip-path="url(#pf61131e72f)" style="fill: none; stroke: #242424; stroke-width: 1.2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 373.0527 98.875584 
+L 519.2208 98.875584 
+" clip-path="url(#pf61131e72f)" style="fill: none; stroke: #444444; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 529.5996 98.875584 
+L 675.7677 98.875584 
+" clip-path="url(#pf61131e72f)" style="fill: none; stroke: #444444; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 686.1465 98.875584 
+L 832.3146 98.875584 
+" clip-path="url(#pf61131e72f)" style="fill: none; stroke: #444444; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_5">
+    <path d="M 54.7695 130.010688 
+L 837.504 130.010688 
+" clip-path="url(#pf61131e72f)" style="fill: none; stroke: #242424; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_6">
+    <path d="M 54.7695 197.253864 
+L 837.504 197.253864 
+" clip-path="url(#pf61131e72f)" style="fill: none; stroke: #a6a6a6; stroke-width: 0.55; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_7">
+    <path d="M 54.7695 239.6322 
+L 837.504 239.6322 
+" clip-path="url(#pf61131e72f)" style="fill: none; stroke: #a6a6a6; stroke-width: 0.55; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_8">
+    <path d="M 54.7695 328.929408 
+L 837.504 328.929408 
+" clip-path="url(#pf61131e72f)" style="fill: none; stroke: #242424; stroke-width: 1.2; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'DejaVu Serif'; text-anchor: start" x="54.7695" y="26.227008" transform="rotate(-0 54.7695 26.227008)">Table 1</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 13px; font-family: 'DejaVu Serif'; text-anchor: start" x="54.7695" y="44.389152" transform="rotate(-0 54.7695 44.389152)">Forecasting performance across network attack prediction horizons</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Serif'; text-anchor: middle" x="151.581399" y="90.022615" transform="rotate(-0 151.581399 90.022615)">Forecasting model</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Serif'; text-anchor: middle" x="308.128299" y="90.097264" transform="rotate(-0 308.128299 90.097264)">Architecture</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Serif'; text-anchor: middle" x="448.196578" y="88.073072" transform="rotate(-0 448.196578 88.073072)">H5 (5 min)</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Serif'; text-anchor: middle" x="604.743478" y="88.073072" transform="rotate(-0 604.743478 88.073072)">H10 (10 min)</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Serif'; text-anchor: middle" x="761.290378" y="88.073072" transform="rotate(-0 761.290378 88.073072)">H15 (15 min)</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 10px; font-family: 'DejaVu Serif'; text-anchor: middle" x="409.059853" y="117.634943" transform="rotate(-0 409.059853 117.634943)">AP</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 10px; font-family: 'DejaVu Serif'; text-anchor: middle" x="565.606753" y="117.634943" transform="rotate(-0 565.606753 117.634943)">AP</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 10px; font-family: 'DejaVu Serif'; text-anchor: middle" x="722.153653" y="117.634943" transform="rotate(-0 722.153653 117.634943)">AP</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 10px; font-family: 'DejaVu Serif'; text-anchor: middle" x="487.333303" y="117.634943" transform="rotate(-0 487.333303 117.634943)">Δ (pp)</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 10px; font-family: 'DejaVu Serif'; text-anchor: middle" x="643.880203" y="117.634943" transform="rotate(-0 643.880203 117.634943)">Δ (pp)</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 10px; font-family: 'DejaVu Serif'; text-anchor: middle" x="800.427103" y="117.634943" transform="rotate(-0 800.427103 117.634943)">Δ (pp)</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 9.65px; font-family: 'DejaVu Serif'; text-anchor: start" x="59.9589" y="146.875135" transform="rotate(-0 59.9589 146.875135)">Single LSTM</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 9.2px; font-family: 'DejaVu Serif'; text-anchor: middle; fill: #4c5057" x="308.128299" y="146.819569" transform="rotate(-0 308.128299 146.819569)">Recurrent</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 9.8px; font-family: 'DejaVu Serif'; text-anchor: middle" x="409.059853" y="146.985131" transform="rotate(-0 409.059853 146.985131)">0.7132</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 9.4px; font-family: 'DejaVu Serif'; text-anchor: middle; fill: #444444" x="487.333303" y="146.874756" transform="rotate(-0 487.333303 146.874756)">-4.78</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 9.8px; font-family: 'DejaVu Serif'; text-anchor: middle" x="565.606753" y="146.985131" transform="rotate(-0 565.606753 146.985131)">0.8963</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 9.4px; font-family: 'DejaVu Serif'; text-anchor: middle; fill: #444444" x="643.880203" y="146.874756" transform="rotate(-0 643.880203 146.874756)">-0.97</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 9.8px; font-family: 'DejaVu Serif'; text-anchor: middle" x="722.153653" y="146.985131" transform="rotate(-0 722.153653 146.985131)">0.9260</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 9.4px; font-family: 'DejaVu Serif'; text-anchor: middle; fill: #444444" x="800.427103" y="146.874756" transform="rotate(-0 800.427103 146.874756)">-1.00</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 9.65px; font-family: 'DejaVu Serif'; text-anchor: start" x="59.9589" y="168.132909" transform="rotate(-0 59.9589 168.132909)">Stacked LSTM</text>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 9.2px; font-family: 'DejaVu Serif'; text-anchor: middle; fill: #4c5057" x="308.128299" y="168.008737" transform="rotate(-0 308.128299 168.008737)">Recurrent</text>
+   </g>
+   <g id="text_24">
+    <text style="font-weight: 700; font-size: 9.8px; font-family: 'DejaVu Serif'; text-anchor: middle" x="409.059853" y="168.174299" transform="rotate(-0 409.059853 168.174299)">0.7610</text>
+   </g>
+   <g id="text_25">
+    <text style="font-size: 9.4px; font-family: 'DejaVu Serif'; text-anchor: middle; fill: #444444" x="487.333303" y="168.063924" transform="rotate(-0 487.333303 168.063924)">+0.00</text>
+   </g>
+   <g id="text_26">
+    <text style="font-weight: 700; font-size: 9.8px; font-family: 'DejaVu Serif'; text-anchor: middle" x="565.606753" y="168.174299" transform="rotate(-0 565.606753 168.174299)">0.9060</text>
+   </g>
+   <g id="text_27">
+    <text style="font-size: 9.4px; font-family: 'DejaVu Serif'; text-anchor: middle; fill: #444444" x="643.880203" y="168.063924" transform="rotate(-0 643.880203 168.063924)">+0.00</text>
+   </g>
+   <g id="text_28">
+    <text style="font-size: 9.8px; font-family: 'DejaVu Serif'; text-anchor: middle" x="722.153653" y="168.174299" transform="rotate(-0 722.153653 168.174299)">0.9359</text>
+   </g>
+   <g id="text_29">
+    <text style="font-size: 9.4px; font-family: 'DejaVu Serif'; text-anchor: middle; fill: #444444" x="800.427103" y="168.063924" transform="rotate(-0 800.427103 168.063924)">-0.02</text>
+   </g>
+   <g id="text_30">
+    <text style="font-size: 9.65px; font-family: 'DejaVu Serif'; text-anchor: start" x="59.9589" y="189.322077" transform="rotate(-0 59.9589 189.322077)">XGBoost V2</text>
+   </g>
+   <g id="text_31">
+    <text style="font-size: 9.2px; font-family: 'DejaVu Serif'; text-anchor: middle; fill: #4c5057" x="308.128299" y="189.197905" transform="rotate(-0 308.128299 189.197905)">Boosted trees</text>
+   </g>
+   <g id="text_32">
+    <text style="font-size: 9.8px; font-family: 'DejaVu Serif'; text-anchor: middle" x="409.059853" y="189.363467" transform="rotate(-0 409.059853 189.363467)">0.6763</text>
+   </g>
+   <g id="text_33">
+    <text style="font-size: 9.4px; font-family: 'DejaVu Serif'; text-anchor: middle; fill: #444444" x="487.333303" y="189.253092" transform="rotate(-0 487.333303 189.253092)">-8.47</text>
+   </g>
+   <g id="text_34">
+    <text style="font-size: 9.8px; font-family: 'DejaVu Serif'; text-anchor: middle" x="565.606753" y="189.363467" transform="rotate(-0 565.606753 189.363467)">0.8751</text>
+   </g>
+   <g id="text_35">
+    <text style="font-size: 9.4px; font-family: 'DejaVu Serif'; text-anchor: middle; fill: #444444" x="643.880203" y="189.253092" transform="rotate(-0 643.880203 189.253092)">-3.09</text>
+   </g>
+   <g id="text_36">
+    <text style="font-size: 9.5px; font-family: 'DejaVu Serif'; text-anchor: middle; fill: #555555" x="761.290378" y="189.280686" transform="rotate(-0 761.290378 189.280686)">N/A</text>
+   </g>
+   <g id="text_37">
+    <text style="font-size: 9.65px; font-family: 'DejaVu Serif'; text-anchor: start" x="59.9589" y="210.511245" transform="rotate(-0 59.9589 210.511245)">CR-LSTM</text>
+   </g>
+   <g id="text_38">
+    <text style="font-size: 9.2px; font-family: 'DejaVu Serif'; text-anchor: middle; fill: #4c5057" x="308.128299" y="210.321667" transform="rotate(-0 308.128299 210.321667)">Competing risk</text>
+   </g>
+   <g id="text_39">
+    <text style="font-size: 9.8px; font-family: 'DejaVu Serif'; text-anchor: middle" x="409.059853" y="210.552635" transform="rotate(-0 409.059853 210.552635)">0.7248</text>
+   </g>
+   <g id="text_40">
+    <text style="font-size: 9.4px; font-family: 'DejaVu Serif'; text-anchor: middle; fill: #444444" x="487.333303" y="210.44226" transform="rotate(-0 487.333303 210.44226)">-3.62</text>
+   </g>
+   <g id="text_41">
+    <text style="font-size: 9.8px; font-family: 'DejaVu Serif'; text-anchor: middle" x="565.606753" y="210.552635" transform="rotate(-0 565.606753 210.552635)">0.8991</text>
+   </g>
+   <g id="text_42">
+    <text style="font-size: 9.4px; font-family: 'DejaVu Serif'; text-anchor: middle; fill: #444444" x="643.880203" y="210.44226" transform="rotate(-0 643.880203 210.44226)">-0.69</text>
+   </g>
+   <g id="text_43">
+    <text style="font-weight: 700; font-size: 9.8px; font-family: 'DejaVu Serif'; text-anchor: middle" x="722.153653" y="210.552635" transform="rotate(-0 722.153653 210.552635)">0.9361</text>
+   </g>
+   <g id="text_44">
+    <text style="font-size: 9.4px; font-family: 'DejaVu Serif'; text-anchor: middle; fill: #444444" x="800.427103" y="210.44226" transform="rotate(-0 800.427103 210.44226)">+0.00</text>
+   </g>
+   <g id="text_45">
+    <text style="font-size: 9.65px; font-family: 'DejaVu Serif'; text-anchor: start" x="59.9589" y="231.700413" transform="rotate(-0 59.9589 231.700413)">CR-TCN</text>
+   </g>
+   <g id="text_46">
+    <text style="font-size: 9.2px; font-family: 'DejaVu Serif'; text-anchor: middle; fill: #4c5057" x="308.128299" y="231.510835" transform="rotate(-0 308.128299 231.510835)">Competing risk</text>
+   </g>
+   <g id="text_47">
+    <text style="font-size: 9.8px; font-family: 'DejaVu Serif'; text-anchor: middle" x="409.059853" y="231.741803" transform="rotate(-0 409.059853 231.741803)">0.7174</text>
+   </g>
+   <g id="text_48">
+    <text style="font-size: 9.4px; font-family: 'DejaVu Serif'; text-anchor: middle; fill: #444444" x="487.333303" y="231.631428" transform="rotate(-0 487.333303 231.631428)">-4.36</text>
+   </g>
+   <g id="text_49">
+    <text style="font-size: 9.8px; font-family: 'DejaVu Serif'; text-anchor: middle" x="565.606753" y="231.741803" transform="rotate(-0 565.606753 231.741803)">0.8939</text>
+   </g>
+   <g id="text_50">
+    <text style="font-size: 9.4px; font-family: 'DejaVu Serif'; text-anchor: middle; fill: #444444" x="643.880203" y="231.631428" transform="rotate(-0 643.880203 231.631428)">-1.21</text>
+   </g>
+   <g id="text_51">
+    <text style="font-size: 9.8px; font-family: 'DejaVu Serif'; text-anchor: middle" x="722.153653" y="231.741803" transform="rotate(-0 722.153653 231.741803)">0.9318</text>
+   </g>
+   <g id="text_52">
+    <text style="font-size: 9.4px; font-family: 'DejaVu Serif'; text-anchor: middle; fill: #444444" x="800.427103" y="231.631428" transform="rotate(-0 800.427103 231.631428)">-0.42</text>
+   </g>
+   <g id="text_53">
+    <text style="font-size: 9.65px; font-family: 'DejaVu Serif'; text-anchor: start" x="59.9589" y="252.820975" transform="rotate(-0 59.9589 252.820975)">Original Graph LSTM</text>
+   </g>
+   <g id="text_54">
+    <text style="font-size: 9.2px; font-family: 'DejaVu Serif'; text-anchor: middle; fill: #4c5057" x="308.128299" y="252.765409" transform="rotate(-0 308.128299 252.765409)">Graph-based</text>
+   </g>
+   <g id="text_55">
+    <text style="font-size: 9.8px; font-family: 'DejaVu Serif'; text-anchor: middle" x="409.059853" y="252.930971" transform="rotate(-0 409.059853 252.930971)">0.7270</text>
+   </g>
+   <g id="text_56">
+    <text style="font-size: 9.4px; font-family: 'DejaVu Serif'; text-anchor: middle; fill: #444444" x="487.333303" y="252.820596" transform="rotate(-0 487.333303 252.820596)">-3.40</text>
+   </g>
+   <g id="text_57">
+    <text style="font-size: 9.8px; font-family: 'DejaVu Serif'; text-anchor: middle" x="565.606753" y="252.930971" transform="rotate(-0 565.606753 252.930971)">0.8880</text>
+   </g>
+   <g id="text_58">
+    <text style="font-size: 9.4px; font-family: 'DejaVu Serif'; text-anchor: middle; fill: #444444" x="643.880203" y="252.820596" transform="rotate(-0 643.880203 252.820596)">-1.81</text>
+   </g>
+   <g id="text_59">
+    <text style="font-size: 9.8px; font-family: 'DejaVu Serif'; text-anchor: middle" x="722.153653" y="252.930971" transform="rotate(-0 722.153653 252.930971)">0.9240</text>
+   </g>
+   <g id="text_60">
+    <text style="font-size: 9.4px; font-family: 'DejaVu Serif'; text-anchor: middle; fill: #444444" x="800.427103" y="252.820596" transform="rotate(-0 800.427103 252.820596)">-1.21</text>
+   </g>
+   <g id="text_61">
+    <text style="font-size: 9.65px; font-family: 'DejaVu Serif'; text-anchor: start" x="59.9589" y="274.078749" transform="rotate(-0 59.9589 274.078749)">Optimized Graph LSTM</text>
+   </g>
+   <g id="text_62">
+    <text style="font-size: 9.2px; font-family: 'DejaVu Serif'; text-anchor: middle; fill: #4c5057" x="308.128299" y="273.954577" transform="rotate(-0 308.128299 273.954577)">Graph-based</text>
+   </g>
+   <g id="text_63">
+    <text style="font-size: 9.8px; font-family: 'DejaVu Serif'; text-anchor: middle" x="409.059853" y="274.120139" transform="rotate(-0 409.059853 274.120139)">0.7241</text>
+   </g>
+   <g id="text_64">
+    <text style="font-size: 9.4px; font-family: 'DejaVu Serif'; text-anchor: middle; fill: #444444" x="487.333303" y="274.009764" transform="rotate(-0 487.333303 274.009764)">-3.69</text>
+   </g>
+   <g id="text_65">
+    <text style="font-size: 9.8px; font-family: 'DejaVu Serif'; text-anchor: middle" x="565.606753" y="274.120139" transform="rotate(-0 565.606753 274.120139)">0.8869</text>
+   </g>
+   <g id="text_66">
+    <text style="font-size: 9.4px; font-family: 'DejaVu Serif'; text-anchor: middle; fill: #444444" x="643.880203" y="274.009764" transform="rotate(-0 643.880203 274.009764)">-1.91</text>
+   </g>
+   <g id="text_67">
+    <text style="font-size: 9.8px; font-family: 'DejaVu Serif'; text-anchor: middle" x="722.153653" y="274.120139" transform="rotate(-0 722.153653 274.120139)">0.9275</text>
+   </g>
+   <g id="text_68">
+    <text style="font-size: 9.4px; font-family: 'DejaVu Serif'; text-anchor: middle; fill: #444444" x="800.427103" y="274.009764" transform="rotate(-0 800.427103 274.009764)">-0.86</text>
+   </g>
+   <g id="text_69">
+    <text style="font-size: 9.65px; font-family: 'DejaVu Serif'; text-anchor: start" x="59.9589" y="295.267917" transform="rotate(-0 59.9589 295.267917)">GCN-LSTM</text>
+   </g>
+   <g id="text_70">
+    <text style="font-size: 9.2px; font-family: 'DejaVu Serif'; text-anchor: middle; fill: #4c5057" x="308.128299" y="295.143745" transform="rotate(-0 308.128299 295.143745)">Graph-based</text>
+   </g>
+   <g id="text_71">
+    <text style="font-size: 9.8px; font-family: 'DejaVu Serif'; text-anchor: middle" x="409.059853" y="295.309307" transform="rotate(-0 409.059853 295.309307)">0.7433</text>
+   </g>
+   <g id="text_72">
+    <text style="font-size: 9.4px; font-family: 'DejaVu Serif'; text-anchor: middle; fill: #444444" x="487.333303" y="295.198932" transform="rotate(-0 487.333303 295.198932)">-1.78</text>
+   </g>
+   <g id="text_73">
+    <text style="font-size: 9.8px; font-family: 'DejaVu Serif'; text-anchor: middle" x="565.606753" y="295.309307" transform="rotate(-0 565.606753 295.309307)">0.8860</text>
+   </g>
+   <g id="text_74">
+    <text style="font-size: 9.4px; font-family: 'DejaVu Serif'; text-anchor: middle; fill: #444444" x="643.880203" y="295.198932" transform="rotate(-0 643.880203 295.198932)">-2.00</text>
+   </g>
+   <g id="text_75">
+    <text style="font-size: 9.8px; font-family: 'DejaVu Serif'; text-anchor: middle" x="722.153653" y="295.309307" transform="rotate(-0 722.153653 295.309307)">0.9190</text>
+   </g>
+   <g id="text_76">
+    <text style="font-size: 9.4px; font-family: 'DejaVu Serif'; text-anchor: middle; fill: #444444" x="800.427103" y="295.198932" transform="rotate(-0 800.427103 295.198932)">-1.70</text>
+   </g>
+   <g id="text_77">
+    <text style="font-size: 9.65px; font-family: 'DejaVu Serif'; text-anchor: start" x="59.9589" y="316.457085" transform="rotate(-0 59.9589 316.457085)">GAT-LSTM</text>
+   </g>
+   <g id="text_78">
+    <text style="font-size: 9.2px; font-family: 'DejaVu Serif'; text-anchor: middle; fill: #4c5057" x="308.128299" y="316.332913" transform="rotate(-0 308.128299 316.332913)">Graph-based</text>
+   </g>
+   <g id="text_79">
+    <text style="font-size: 9.8px; font-family: 'DejaVu Serif'; text-anchor: middle" x="409.059853" y="316.498475" transform="rotate(-0 409.059853 316.498475)">0.7209</text>
+   </g>
+   <g id="text_80">
+    <text style="font-size: 9.4px; font-family: 'DejaVu Serif'; text-anchor: middle; fill: #444444" x="487.333303" y="316.3881" transform="rotate(-0 487.333303 316.3881)">-4.01</text>
+   </g>
+   <g id="text_81">
+    <text style="font-size: 9.8px; font-family: 'DejaVu Serif'; text-anchor: middle" x="565.606753" y="316.498475" transform="rotate(-0 565.606753 316.498475)">0.8844</text>
+   </g>
+   <g id="text_82">
+    <text style="font-size: 9.4px; font-family: 'DejaVu Serif'; text-anchor: middle; fill: #444444" x="643.880203" y="316.3881" transform="rotate(-0 643.880203 316.3881)">-2.16</text>
+   </g>
+   <g id="text_83">
+    <text style="font-size: 9.8px; font-family: 'DejaVu Serif'; text-anchor: middle" x="722.153653" y="316.498475" transform="rotate(-0 722.153653 316.498475)">0.9181</text>
+   </g>
+   <g id="text_84">
+    <text style="font-size: 9.4px; font-family: 'DejaVu Serif'; text-anchor: middle; fill: #444444" x="800.427103" y="316.3881" transform="rotate(-0 800.427103 316.3881)">-1.80</text>
+   </g>
+   <g id="text_85">
+    <text style="font-size: 9.3px; font-family: 'DejaVu Serif'; text-anchor: start" x="54.7695" y="361.79424" transform="rotate(-0 54.7695 361.79424)">Notes: AP = average precision; Δ = AP difference from the best model at the same prediction horizon, in percentage points.</text>
+   </g>
+   <g id="text_86">
+    <text style="font-size: 9.3px; font-family: 'DejaVu Serif'; text-anchor: start" x="54.7695" y="375.632064" transform="rotate(-0 54.7695 375.632064)">Bold values mark the highest measured AP per horizon. N/A indicates an unavailable saved model prediction, not a score of zero.</text>
+   </g>
+   <g id="text_87">
+    <text style="font-size: 9.2px; font-family: 'DejaVu Serif'; text-anchor: start" x="54.7695" y="389.469888" transform="rotate(-0 54.7695 389.469888)">Synthetic NAF v2 development validation (18,839 aligned windows). H5/H10/H15 positives: 1,125 / 2,250 / 3,375.</text>
+   </g>
+   <g id="text_88">
+    <text style="font-size: 9.2px; font-family: 'DejaVu Serif'; text-anchor: start; fill: #555555" x="54.7695" y="403.307712" transform="rotate(-0 54.7695 403.307712)">These descriptive rankings do not establish statistical significance or live-network performance.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pf61131e72f">
+   <rect x="7.2" y="7.2" width="864.9" height="432.432"/>
+  </clipPath>
+ </defs>
+</svg>

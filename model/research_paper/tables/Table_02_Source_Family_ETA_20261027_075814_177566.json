@@ -1,0 +1,59 @@
+{
+  "project": "NetGuard",
+  "publication_table": 2,
+  "title": "Source-dependent forecasting, family and ETA",
+  "source_groups": [
+    "CIC-IDS2017",
+    "UNSW-NB15",
+    "Pooled"
+  ],
+  "models": [
+    "CR-LSTM",
+    "CR-TCN"
+  ],
+  "dataset": "Synthetic NAF v2",
+  "evaluation": "development validation",
+  "pooled_decision_windows": 18839,
+  "pooled_true_event_windows": 3375,
+  "source_files": [
+    {
+      "path": "Synthetic_NAF_v2/models/FINAL_VALIDATION_AUDIT/SOURCE_SPECIFIC_METRICS.csv",
+      "sha256": "d24aaf05701a184f5d13f6d6ff99cdb928886deafdb9e866ca50df790f1c8e45"
+    },
+    {
+      "path": "Synthetic_NAF_v2/models/FINAL_VALIDATION_AUDIT/COMPETING_RISK_RECOMPUTED_METRICS.csv",
+      "sha256": "bee7a90bf256669099a84ae00863824afc7f92a75cc7585945cc43602f2a3618"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "Research_Paper/02_Final_Tables/Table_02_Source_Family_ETA_20261027_075814_177566.pdf",
+      "sha256": "61bf4145550b91c71f2000854171bdf779dca0347a2f81553ef96aa084b6603f"
+    },
+    {
+      "path": "Research_Paper/02_Final_Tables/Table_02_Source_Family_ETA_20261027_075814_177566.svg",
+      "sha256": "d23d7b82f0582445798313da104c666bf621eb10c40b578ca87b3c04f19df328"
+    },
+    {
+      "path": "Research_Paper/02_Final_Tables/Table_02_Source_Family_ETA_20261027_075814_177566.png",
+      "sha256": "3a037b0b8dfc1fbb67ad1d2deb495739dafd11be3f6deb95295f6c5b4a3b2c77"
+    },
+    {
+      "path": "Research_Paper/02_Final_Tables/Table_02_Source_Family_ETA_20261027_075814_177566.csv",
+      "sha256": "ee8405daa7c86cdee1f8b7ffbf255617d15ea4bc34866e74f9e810125212ae13"
+    },
+    {
+      "path": "Research_Paper/02_Final_Tables/Table_02_Source_Family_ETA_20261027_075814_177566.tex",
+      "sha256": "95217d5e4f6894743d50126f390e7c7ea0ba8328f2187cf8608846c61dd360cf"
+    }
+  ],
+  "limitations": [
+    "Family and ETA scores are event-conditional.",
+    "Source-specific family support differs.",
+    "Pooled and source-specific macro F1 need not average.",
+    "Development validation, not an independent test.",
+    "No uncertainty intervals computed for this table."
+  ],
+  "models_retrained": 0,
+  "official_test_accessed": false
+}

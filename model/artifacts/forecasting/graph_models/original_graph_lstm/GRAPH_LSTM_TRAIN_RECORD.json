@@ -1,0 +1,43 @@
+{
+  "model": "GraphLSTMForecaster",
+  "architecture": "WeightedGraphConv_GraphConv_LSTM",
+  "config": {
+    "seed": 20261027,
+    "epochs": 12,
+    "batch_size": 256,
+    "learning_rate": 0.001,
+    "weight_decay": 0.001,
+    "graph_hidden": 32,
+    "lstm_hidden": 64,
+    "dropout": 0.1,
+    "input_features": 8,
+    "nodes": 8,
+    "history": 10
+  },
+  "parameters": 38147,
+  "train_windows": 88186,
+  "train_episodes": 1400,
+  "graph_sha256": "6fac7cca1bd6423b34fccef56a34072a7fff65a43929efd3762b42166b21b94e",
+  "checkpoint_sha256": "153654fc03d764b879b3339183766981c3bea4c3a4397b7f914e57f58b7b88e9",
+  "train_bce_history": [
+    0.30260105763215606,
+    0.14711094454288742,
+    0.12038506160943087,
+    0.1139735830784063,
+    0.11154021181414057,
+    0.109397652411489,
+    0.10806707549889467,
+    0.10567364488442081,
+    0.10529188088163792,
+    0.10405641308741757,
+    0.10306526714221095,
+    0.10221783772213676
+  ],
+  "final_train_bce": 0.10221783772213676,
+  "preprocessing": "TRAIN_LOG1P_MEDIAN_IQR_CLIP8",
+  "edge_processing": "ROW_NORMALIZED_INCOMING_FLOW",
+  "source": "Synthetic_NAF_v2_GraphCompanion",
+  "graph_origin": "Synthetic node and edge allocations",
+  "validation_accessed": false,
+  "test_accessed": false
+}

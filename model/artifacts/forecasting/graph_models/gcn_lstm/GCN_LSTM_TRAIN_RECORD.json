@@ -1,0 +1,42 @@
+{
+  "model": "GCNLSTMForecaster",
+  "architecture": "PyG_GCNConv_GCNConv_LSTM",
+  "config": {
+    "seed": 20261027,
+    "epochs": 12,
+    "batch_size": 128,
+    "learning_rate": 0.001,
+    "weight_decay": 0.001,
+    "gcn_hidden": 32,
+    "lstm_hidden": 64,
+    "dropout": 0.1,
+    "nodes": 8,
+    "node_features": 8,
+    "history": 10,
+    "architecture": "PyG_GCNConv_GCNConv_LSTM",
+    "edge_processing": "OUTGOING_ROW_NORMALIZED"
+  },
+  "parameters": 36803,
+  "training_windows": 88186,
+  "training_episodes": 1400,
+  "train_graph_sha256": "6fac7cca1bd6423b34fccef56a34072a7fff65a43929efd3762b42166b21b94e",
+  "checkpoint_sha256": "e5a0d1930253b73fb02d1b98deac0dcaf1132a62ecbd8f3ce0c3b12380ed46c9",
+  "training_bce": [
+    0.22373941390804145,
+    0.12386047366990573,
+    0.1156519297432235,
+    0.11138650238479476,
+    0.10913265365368385,
+    0.10738067180553633,
+    0.1066507634405831,
+    0.1049857601630529,
+    0.10417459333085306,
+    0.10282137727935735,
+    0.10203232069317954,
+    0.10075305923327826
+  ],
+  "final_train_bce": 0.10075305923327826,
+  "synthetic_topology": true,
+  "official_validation_accessed": false,
+  "official_test_accessed": false
+}

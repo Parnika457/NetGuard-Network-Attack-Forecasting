@@ -1,0 +1,136 @@
+{
+  "release_candidate": "netguard-models-v1-candidate",
+  "created_utc": "2026-10-27T14:02:30.463285+00:00",
+  "status": "ARTIFACT_INTEGRITY_AND_SYNTHETIC_INFERENCE_SMOKE_VERIFIED_ONLY",
+  "not_yet_verified": [
+    "matching original saved validation predictions on real windows",
+    "independent test-set performance",
+    "probability calibration and alert thresholds",
+    "live network input integration"
+  ],
+  "models": {
+    "weighted_xgboost_v2": {
+      "model": {
+        "path": "model/artifacts/current_detection/weighted_xgboost_v2/weighted_xgboost.ubj",
+        "sha256": "e2408ec43ba9233cc5afba5bfde7e68f96f31bce90d0df9bd252488071c2cd23"
+      },
+      "preprocessor": {
+        "path": "model/artifacts/current_detection/weighted_xgboost_v2/preprocessor.joblib",
+        "sha256": "8c13a9b122924822314af3ea94376902449bea86ae4cbfaa2a1954143760381f"
+      },
+      "metadata": {
+        "path": "model/artifacts/current_detection/weighted_xgboost_v2/metadata.json",
+        "sha256": "283f3a61fc676fffd6a76f74e70c222c33b0e7be15d7ca6776c94d62620c530c"
+      }
+    },
+    "stacked_lstm_v2": {
+      "model": {
+        "path": "model/artifacts/forecasting/stacked_lstm/LSTM_V2_MONOTONIC_HORIZON_STATE.pt",
+        "sha256": "c44227e823986baae57ccd10fa70fa3d00b63501bc4ee8fe70d5666af0f6799a"
+      },
+      "scaler": {
+        "path": "model/artifacts/forecasting/stacked_lstm/LSTM_V2_FULL_TRAIN_SCALER.json",
+        "sha256": "d826ad37e5bb05396f127217da27251d19ab9687c632bc71ba8796aa8a5513d0"
+      },
+      "record": {
+        "path": "model/artifacts/forecasting/stacked_lstm/LSTM_V2_FINAL_TRAIN_RECORD.json",
+        "sha256": "007f4c1442235652b5d85e950463b375229bbc49189cec2d279373704c0bbc13"
+      }
+    },
+    "competing_risk_lstm": {
+      "model": {
+        "path": "model/artifacts/forecasting/competing_risk_lstm/LSTM_V2_CR_STATE.pt",
+        "sha256": "062f8dda7b0045c605bb4b2e52de927e576661c88e4c7fb9009fb367fb9717fd"
+      },
+      "scaler": {
+        "path": "model/artifacts/forecasting/competing_risk_lstm/LSTM_V2_CR_FULL_TRAIN_SCALER.json",
+        "sha256": "d826ad37e5bb05396f127217da27251d19ab9687c632bc71ba8796aa8a5513d0"
+      },
+      "record": {
+        "path": "model/artifacts/forecasting/competing_risk_lstm/LSTM_V2_CR_FINAL_TRAIN_RECORD.json",
+        "sha256": "a6a18bab676847adc6cdd2ce31328cc031b2d00604b617178a139289ce03857e"
+      }
+    }
+  },
+  "feature_contract": {
+    "forecast": {
+      "shape": [
+        10,
+        14
+      ],
+      "time_order": "oldest_to_newest",
+      "feature_order": [
+        "Flow_Count",
+        "Flow_Duration_Mean",
+        "Flow_Duration_Std",
+        "Flow_Duration_Max",
+        "Forward_Packets_Sum",
+        "Backward_Packets_Sum",
+        "Total_Packets",
+        "Forward_Bytes_Sum",
+        "Backward_Bytes_Sum",
+        "Total_Bytes",
+        "Packets_Per_Second",
+        "Bytes_Per_Second",
+        "Forward_Backward_Packet_Ratio",
+        "Forward_Backward_Byte_Ratio"
+      ],
+      "preprocessing": "log1p -> saved median/IQR -> clip[-8,8]"
+    },
+    "current_detection": {
+      "feature_order": [
+        "dur",
+        "proto",
+        "service",
+        "state",
+        "spkts",
+        "dpkts",
+        "sbytes",
+        "dbytes",
+        "rate",
+        "sttl",
+        "dttl",
+        "sload",
+        "dload",
+        "sloss",
+        "dloss",
+        "sinpkt",
+        "dinpkt",
+        "sjit",
+        "djit",
+        "swin",
+        "stcpb",
+        "dtcpb",
+        "dwin",
+        "tcprtt",
+        "synack",
+        "ackdat",
+        "smean",
+        "dmean",
+        "trans_depth",
+        "response_body_len",
+        "ct_srv_src",
+        "ct_state_ttl",
+        "ct_dst_ltm",
+        "ct_src_dport_ltm",
+        "ct_dst_sport_ltm",
+        "ct_dst_src_ltm",
+        "is_ftp_login",
+        "ct_ftp_cmd",
+        "ct_flw_http_mthd",
+        "ct_src_ltm",
+        "ct_srv_dst",
+        "is_sm_ips_ports"
+      ],
+      "preprocessing": "saved joblib pipeline"
+    }
+  },
+  "environment": {
+    "python": "3.12.3",
+    "torch": "2.14.1",
+    "xgboost": "3.4.1",
+    "scikit_learn": "1.6.1",
+    "numpy": "2.5.4",
+    "joblib": "1.6.0"
+  }
+}

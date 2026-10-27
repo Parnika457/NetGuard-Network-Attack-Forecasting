@@ -1,0 +1,50 @@
+[
+  {
+    "title": "NIST SP 800-61 Revision 3 — Incident Response (NetGuard research summary)",
+    "url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+    "family": "",
+    "text": "This is a NetGuard-authored research summary of NIST Special Publication 800-61 Revision 3 (2025), not the full NIST text. NIST recommends incorporating incident response throughout cybersecurity risk management. For an uncertain forecast, verify collection quality, consult independent evidence from monitoring and logs, evaluate scope and potential impact, document findings, and coordinate escalation through a defined response process. A statistical forecast by itself is not confirmation of a cybersecurity incident. For suspicious observations, investigate and triage before taking disruptive containment actions. This is cross-cutting response-process guidance rather than evidence that any particular attack has occurred."
+  },
+  {
+    "title": "MITRE ATT&CK T1110 — Brute Force (NetGuard research summary)",
+    "url": "https://attack.mitre.org/techniques/T1110/",
+    "family": "BRUTE_AUTH",
+    "text": "NetGuard-authored research summary of MITRE ATT&CK T1110 (Brute Force), not an independently observed technique. Credential brute force encompasses password guessing, spraying and credential stuffing. If a separate model gives BRUTE_AUTH as a conditional future family, verify identity-provider and authentication logs, abnormal failure-to-success sequences, unsuccessful attempts against multiple accounts, originating IP and client patterns, and MFA signals, if those sources are available. Correlate with authorized tests and expected account activity. MITRE describes account use policies and multifactor authentication as relevant mitigations. Conditional family confidence does not show authentication failures actually occurred."
+  },
+  {
+    "title": "MITRE ATT&CK T1498 — Network Denial of Service (NetGuard research summary)",
+    "url": "https://attack.mitre.org/techniques/T1498/",
+    "family": "DOS_DDOS",
+    "text": "NetGuard-authored research summary of MITRE ATT&CK T1498, Network Denial of Service. Such attacks can disrupt availability through network saturation or flooding. When a forecast names DOS_DDOS conditionally, examine destination concentration, packet and byte volumes, connection-rate bursts, upstream filtering and network device statistics, and application availability/latency where external telemetry exists. Compare with normal traffic patterns, deployments and authorized load tests. Do not assume the traffic is malicious simply because the conditional family ranks highest."
+  },
+  {
+    "title": "MITRE ATT&CK T1499 — Endpoint Denial of Service (NetGuard research summary)",
+    "url": "https://attack.mitre.org/techniques/T1499/",
+    "family": "DOS_DDOS",
+    "text": "NetGuard-authored research summary of MITRE ATT&CK T1499, Endpoint Denial of Service. Service disruption can also arise from resource exhaustion at an endpoint rather than saturation of network bandwidth. If a separate risk model gives DOS_DDOS as conditional future family, check service metrics, HTTP response errors, host CPU and process/connection limits, and any available service-health or availability alerts. Distinguish legitimate demand spikes and planned load tests from unexplained degradation. The conditional model is not proof of an ongoing denial of service."
+  },
+  {
+    "title": "MITRE ATT&CK T1190 — Exploit Public-Facing Application (NetGuard research summary)",
+    "url": "https://attack.mitre.org/techniques/T1190/",
+    "family": "EXPLOIT_APP",
+    "text": "NetGuard-authored research summary of MITRE ATT&CK T1190, Exploit Public-Facing Application. Threat actors can target vulnerable or misconfigured internet-facing applications. If EXPLOIT_APP appears as a conditional future family, inspect application and WAF logs, unusual request patterns and response codes, service errors, affected endpoint changes, and available vulnerability or patch records. Confirm any suspected exploitation with independent evidence. The conditional family label does not identify a CVE, exploited host, attacker, or successful compromise."
+  },
+  {
+    "title": "MITRE ATT&CK T1595 — Active Scanning (NetGuard research summary)",
+    "url": "https://attack.mitre.org/techniques/T1595/",
+    "family": "RECON_SCAN",
+    "text": "NetGuard-authored research summary of MITRE ATT&CK T1595, Active Scanning. Reconnaissance can involve probing target infrastructure and collecting service information. If RECON_SCAN is the top conditional future family, check destination port or host diversity, attempted connection rates, firewall and IDS logs, and whether scanning is authorized. Verify patterns from independent network sources, since simulated forecast inputs do not contain full destination or protocol information. A conditional RECON_SCAN score is not proof that reconnaissance was observed."
+  },
+  {
+    "title": "MITRE ATT&CK T1046 — Network Service Discovery (NetGuard research summary)",
+    "url": "https://attack.mitre.org/techniques/T1046/",
+    "family": "RECON_SCAN",
+    "text": "NetGuard-authored research summary of MITRE ATT&CK T1046, Network Service Discovery. An actor may enumerate services and ports available on remote devices. For a conditional RECON_SCAN estimate, analysts can consult permitted flow and service logs to look for bursts of contacts across multiple destination ports or hosts and distinguish discovery from approved inventory activities. This is a possible investigation direction, not evidence of a confirmed scanning incident."
+  },
+  {
+    "title": "NetGuard fuzzing and testing investigation guide",
+    "url": "",
+    "family": "FUZZING",
+    "text": "NetGuard-authored guidance for a conditional FUZZING future family, not an official ATT&CK mapping. Correlate unusual or malformed application requests, HTTP or protocol errors, affected endpoints, and input variety with approved software QA, vulnerability testing and maintenance schedules. If monitoring data is not available, first request those logs before alleging a security event. The forecasting label does not prove exploitation or distinguish malicious activity from authorized stress testing."
+  }
+]

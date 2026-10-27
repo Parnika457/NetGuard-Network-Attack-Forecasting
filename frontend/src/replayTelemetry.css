@@ -1,0 +1,20 @@
+.ng-data-shell {margin-bottom:22px; border:1px solid var(--border); background:var(--surface); padding:clamp(16px,1.5vw,25px); border-radius:14px;}
+.ng-data-shell h3 {font-size:20px;margin:5px 0 5px;color:var(--text)}
+.ng-data-shell h4 {font-size:14px;margin:0 0 5px;color:var(--text)}
+.ng-data-shell p {font-size:12px;color:var(--text-muted);line-height:1.5}
+.ng-data-shell .network-metrics {margin:16px 0}
+.ng-data-shell .network-metric small {color:var(--text-muted)}
+.ng-chart-card {border:1px solid var(--border);border-radius:13px;padding:17px;background:var(--surface-2);min-width:0}
+.ng-chart-height {height:215px;width:100%;margin-top:14px}
+.ng-compact-chart {height:180px}
+.ng-legend {display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;margin-top:7px;color:var(--text-secondary);font-size:12px}
+.ng-legend strong {color:var(--text)}
+.ng-chart-summary {border-top:1px solid var(--border);padding-top:10px}
+.ng-chart-summary strong {color:var(--text);font-size:16px}
+.ng-telemetry-footnote {border-top:1px solid var(--border);padding-top:14px;margin-top:15px}
+.ng-empty-history {padding:25px;color:var(--text)}
+.ng-empty-history p {color:var(--text-muted);font-size:13px}
+.ng-history-prob {color:var(--text-secondary);font-weight:700;font-size:12px}
+.ng-history-footer {display:flex;gap:15px;align-items:center;justify-content:space-between;margin:15px 0;color:var(--text-muted);font-size:12px}
+.ng-action {border-radius:7px;border:1px solid var(--border);padding:9px 13px;background:var(--surface-2);color:var(--text);cursor:pointer}
+@media(max-width:680px){.ng-history-prob{font-size:10px}.ng-data-shell .network-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}}

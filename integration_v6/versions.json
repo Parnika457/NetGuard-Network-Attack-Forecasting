@@ -1,0 +1,15 @@
+{
+  "expected_sha256": {
+    "App.jsx": "39cac7415272e540f857c430bb5f5999a3613876c93f9464022e054cf9d1ca66",
+    "ModelReplayPanel.jsx": "3e0160e97b5fb3cff46d87cb7bf903386b8478f64b02b1ca51995de3201c7211",
+    "ReplayTelemetry.jsx": "0ae3f843c55c55d1b21741fa5eb2181a68f465c6e8413559b7187128c74a340c",
+    "LiveTrafficPanel.jsx": "972671284be4e669d098d72f277fcc7a72428ca51c57e1b6900ede5a11d6f75d"
+  },
+  "patched_sha256": {
+    "App.jsx": "2f6ceea20eb7d0f709f975362d1e35fa45a0cf2185b8fd28f766b467d3648f7a",
+    "ModelReplayPanel.jsx": "9477fe4769baa7e5beea16e8bb25ef2b1e78f1491f934fdef3473289041c1271",
+    "ReplayTelemetry.jsx": "87b34a7c8910e3ff92faa3fff6c748f66f7298ab449a2297757c93e826fcfb80",
+    "LiveTrafficPanel.jsx": "9f0a9fa1fd38ad5066dc150ba1b6026af4ba51e2efad8feb7384545ad8b2b755",
+    "monitorPolish.css": "a3ec5facf5948ac20720e6554e48f21d08c26d966e387400d9686c6838d87329"
+  }
+}

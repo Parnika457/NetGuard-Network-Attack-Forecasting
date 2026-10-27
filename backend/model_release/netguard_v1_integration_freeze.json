@@ -1,0 +1,223 @@
+{
+  "release_id": "netguard-models-v1.0.0-demo",
+  "status": "FROZEN_FOR_RESEARCH_DEMO_INTEGRATION_DEV_VALIDATED",
+  "created_utc": "2026-10-27T14:20:52.501697+00:00",
+  "purpose": "Local/replay-backed FastAPI and React integration; not a real-world security deployment claim",
+  "selection": {
+    "current_attack_detection": "weighted_xgboost_v2",
+    "multi_horizon_attack_forecast": "stacked_lstm_v2",
+    "attack_family_and_conditional_eta": "competing_risk_lstm"
+  },
+  "models": {
+    "weighted_xgboost_v2": {
+      "model": {
+        "path": "model/artifacts/current_detection/weighted_xgboost_v2/weighted_xgboost.ubj",
+        "sha256": "e2408ec43ba9233cc5afba5bfde7e68f96f31bce90d0df9bd252488071c2cd23"
+      },
+      "preprocessor": {
+        "path": "model/artifacts/current_detection/weighted_xgboost_v2/preprocessor.joblib",
+        "sha256": "8c13a9b122924822314af3ea94376902449bea86ae4cbfaa2a1954143760381f"
+      },
+      "metadata": {
+        "path": "model/artifacts/current_detection/weighted_xgboost_v2/metadata.json",
+        "sha256": "283f3a61fc676fffd6a76f74e70c222c33b0e7be15d7ca6776c94d62620c530c"
+      }
+    },
+    "stacked_lstm_v2": {
+      "model": {
+        "path": "model/artifacts/forecasting/stacked_lstm/LSTM_V2_MONOTONIC_HORIZON_STATE.pt",
+        "sha256": "c44227e823986baae57ccd10fa70fa3d00b63501bc4ee8fe70d5666af0f6799a"
+      },
+      "scaler": {
+        "path": "model/artifacts/forecasting/stacked_lstm/LSTM_V2_FULL_TRAIN_SCALER.json",
+        "sha256": "d826ad37e5bb05396f127217da27251d19ab9687c632bc71ba8796aa8a5513d0"
+      },
+      "record": {
+        "path": "model/artifacts/forecasting/stacked_lstm/LSTM_V2_FINAL_TRAIN_RECORD.json",
+        "sha256": "007f4c1442235652b5d85e950463b375229bbc49189cec2d279373704c0bbc13"
+      }
+    },
+    "competing_risk_lstm": {
+      "model": {
+        "path": "model/artifacts/forecasting/competing_risk_lstm/LSTM_V2_CR_STATE.pt",
+        "sha256": "062f8dda7b0045c605bb4b2e52de927e576661c88e4c7fb9009fb367fb9717fd"
+      },
+      "scaler": {
+        "path": "model/artifacts/forecasting/competing_risk_lstm/LSTM_V2_CR_FULL_TRAIN_SCALER.json",
+        "sha256": "d826ad37e5bb05396f127217da27251d19ab9687c632bc71ba8796aa8a5513d0"
+      },
+      "record": {
+        "path": "model/artifacts/forecasting/competing_risk_lstm/LSTM_V2_CR_FINAL_TRAIN_RECORD.json",
+        "sha256": "a6a18bab676847adc6cdd2ce31328cc031b2d00604b617178a139289ce03857e"
+      }
+    }
+  },
+  "feature_contract": {
+    "forecast": {
+      "shape": [
+        10,
+        14
+      ],
+      "time_order": "oldest_to_newest",
+      "feature_order": [
+        "Flow_Count",
+        "Flow_Duration_Mean",
+        "Flow_Duration_Std",
+        "Flow_Duration_Max",
+        "Forward_Packets_Sum",
+        "Backward_Packets_Sum",
+        "Total_Packets",
+        "Forward_Bytes_Sum",
+        "Backward_Bytes_Sum",
+        "Total_Bytes",
+        "Packets_Per_Second",
+        "Bytes_Per_Second",
+        "Forward_Backward_Packet_Ratio",
+        "Forward_Backward_Byte_Ratio"
+      ],
+      "preprocessing": "log1p -> saved median/IQR -> clip[-8,8]"
+    },
+    "current_detection": {
+      "feature_order": [
+        "dur",
+        "proto",
+        "service",
+        "state",
+        "spkts",
+        "dpkts",
+        "sbytes",
+        "dbytes",
+        "rate",
+        "sttl",
+        "dttl",
+        "sload",
+        "dload",
+        "sloss",
+        "dloss",
+        "sinpkt",
+        "dinpkt",
+        "sjit",
+        "djit",
+        "swin",
+        "stcpb",
+        "dtcpb",
+        "dwin",
+        "tcprtt",
+        "synack",
+        "ackdat",
+        "smean",
+        "dmean",
+        "trans_depth",
+        "response_body_len",
+        "ct_srv_src",
+        "ct_state_ttl",
+        "ct_dst_ltm",
+        "ct_src_dport_ltm",
+        "ct_dst_sport_ltm",
+        "ct_dst_src_ltm",
+        "is_ftp_login",
+        "ct_ftp_cmd",
+        "ct_flw_http_mthd",
+        "ct_src_ltm",
+        "ct_srv_dst",
+        "is_sm_ips_ports"
+      ],
+      "preprocessing": "saved joblib pipeline"
+    }
+  },
+  "environment_verified": {
+    "python": "3.12.3",
+    "torch": "2.14.1",
+    "xgboost": "3.4.1",
+    "scikit_learn": "1.6.1",
+    "numpy": "2.5.4",
+    "joblib": "1.6.0"
+  },
+  "evidence": {
+    "candidate_manifest": {
+      "path": "backend/model_release/netguard_v1_candidate.json",
+      "sha256": "9f163b442358ce262f08d6b416779002596d139d4a6cf63a268fd52bf5fde602"
+    },
+    "forecast_validation": {
+      "path": "backend/model_release/validation_windows_v1.json",
+      "sha256": "3e82438edece92b07245c6c128b0eea69eb51c49efe4993e8e66376f78b3a7f2",
+      "evaluation_type": "FROZEN_SYNTHETIC_VALIDATION_REPLAY",
+      "rows": 18839,
+      "unique_episodes": 300,
+      "metrics": {
+        "stacked_lstm_v2": {
+          "horizons": {
+            "H5": {
+              "average_precision": 0.761004661894194,
+              "roc_auc": 0.9816588762184337,
+              "brier_score": 0.02552190954348803,
+              "prevalence": 0.059716545464196615
+            },
+            "H10": {
+              "average_precision": 0.906017839758302,
+              "roc_auc": 0.9853568696793726,
+              "brier_score": 0.03102571795753861,
+              "prevalence": 0.11943309092839323
+            },
+            "H15": {
+              "average_precision": 0.9358539617810008,
+              "roc_auc": 0.9766912398689429,
+              "brier_score": 0.036723829203440715,
+              "prevalence": 0.17914963639258985
+            }
+          }
+        },
+        "competing_risk_lstm": {
+          "horizons": {
+            "H5": {
+              "average_precision": 0.724838060875159,
+              "roc_auc": 0.9792827267823315,
+              "brier_score": 0.027394379226399822,
+              "prevalence": 0.059716545464196615
+            },
+            "H10": {
+              "average_precision": 0.8991370356670583,
+              "roc_auc": 0.9852374465006934,
+              "brier_score": 0.031489027227833706,
+              "prevalence": 0.11943309092839323
+            },
+            "H15": {
+              "average_precision": 0.9360590366773125,
+              "roc_auc": 0.9784681650092929,
+              "brier_score": 0.03624085545194341,
+              "prevalence": 0.17914963639258985
+            }
+          },
+          "family_and_eta": {
+            "family_accuracy_given_true_onset": 0.8088888888888889,
+            "family_macro_f1_given_true_onset": 0.7958230612470937,
+            "conditional_eta_mae_minutes_given_true_onset": 2.5365340541444445,
+            "note": "Metrics conditioned on actual onset use labels for evaluation only, not as prediction inputs."
+          }
+        }
+      }
+    },
+    "detection_validation": {
+      "path": "backend/model_release/detection_validation_v1.json",
+      "sha256": "b533996000d1dd97b938cf5a781627bbd9b4f430c818b724d835dd85379877a0",
+      "evaluation_type": "SAVED_CHECKPOINT_DEV_VALIDATION_REPLAY_NOT_INDEPENDENT_TEST",
+      "rows": 35167,
+      "metrics": {
+        "Accuracy": 0.8167600307106094,
+        "Macro F1": 0.6430739316136387,
+        "Balanced accuracy": 0.655136402436738,
+        "Weighted F1": 0.823378551145442
+      },
+      "dos_recall": 0.6391065830721003
+    }
+  },
+  "restrictions": {
+    "independent_test_confirmed": false,
+    "live_network_forecasting_validated": false,
+    "operational_probability_calibration_approved": false,
+    "alert_thresholds_approved": false,
+    "automatic_defense_approved": false,
+    "synthetic_forecast_precursors": true
+  },
+  "change_policy": "Any change to weights, scaler, preprocessor, feature order, or selection requires a new release id and revalidation"
+}

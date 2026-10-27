@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="940.68pt" height="424.656pt" viewBox="0 0 940.68 424.656" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-27T08:07:02.180740</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 424.656 
+L 940.68 424.656 
+L 940.68 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="line2d_1">
+    <path d="M 58.1454 66.68712 
+L 896.4288 66.68712 
+" clip-path="url(#pb332521f30)" style="fill: none; stroke: #242424; stroke-width: 1.2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 274.726679 106.481952 
+L 625.346123 106.481952 
+" clip-path="url(#pb332521f30)" style="fill: none; stroke: #242424; stroke-width: 0.65; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 634.608923 106.481952 
+L 794.906027 106.481952 
+" clip-path="url(#pb332521f30)" style="fill: none; stroke: #242424; stroke-width: 0.65; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 804.168827 106.481952 
+L 891.7974 106.481952 
+" clip-path="url(#pb332521f30)" style="fill: none; stroke: #242424; stroke-width: 0.65; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_5">
+    <path d="M 58.1454 149.969088 
+L 896.4288 149.969088 
+" clip-path="url(#pb332521f30)" style="fill: none; stroke: #242424; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_6">
+    <path d="M 58.1454 277.558704 
+L 896.4288 277.558704 
+" clip-path="url(#pb332521f30)" style="fill: none; stroke: #242424; stroke-width: 1.2; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'DejaVu Serif'; text-anchor: start" x="58.1454" y="27.473365" transform="rotate(-0 58.1454 27.473365)">Table 4</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 13.3px; font-family: 'DejaVu Serif'; text-anchor: start" x="58.1454" y="47.698454" transform="rotate(-0 58.1454 47.698454)">Comparison of current network attack-type classifiers</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Serif'; text-anchor: middle" x="164.12034" y="96.251104" transform="rotate(-0 164.12034 96.251104)">Classifier</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Serif'; text-anchor: middle" x="450.036401" y="92.969056" transform="rotate(-0 450.036401 92.969056)">Overall ten-class classification</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Serif'; text-anchor: middle" x="714.757475" y="92.969056" transform="rotate(-0 714.757475 92.969056)">DoS</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Serif'; text-anchor: middle" x="847.983113" y="92.969056" transform="rotate(-0 847.983113 92.969056)">Exploits</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 10.2px; font-family: 'DejaVu Serif'; text-anchor: middle" x="315.08056" y="129.664283" transform="rotate(-0 315.08056 129.664283)">Accuracy</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 10.2px; font-family: 'DejaVu Serif'; text-anchor: middle" x="405.051121" y="129.809314" transform="rotate(-0 405.051121 129.809314)">Macro F1</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 10.2px; font-family: 'DejaVu Serif'" transform="translate(471.136947 124.025914)">Balanced</text>
+    <text style="font-size: 10.2px; font-family: 'DejaVu Serif'" transform="translate(471.768072 135.447683)">accuracy</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 10.2px; font-family: 'DejaVu Serif'; text-anchor: middle" x="584.992243" y="129.736799" transform="rotate(-0 584.992243 129.736799)">Weighted F1</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 10.2px; font-family: 'DejaVu Serif'; text-anchor: middle" x="672.367499" y="129.809314" transform="rotate(-0 672.367499 129.809314)">Recall</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 10.2px; font-family: 'DejaVu Serif'; text-anchor: middle" x="757.147451" y="129.809314" transform="rotate(-0 757.147451 129.809314)">F1</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 10.2px; font-family: 'DejaVu Serif'; text-anchor: middle" x="847.983113" y="129.809314" transform="rotate(-0 847.983113 129.809314)">Recall</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 10.4px; font-family: 'DejaVu Serif'; text-anchor: start" x="64.62936" y="179.915734" transform="rotate(-0 64.62936 179.915734)">XGBoost V1</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Serif'; text-anchor: middle" x="315.08056" y="179.943328" transform="rotate(-0 315.08056 179.943328)">0.8287</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Serif'; text-anchor: middle" x="405.051121" y="179.943328" transform="rotate(-0 405.051121 179.943328)">0.5979</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Serif'; text-anchor: middle" x="495.021682" y="179.943328" transform="rotate(-0 495.021682 179.943328)">0.5918</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Serif'; text-anchor: middle" x="584.992243" y="179.943328" transform="rotate(-0 584.992243 179.943328)">0.8045</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Serif'; text-anchor: middle" x="672.367499" y="179.943328" transform="rotate(-0 672.367499 179.943328)">0.0603</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Serif'; text-anchor: middle" x="757.147451" y="179.943328" transform="rotate(-0 757.147451 179.943328)">0.1113</text>
+   </g>
+   <g id="text_21">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Serif'; text-anchor: middle" x="847.983113" y="179.943328" transform="rotate(-0 847.983113 179.943328)">0.9497</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 10.4px; font-family: 'DejaVu Serif'; text-anchor: start" x="64.62936" y="206.09818" transform="rotate(-0 64.62936 206.09818)">Weighted XGBoost V2</text>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Serif'; text-anchor: middle" x="315.08056" y="206.199712" transform="rotate(-0 315.08056 206.199712)">0.8168</text>
+   </g>
+   <g id="text_24">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Serif'; text-anchor: middle" x="405.051121" y="206.199712" transform="rotate(-0 405.051121 206.199712)">0.6431</text>
+   </g>
+   <g id="text_25">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Serif'; text-anchor: middle" x="495.021682" y="206.199712" transform="rotate(-0 495.021682 206.199712)">0.6551</text>
+   </g>
+   <g id="text_26">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Serif'; text-anchor: middle" x="584.992243" y="206.199712" transform="rotate(-0 584.992243 206.199712)">0.8234</text>
+   </g>
+   <g id="text_27">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Serif'; text-anchor: middle" x="672.367499" y="206.199712" transform="rotate(-0 672.367499 206.199712)">0.6391</text>
+   </g>
+   <g id="text_28">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Serif'; text-anchor: middle" x="757.147451" y="206.199712" transform="rotate(-0 757.147451 206.199712)">0.4645</text>
+   </g>
+   <g id="text_29">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Serif'; text-anchor: middle" x="847.983113" y="206.199712" transform="rotate(-0 847.983113 206.199712)">0.6646</text>
+   </g>
+   <g id="text_30">
+    <text style="font-size: 10.4px; font-family: 'DejaVu Serif'; text-anchor: start" x="64.62936" y="232.428502" transform="rotate(-0 64.62936 232.428502)">Conflict-aware XGBoost</text>
+   </g>
+   <g id="text_31">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Serif'; text-anchor: middle" x="315.08056" y="232.456096" transform="rotate(-0 315.08056 232.456096)">0.8306</text>
+   </g>
+   <g id="text_32">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Serif'; text-anchor: middle" x="405.051121" y="232.456096" transform="rotate(-0 405.051121 232.456096)">0.6137</text>
+   </g>
+   <g id="text_33">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Serif'; text-anchor: middle" x="495.021682" y="232.456096" transform="rotate(-0 495.021682 232.456096)">0.6036</text>
+   </g>
+   <g id="text_34">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Serif'; text-anchor: middle" x="584.992243" y="232.456096" transform="rotate(-0 584.992243 232.456096)">0.8091</text>
+   </g>
+   <g id="text_35">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Serif'; text-anchor: middle" x="672.367499" y="232.456096" transform="rotate(-0 672.367499 232.456096)">0.0823</text>
+   </g>
+   <g id="text_36">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Serif'; text-anchor: middle" x="757.147451" y="232.456096" transform="rotate(-0 757.147451 232.456096)">0.1443</text>
+   </g>
+   <g id="text_37">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Serif'; text-anchor: middle" x="847.983113" y="232.456096" transform="rotate(-0 847.983113 232.456096)">0.9422</text>
+   </g>
+   <g id="text_38">
+    <text style="font-size: 10.4px; font-family: 'DejaVu Serif'; text-anchor: start" x="64.62936" y="258.684886" transform="rotate(-0 64.62936 258.684886)">CatBoost</text>
+   </g>
+   <g id="text_39">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Serif'; text-anchor: middle" x="315.08056" y="258.71248" transform="rotate(-0 315.08056 258.71248)">0.8209</text>
+   </g>
+   <g id="text_40">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Serif'; text-anchor: middle" x="405.051121" y="258.71248" transform="rotate(-0 405.051121 258.71248)">0.5607</text>
+   </g>
+   <g id="text_41">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Serif'; text-anchor: middle" x="495.021682" y="258.71248" transform="rotate(-0 495.021682 258.71248)">0.5388</text>
+   </g>
+   <g id="text_42">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Serif'; text-anchor: middle" x="584.992243" y="258.71248" transform="rotate(-0 584.992243 258.71248)">0.8012</text>
+   </g>
+   <g id="text_43">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Serif'; text-anchor: middle" x="672.367499" y="258.71248" transform="rotate(-0 672.367499 258.71248)">0.1046</text>
+   </g>
+   <g id="text_44">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Serif'; text-anchor: middle" x="757.147451" y="258.71248" transform="rotate(-0 757.147451 258.71248)">0.1704</text>
+   </g>
+   <g id="text_45">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Serif'; text-anchor: middle" x="847.983113" y="258.71248" transform="rotate(-0 847.983113 258.71248)">0.9227</text>
+   </g>
+   <g id="text_46">
+    <text style="font-size: 9.5px; font-family: 'DejaVu Serif'; text-anchor: start" x="58.1454" y="300.53304" transform="rotate(-0 58.1454 300.53304)">Notes: All metrics are fractions between 0 and 1. Bold values denote the largest observed value in each metric column.</text>
+   </g>
+   <g id="text_47">
+    <text style="font-size: 9.4px; font-family: 'DejaVu Serif'; text-anchor: start" x="58.1454" y="318.584304" transform="rotate(-0 58.1454 318.584304)">UNSW-NB15 development validation (35,167 records, ten classes). Macro F1 and balanced accuracy help expose poor performance on minority attack classes.</text>
+   </g>
+   <g id="text_48">
+    <text style="font-size: 9.4px; font-family: 'DejaVu Serif'; text-anchor: start" x="58.1454" y="336.635568" transform="rotate(-0 58.1454 336.635568)">Overall metrics come from saved model reports. Original XGBoost per-class scores were recalculated from its saved confusion matrix;</text>
+   </g>
+   <g id="text_49">
+    <text style="font-size: 9.4px; font-family: 'DejaVu Serif'; text-anchor: start" x="58.1454" y="349.76376" transform="rotate(-0 58.1454 349.76376)">other per-class values are rounded diagnostics transcribed from earlier experiment output. These values were not independently recomputed here.</text>
+   </g>
+   <g id="text_50">
+    <text style="font-size: 9.3px; font-family: 'DejaVu Serif'; text-anchor: start; fill: #555555" x="58.1454" y="368.22528" transform="rotate(-0 58.1454 368.22528)">The development-validation fold was examined repeatedly; these comparisons do not represent an independent final TEST-set assessment.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pb332521f30">
+   <rect x="7.2" y="7.2" width="926.28" height="410.256"/>
+  </clipPath>
+ </defs>
+</svg>

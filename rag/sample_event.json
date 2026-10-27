@@ -1,0 +1,20 @@
+{
+  "question": "Explain the detected DoS class and the general 10-minute attack forecast. What should an analyst investigate?",
+  "detection": {
+    "attack_class": "DoS",
+    "confidence": 0.91,
+    "model_name": "DEMO_ONLY"
+  },
+  "forecast": {
+    "horizon_minutes": 10,
+    "probability": 0.73,
+    "target": "any_attack",
+    "model_name": "DEMO_ONLY"
+  },
+  "observations": {
+    "protocol": "TCP",
+    "flow_count": 900,
+    "window_minutes": 10
+  },
+  "top_k": 6
+}

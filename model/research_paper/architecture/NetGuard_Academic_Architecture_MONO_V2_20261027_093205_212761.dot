@@ -1,0 +1,473 @@
+
+digraph NetGuard {
+
+    graph [
+        rankdir=TB,
+        bgcolor="white",
+        pad="0.28",
+        nodesep="0.30",
+        ranksep="0.42",
+        compound=true,
+        newrank=true,
+        splines=polyline,
+        outputorder=edgesfirst,
+        fontname="Helvetica",
+        fontsize=18,
+        labeljust="l",
+        labelloc="t",
+        label="NETGUARD  |  DUAL-PATH RESEARCH ARCHITECTURE\nEvaluated pipelines (not an integrated live deployment)",
+        dpi=180
+    ];
+
+    node [
+        shape=plain,
+        fontname="Helvetica",
+        fontsize=10
+    ];
+
+    edge [
+        color="#444444",
+        penwidth=1.0,
+        arrowsize=0.7,
+        fontname="Helvetica",
+        fontsize=9
+    ];
+    D1 [label=<<TABLE
+        BORDER="1"
+        CELLBORDER="0"
+        CELLSPACING="0"
+        CELLPADDING="7"
+        COLOR="#353535"
+        BGCOLOR="white">
+
+        <TR>
+            <TD ALIGN="LEFT" BGCOLOR="#EAEAEA">
+                <FONT FACE="Helvetica" POINT-SIZE="10">
+                    <B>01  DATA SOURCE</B>
+                </FONT>
+            </TD>
+        </TR>
+
+        <TR>
+            <TD ALIGN="LEFT">
+                <FONT FACE="Helvetica" POINT-SIZE="10">
+                    UNSW-NB15 canonical TRAIN<BR ALIGN="LEFT"/>175,341 labeled flow records<BR ALIGN="LEFT"/>Official TEST held out
+                </FONT>
+            </TD>
+        </TR>
+    </TABLE>>];
+    D2 [label=<<TABLE
+        BORDER="1"
+        CELLBORDER="0"
+        CELLSPACING="0"
+        CELLPADDING="7"
+        COLOR="#353535"
+        BGCOLOR="white">
+
+        <TR>
+            <TD ALIGN="LEFT" BGCOLOR="#F5F5F5">
+                <FONT FACE="Helvetica" POINT-SIZE="10">
+                    <B>02  DEVELOPMENT SPLIT</B>
+                </FONT>
+            </TD>
+        </TR>
+
+        <TR>
+            <TD ALIGN="LEFT">
+                <FONT FACE="Helvetica" POINT-SIZE="10">
+                    Feature-signature grouping<BR ALIGN="LEFT"/>Train: 140,174 flows<BR ALIGN="LEFT"/>Validation: 35,167 flows
+                </FONT>
+            </TD>
+        </TR>
+    </TABLE>>];
+    D3 [label=<<TABLE
+        BORDER="1"
+        CELLBORDER="0"
+        CELLSPACING="0"
+        CELLPADDING="7"
+        COLOR="#353535"
+        BGCOLOR="white">
+
+        <TR>
+            <TD ALIGN="LEFT" BGCOLOR="#F5F5F5">
+                <FONT FACE="Helvetica" POINT-SIZE="10">
+                    <B>03  FEATURE ENGINEERING</B>
+                </FONT>
+            </TD>
+        </TR>
+
+        <TR>
+            <TD ALIGN="LEFT">
+                <FONT FACE="Helvetica" POINT-SIZE="10">
+                    42 flow-level predictors<BR ALIGN="LEFT"/>Numeric / categorical processing<BR ALIGN="LEFT"/>Train-fitted preprocessing
+                </FONT>
+            </TD>
+        </TR>
+    </TABLE>>];
+    D4 [label=<<TABLE
+        BORDER="1.5"
+        CELLBORDER="0"
+        CELLSPACING="0"
+        CELLPADDING="7"
+        COLOR="#353535"
+        BGCOLOR="white">
+
+        <TR>
+            <TD ALIGN="LEFT" BGCOLOR="#EAEAEA">
+                <FONT FACE="Helvetica" POINT-SIZE="10">
+                    <B>04  MULTICLASS DETECTOR</B>
+                </FONT>
+            </TD>
+        </TR>
+
+        <TR>
+            <TD ALIGN="LEFT">
+                <FONT FACE="Helvetica" POINT-SIZE="10">
+                    XGBoost V1 | 10 classes<BR ALIGN="LEFT"/>Saved model + preprocessing<BR ALIGN="LEFT"/>Normal + 9 attack types
+                </FONT>
+            </TD>
+        </TR>
+    </TABLE>>];
+    D5 [label=<<TABLE
+        BORDER="1"
+        CELLBORDER="0"
+        CELLSPACING="0"
+        CELLPADDING="7"
+        COLOR="#353535"
+        BGCOLOR="white">
+
+        <TR>
+            <TD ALIGN="LEFT" BGCOLOR="#F5F5F5">
+                <FONT FACE="Helvetica" POINT-SIZE="10">
+                    <B>05  DECISION OUTPUT</B>
+                </FONT>
+            </TD>
+        </TR>
+
+        <TR>
+            <TD ALIGN="LEFT">
+                <FONT FACE="Helvetica" POINT-SIZE="10">
+                    Binary score = 1 - P(Normal)<BR ALIGN="LEFT"/>Predicted attack category<BR ALIGN="LEFT"/>Class-probability distribution
+                </FONT>
+            </TD>
+        </TR>
+    </TABLE>>];
+    D6 [label=<<TABLE
+        BORDER="1"
+        CELLBORDER="0"
+        CELLSPACING="0"
+        CELLPADDING="7"
+        COLOR="#353535"
+        BGCOLOR="white">
+
+        <TR>
+            <TD ALIGN="LEFT" BGCOLOR="#EAEAEA">
+                <FONT FACE="Helvetica" POINT-SIZE="10">
+                    <B>06  MODEL EVALUATION</B>
+                </FONT>
+            </TD>
+        </TR>
+
+        <TR>
+            <TD ALIGN="LEFT">
+                <FONT FACE="Helvetica" POINT-SIZE="10">
+                    Binary AP / ROC-AUC / calibration<BR ALIGN="LEFT"/>Ten-class macro F1 / confusion<BR ALIGN="LEFT"/>Threshold and class trade-offs
+                </FONT>
+            </TD>
+        </TR>
+    </TABLE>>];
+    D7 [label=<<TABLE
+        BORDER="1"
+        CELLBORDER="0"
+        CELLSPACING="0"
+        CELLPADDING="7"
+        COLOR="#353535"
+        BGCOLOR="white">
+
+        <TR>
+            <TD ALIGN="LEFT" BGCOLOR="#F5F5F5">
+                <FONT FACE="Helvetica" POINT-SIZE="10">
+                    <B>ADDITIONAL MODEL EXPERIMENTS</B>
+                </FONT>
+            </TD>
+        </TR>
+
+        <TR>
+            <TD ALIGN="LEFT">
+                <FONT FACE="Helvetica" POINT-SIZE="10">
+                    Weighted XGBoost V2<BR ALIGN="LEFT"/>Conflict-aware XGBoost<BR ALIGN="LEFT"/>CatBoost baseline
+                </FONT>
+            </TD>
+        </TR>
+    </TABLE>>];
+    F1 [label=<<TABLE
+        BORDER="1"
+        CELLBORDER="0"
+        CELLSPACING="0"
+        CELLPADDING="7"
+        COLOR="#353535"
+        BGCOLOR="white">
+
+        <TR>
+            <TD ALIGN="LEFT" BGCOLOR="#EAEAEA">
+                <FONT FACE="Helvetica" POINT-SIZE="10">
+                    <B>01  DATA SOURCES</B>
+                </FONT>
+            </TD>
+        </TR>
+
+        <TR>
+            <TD ALIGN="LEFT">
+                <FONT FACE="Helvetica" POINT-SIZE="10">
+                    Synthetic NAF v2 episodes<BR ALIGN="LEFT"/>CIC-IDS2017 + UNSW-NB15 derived<BR ALIGN="LEFT"/>Synthetic; not live traffic
+                </FONT>
+            </TD>
+        </TR>
+    </TABLE>>];
+    F2 [label=<<TABLE
+        BORDER="1"
+        CELLBORDER="0"
+        CELLSPACING="0"
+        CELLPADDING="7"
+        COLOR="#353535"
+        BGCOLOR="white">
+
+        <TR>
+            <TD ALIGN="LEFT" BGCOLOR="#F5F5F5">
+                <FONT FACE="Helvetica" POINT-SIZE="10">
+                    <B>02  TEMPORAL FEATURES</B>
+                </FONT>
+            </TD>
+        </TR>
+
+        <TR>
+            <TD ALIGN="LEFT">
+                <FONT FACE="Helvetica" POINT-SIZE="10">
+                    Minute-level traffic aggregations<BR ALIGN="LEFT"/>Sequence / graph representations<BR ALIGN="LEFT"/>Event labels: H5, H10, H15
+                </FONT>
+            </TD>
+        </TR>
+    </TABLE>>];
+    F3 [label=<<TABLE
+        BORDER="1"
+        CELLBORDER="0"
+        CELLSPACING="0"
+        CELLPADDING="7"
+        COLOR="#353535"
+        BGCOLOR="white">
+
+        <TR>
+            <TD ALIGN="LEFT" BGCOLOR="#F5F5F5">
+                <FONT FACE="Helvetica" POINT-SIZE="10">
+                    <B>03b  SEQUENCE / TABULAR</B>
+                </FONT>
+            </TD>
+        </TR>
+
+        <TR>
+            <TD ALIGN="LEFT">
+                <FONT FACE="Helvetica" POINT-SIZE="10">
+                    Single and stacked LSTM<BR ALIGN="LEFT"/>XGBoost V2 (H5, H10 only)
+                </FONT>
+            </TD>
+        </TR>
+    </TABLE>>];
+    F4 [label=<<TABLE
+        BORDER="1"
+        CELLBORDER="0"
+        CELLSPACING="0"
+        CELLPADDING="7"
+        COLOR="#353535"
+        BGCOLOR="white">
+
+        <TR>
+            <TD ALIGN="LEFT" BGCOLOR="#F5F5F5">
+                <FONT FACE="Helvetica" POINT-SIZE="10">
+                    <B>03a  GRAPH-BASED</B>
+                </FONT>
+            </TD>
+        </TR>
+
+        <TR>
+            <TD ALIGN="LEFT">
+                <FONT FACE="Helvetica" POINT-SIZE="10">
+                    Original / optimized Graph LSTM<BR ALIGN="LEFT"/>GCN-LSTM, GAT-LSTM
+                </FONT>
+            </TD>
+        </TR>
+    </TABLE>>];
+    F5 [label=<<TABLE
+        BORDER="1.5"
+        CELLBORDER="0"
+        CELLSPACING="0"
+        CELLPADDING="7"
+        COLOR="#353535"
+        BGCOLOR="white">
+
+        <TR>
+            <TD ALIGN="LEFT" BGCOLOR="#EAEAEA">
+                <FONT FACE="Helvetica" POINT-SIZE="10">
+                    <B>03c  COMPETING RISK</B>
+                </FONT>
+            </TD>
+        </TR>
+
+        <TR>
+            <TD ALIGN="LEFT">
+                <FONT FACE="Helvetica" POINT-SIZE="10">
+                    CR-LSTM and CR-TCN<BR ALIGN="LEFT"/>Multi-output future-event models
+                </FONT>
+            </TD>
+        </TR>
+    </TABLE>>];
+    F6 [label=<<TABLE
+        BORDER="1"
+        CELLBORDER="0"
+        CELLSPACING="0"
+        CELLPADDING="7"
+        COLOR="#353535"
+        BGCOLOR="white">
+
+        <TR>
+            <TD ALIGN="LEFT" BGCOLOR="#F5F5F5">
+                <FONT FACE="Helvetica" POINT-SIZE="10">
+                    <B>04a  HORIZON RISKS</B>
+                </FONT>
+            </TD>
+        </TR>
+
+        <TR>
+            <TD ALIGN="LEFT">
+                <FONT FACE="Helvetica" POINT-SIZE="10">
+                    P(event within next 5 min)<BR ALIGN="LEFT"/>P(event within next 10 min)<BR ALIGN="LEFT"/>P(event within next 15 min)
+                </FONT>
+            </TD>
+        </TR>
+    </TABLE>>];
+    F7 [label=<<TABLE
+        BORDER="1"
+        CELLBORDER="0"
+        CELLSPACING="0"
+        CELLPADDING="7"
+        COLOR="#353535"
+        BGCOLOR="white">
+
+        <TR>
+            <TD ALIGN="LEFT" BGCOLOR="#F5F5F5">
+                <FONT FACE="Helvetica" POINT-SIZE="10">
+                    <B>04b  CONDITIONAL OUTPUTS</B>
+                </FONT>
+            </TD>
+        </TR>
+
+        <TR>
+            <TD ALIGN="LEFT">
+                <FONT FACE="Helvetica" POINT-SIZE="10">
+                    Future attack family: 5 groups<BR ALIGN="LEFT"/>Expected time-to-attack (1-15 min)<BR ALIGN="LEFT"/>Conditional on a true future event
+                </FONT>
+            </TD>
+        </TR>
+    </TABLE>>];
+    F8 [label=<<TABLE
+        BORDER="1"
+        CELLBORDER="0"
+        CELLSPACING="0"
+        CELLPADDING="7"
+        COLOR="#353535"
+        BGCOLOR="white">
+
+        <TR>
+            <TD ALIGN="LEFT" BGCOLOR="#EAEAEA">
+                <FONT FACE="Helvetica" POINT-SIZE="10">
+                    <B>05  MODEL EVALUATION</B>
+                </FONT>
+            </TD>
+        </TR>
+
+        <TR>
+            <TD ALIGN="LEFT">
+                <FONT FACE="Helvetica" POINT-SIZE="10">
+                    18,839 aligned validation windows<BR ALIGN="LEFT"/>AP / ECE / fixed-threshold alerts<BR ALIGN="LEFT"/>Family F1 / ETA MAE / bootstrap CIs
+                </FONT>
+            </TD>
+        </TR>
+    </TABLE>>];
+
+
+    // ---------------------------------------------------------------
+    // FUTURE FORECASTING
+    // ---------------------------------------------------------------
+
+    subgraph cluster_forecast {
+
+        label="B  |  FUTURE ATTACK FORECASTING  /  MINUTE WINDOWS";
+        labelloc=t;
+        labeljust=l;
+        fontname="Helvetica-Bold";
+        fontsize=14;
+        color="#777777";
+        penwidth=1.2;
+        margin=21;
+
+        F1; F2; F3; F4; F5; F6; F7; F8;
+
+        F1 -> F2;
+
+        F2 -> F3;
+        F2 -> F4;
+        F2 -> F5;
+
+        F3 -> F6;
+        F4 -> F6;
+        F5 -> F6;
+
+        F5 -> F7;
+
+        F6 -> F8;
+        F7 -> F8;
+    }
+
+    // ---------------------------------------------------------------
+    // CURRENT DETECTION
+    // ---------------------------------------------------------------
+
+    subgraph cluster_detection {
+
+        label="A  |  CURRENT ATTACK DETECTION  /  FLOW RECORDS";
+        labelloc=t;
+        labeljust=l;
+        fontname="Helvetica-Bold";
+        fontsize=14;
+        color="#777777";
+        penwidth=1.2;
+        margin=21;
+
+        D1; D2; D3; D4; D5; D6; D7;
+
+        D1 -> D2;
+        D2 -> D3;
+        D3 -> D4;
+        D4 -> D5;
+        D5 -> D6;
+
+        D3 -> D7 [
+            style=dashed,
+            color="#888888"
+        ];
+
+        D7 -> D6 [
+            style=dashed,
+            color="#888888"
+        ];
+    }
+
+    // ---------------------------------------------------------------
+    // ALIGN TWO PRIMARY RESEARCH BRANCHES
+    // ---------------------------------------------------------------
+
+    {rank=same; F1; D1;}
+    {rank=same; F2; D2;}
+    {rank=same; F5; D4;}
+    {rank=same; F6; D5;}
+    {rank=same; F8; D6;}
+}

@@ -1,0 +1,30 @@
+{
+  "expected_v7_sha256": {
+    "rag/app/chunking.py": "8021569f4aed6151f526304148b2e5c4bb8fa2c64a2a9cbfdb79daa62a2ef7b4",
+    "rag/app/knowledge.py": "f2fe7f3e602fbe61c5221c78c23fa5aa1b5664e266d5b84401e7c9d6022a6c68",
+    "rag/app/ingest.py": "41e18b09122065bd1634849acff852509b0127292a29df978b820c25bc641831",
+    "rag/app/schemas.py": "6d0ee222bc3716225abcf332129d662fc24771e78fed804652535a10b8e52a9c",
+    "rag/app/retriever.py": "03a970a4ca1754adc25aba67c871b952c3eb6ac5990cfe14f3066fb29e36361a",
+    "rag/app/service.py": "d4639a9ca572e7d787210701fb00164f6743bd8a2660894c849e3e5887927525",
+    "rag/app/llm.py": "af73f93a0afc90299afa309461112861b910d067c36d11821288d87e0880ebdd",
+    "backend/rag_bridge.py": "90286b1293be1b6cbe07b17769d83e334b0b7cc72727b47812a567f025d0f213",
+    "frontend/src/RagAnalysis.jsx": "3211c4e97dd31641816fa9e015ca2a614dc6c06aa0f545593459c531e52a963e",
+    "frontend/src/ragAnalysis.css": "1b9d79887ed49726f7d077aab6ed0d0ed0d7516907c238eb8292233abe8f272f"
+  },
+  "target_v8_sha256": {
+    "rag/app/chunking.py": "87e0540aeffae3e024352d09318628caab22f52842dfccbaf47fc875b771df95",
+    "rag/app/knowledge.py": "a8ccec8c29772a42a36e84f0224ce0be0c70257bc31b8603c29bd0e859029622",
+    "rag/app/ingest.py": "e02242d0823f4bfe6b9f7397a4a1e8eada7c0aa013d9fc050bae1ad6d5140228",
+    "rag/app/schemas.py": "65cf83bd71d810d80ceef2754315c03354a736184c0f4b196df2427a216f47dd",
+    "rag/app/retriever.py": "d5235846e0d7e0392f9bf681c221cbbf92a4aa71c68168a8963bbdfbcc1538d5",
+    "rag/app/service.py": "5392785a819f3f9b959ca0b3e5e694c9af9c3664398200d00df53eb9a58cb217",
+    "rag/app/llm.py": "8e82a2726ce55853d10c81ef8d29b1c837960ab5cb9946a813a716b2b46253ef",
+    "backend/rag_bridge.py": "f33d904f8784d967f31b57fb760506e1d5566c08dd3ffdded34eab972d70f4b2",
+    "frontend/src/RagAnalysis.jsx": "74aff3c18f4678fe6828a1ce05707b62d6ef52dc1bdca0568f0fc5c67cf945e2",
+    "frontend/src/ragAnalysis.css": "195f139d98802c7e8d7d37d8ec5c020ef49dc656a8a14a8136397770de378be0"
+  },
+  "new_files": {
+    "rag/knowledge/official_reference_summaries.json": "2e08edf73556a86a5bd60d0a3347a8d086e533c72eaa129b9d44183bb7891681",
+    "integration_v8/tests/test_v8_contract.py": "b459c18a53d10b3efd4cc45f1854165f7bbbc095334bd5e4cbedceb4813f323e"
+  }
+}

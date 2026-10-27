@@ -1,0 +1,74 @@
+{
+  "evaluation_kind": "FROZEN_SYNTHETIC_VALIDATION_REPLAY",
+  "created_utc": "2026-10-27T14:07:31.939224+00:00",
+  "dataset_name": "windows_W10_VALIDATION.npz",
+  "dataset_sha256": "45ed08b72400cd5d09a9ddbd082265a9e556fe5b38d925de08a23a313848008e",
+  "rows_evaluated": 18839,
+  "total_rows_available": 18839,
+  "unique_episodes_evaluated": 300,
+  "sampling": "full",
+  "model_metrics": {
+    "stacked_lstm_v2": {
+      "horizons": {
+        "H5": {
+          "average_precision": 0.7610046618941941,
+          "roc_auc": 0.9816588762184336,
+          "brier_score": 0.02552190963561673,
+          "prevalence": 0.059716545464196615
+        },
+        "H10": {
+          "average_precision": 0.906017839758302,
+          "roc_auc": 0.9853568696793725,
+          "brier_score": 0.031025718557829866,
+          "prevalence": 0.11943309092839323
+        },
+        "H15": {
+          "average_precision": 0.9358539385687779,
+          "roc_auc": 0.976691239868943,
+          "brier_score": 0.03672383040134547,
+          "prevalence": 0.17914963639258985
+        }
+      }
+    },
+    "competing_risk_lstm": {
+      "horizons": {
+        "H5": {
+          "average_precision": 0.724838060875159,
+          "roc_auc": 0.9792827267823315,
+          "brier_score": 0.027394379284473924,
+          "prevalence": 0.059716545464196615
+        },
+        "H10": {
+          "average_precision": 0.8991369778133467,
+          "roc_auc": 0.9852374197091782,
+          "brier_score": 0.03148902691955114,
+          "prevalence": 0.11943309092839323
+        },
+        "H15": {
+          "average_precision": 0.9360590366773125,
+          "roc_auc": 0.9784681650092929,
+          "brier_score": 0.03624085572182614,
+          "prevalence": 0.17914963639258985
+        }
+      },
+      "family_and_eta": {
+        "family_accuracy_given_true_onset": 0.8088888888888889,
+        "family_macro_f1_given_true_onset": 0.7958230612470937,
+        "conditional_eta_mae_minutes_given_true_onset": 2.5365340351375987,
+        "note": "Metrics conditioned on actual onset use labels for evaluation only, not as prediction inputs."
+      }
+    }
+  },
+  "environment": {
+    "python": "3.13.5",
+    "torch": "2.10.0+cpu",
+    "scikit_learn": "1.8.0",
+    "numpy": "2.3.5"
+  },
+  "limitations": [
+    "Synthetic_NAF_v2 is simulated, not live recorded attack-precursor traffic",
+    "This uses VALIDATION only and is not an independent real-world test",
+    "No thresholds were selected or tuned",
+    "The current detection XGBoost model is not evaluated by this forecasting-window file"
+  ]
+}

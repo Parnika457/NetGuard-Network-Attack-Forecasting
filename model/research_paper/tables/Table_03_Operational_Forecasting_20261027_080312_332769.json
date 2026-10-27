@@ -1,0 +1,62 @@
+{
+  "project": "NetGuard",
+  "publication_table": 3,
+  "title": "Operational forecasting performance",
+  "models": [
+    "Competing-Risk LSTM",
+    "Competing-Risk TCN"
+  ],
+  "horizons": [
+    "H5",
+    "H10",
+    "H15"
+  ],
+  "selected_thresholds": [
+    0.2,
+    0.5
+  ],
+  "original_audit_thresholds": [
+    0.1,
+    0.2,
+    0.5
+  ],
+  "validation_windows_per_operating_point": 18839,
+  "whole_benign_episodes": 75,
+  "all_original_rows_verified": true,
+  "source_file": {
+    "path": "Synthetic_NAF_v2/models/FINAL_VALIDATION_AUDIT/FIXED_THRESHOLD_ALERT_AUDIT.csv",
+    "sha256": "5b890d749489f2f5b25534d32bf15f6b61db15dc442247bb3683266b69e8ff54"
+  },
+  "generated_files": [
+    {
+      "path": "Research_Paper/02_Final_Tables/Table_03_Operational_Forecasting_20261027_080312_332769.pdf",
+      "sha256": "77f2789f7c5bbe070fceccd1b1539beda29c453025b8ade434d3b68dfa9c5160"
+    },
+    {
+      "path": "Research_Paper/02_Final_Tables/Table_03_Operational_Forecasting_20261027_080312_332769.svg",
+      "sha256": "513e57b126ef295a1c6f42a7f8324576a1803fa2e473f4bed81a52e663d1a91e"
+    },
+    {
+      "path": "Research_Paper/02_Final_Tables/Table_03_Operational_Forecasting_20261027_080312_332769.png",
+      "sha256": "9121f7e54b2246ac5f0e4b5364d96a0d2bfa37c4b07297492f88c311f5abb567"
+    },
+    {
+      "path": "Research_Paper/02_Final_Tables/Table_03_Operational_Forecasting_20261027_080312_332769.csv",
+      "sha256": "2f4ccb3ebe3bb8c03361a677690e7a645965434e3ef3842fb7c9f9bb19af64f3"
+    },
+    {
+      "path": "Research_Paper/02_Final_Tables/Table_03_Operational_Forecasting_20261027_080312_332769.tex",
+      "sha256": "88b7cdab07e39be3ee78535b4e7bfec6dae1447b0c1800515ec6441099329c0f"
+    }
+  ],
+  "limitations": [
+    "Thresholds are fixed illustrative diagnostics.",
+    "Thresholds were not selected for deployment.",
+    "Decision windows overlap in time.",
+    "Whole-benign-episode alert fraction is not window FPR.",
+    "Evaluation uses synthetic development validation.",
+    "No official TEST evaluation was performed."
+  ],
+  "models_retrained": 0,
+  "official_test_accessed": false
+}

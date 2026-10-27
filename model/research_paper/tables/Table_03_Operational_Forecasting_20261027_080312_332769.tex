@@ -1,0 +1,34 @@
+% Requires \usepackage{booktabs,multirow}
+\begin{table*}[t]
+\centering
+\caption{Operational performance of future-attack forecasting models at fixed decision thresholds.}
+\label{tab:operational_forecasting}
+\small
+\begin{tabular}{llrrrrrrr}
+\toprule
+\multirow{2}{*}{Horizon} & \multirow{2}{*}{Model} & \multirow{2}{*}{$\tau$} & \multicolumn{3}{c}{Window-level performance} & \multicolumn{2}{c}{Window errors} & \multicolumn{1}{c}{Episode-level alerts} \\
+\cmidrule(lr){4-6}\cmidrule(lr){7-8}
+ & & & Precision (\%) & Recall (\%) & FPR (\%) & FP & FN & Benign episodes alerted \\
+\midrule
+\multirow{4}{*}{H5} & \multirow{2}{*}{CR-LSTM} & 0.20 & 52.4 & 87.9 & 5.08 & 899 & 136 & 0/75 \\
+ &  & 0.50 & 68.8 & 60.9 & 1.76 & 311 & 440 & 0/75 \\
+\cmidrule(lr){2-9}
+ & \multirow{2}{*}{CR-TCN} & 0.20 & 51.3 & 89.2 & 5.39 & 954 & 122 & 3/75 \\
+ &  & 0.50 & 67.3 & 67.7 & 2.09 & 370 & 363 & 3/75 \\
+\midrule
+\multirow{4}{*}{H10} & \multirow{2}{*}{CR-LSTM} & 0.20 & 71.5 & 92.8 & 5.02 & 832 & 161 & 3/75 \\
+ &  & 0.50 & 80.9 & 81.1 & 2.60 & 431 & 426 & 0/75 \\
+\cmidrule(lr){2-9}
+ & \multirow{2}{*}{CR-TCN} & 0.20 & 68.7 & 94.1 & 5.82 & 966 & 133 & 5/75 \\
+ &  & 0.50 & 79.7 & 83.5 & 2.88 & 477 & 372 & 3/75 \\
+\midrule
+\multirow{4}{*}{H15} & \multirow{2}{*}{CR-LSTM} & 0.20 & 80.9 & 90.5 & 4.67 & 722 & 321 & 12/75 \\
+ &  & 0.50 & 89.7 & 83.2 & 2.08 & 321 & 567 & 4/75 \\
+\cmidrule(lr){2-9}
+ & \multirow{2}{*}{CR-TCN} & 0.20 & 79.4 & 91.5 & 5.19 & 803 & 288 & 13/75 \\
+ &  & 0.50 & 88.1 & 84.1 & 2.49 & 385 & 536 & 5/75 \\
+\bottomrule
+\end{tabular}
+\vspace{2pt}
+\parbox{\textwidth}{\footnotesize FPR = false-positive rate; FP = false-positive windows; FN = false-negative windows. Benign episode alerts count wholly benign episodes with at least one alert (denominator 75). Results use 18,839 synthetic development-validation decision windows. Thresholds are illustrative, not deployment-optimized.}
+\end{table*}

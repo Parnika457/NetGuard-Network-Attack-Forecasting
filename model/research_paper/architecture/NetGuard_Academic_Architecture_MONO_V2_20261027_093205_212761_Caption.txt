@@ -1,0 +1,27 @@
+NetGuard dual-path research architecture.
+
+Panel A depicts current network attack detection on UNSW-NB15
+flow records. The pipeline consists of a grouped development
+split, train-fitted feature preprocessing, a ten-class XGBoost
+classifier, derived binary attack probabilities, and multiclass
+attack-type identification. Weighted XGBoost, conflict-aware
+XGBoost and CatBoost were evaluated as comparison models.
+
+Panel B depicts the future-attack forecasting experiments
+performed on Synthetic NAF v2 minute-level episodes derived
+from CIC-IDS2017 and UNSW-NB15 sources. Evaluated model
+families include recurrent, boosted-tree, graph-based and
+competing-risk architectures. The outputs comprise event
+probabilities for 5-, 10- and 15-minute horizons, with the
+15-minute prediction unavailable for XGBoost V2, together
+with conditional future attack-family and time-to-attack
+estimates from competing-risk models.
+
+Both pipelines were evaluated on development-validation data,
+not independent TEST data. The current attack and forecasting
+branches were not validated as a single live-deployed system.
+The planned RAG explanation and dashboard integrations are
+outside the scope of this evaluated architecture.
+
+Solid arrows identify primary evaluated processing paths.
+Dashed arrows denote additional evaluated classifier variants.

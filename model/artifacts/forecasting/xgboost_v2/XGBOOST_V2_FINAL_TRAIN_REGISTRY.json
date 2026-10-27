@@ -1,0 +1,27 @@
+{
+  "dataset": "Synthetic_NAF_v2",
+  "dataset_version": "2.0.0",
+  "model_family": "XGBoost",
+  "representation": "FLAT140_LOG1P",
+  "training_status": "FINAL_FULL_TRAIN_COMPLETED",
+  "models": {
+    "H5": {
+      "model_file": "XGBoost_V2_FLAT140_H5.json",
+      "model_sha256": "42506384b4e445e33afeb4aa0d7e7a5a302aa36358280deb2bd00772affe4843",
+      "boosting_rounds": 435,
+      "source_cv_average_precision": 0.7135438340857836,
+      "official_validation_used": false,
+      "official_test_used": false
+    },
+    "H10": {
+      "model_file": "XGBoost_V2_FLAT140_H10.json",
+      "model_sha256": "3a21e3ad1f38fb7ac9cf839984f725d3bdeb6833287ecc4e80c7a52bf084b9e9",
+      "boosting_rounds": 376,
+      "source_cv_average_precision": 0.8826604343924561,
+      "official_validation_used": false,
+      "official_test_used": false
+    }
+  },
+  "validation_status": "NOT_STARTED",
+  "test_status": "EMBARGOED"
+}

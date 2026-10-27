@@ -1,0 +1,99 @@
+{
+  "project": "NetGuard",
+  "publication_table": 4,
+  "title": "Current network attack classification",
+  "dataset": "UNSW-NB15 canonical TRAIN",
+  "evaluation": "development validation",
+  "validation_records": 35167,
+  "classes": [
+    "Analysis",
+    "Backdoor",
+    "DoS",
+    "Exploits",
+    "Fuzzers",
+    "Generic",
+    "Normal",
+    "Reconnaissance",
+    "Shellcode",
+    "Worms"
+  ],
+  "model_count": 4,
+  "aggregated_metrics": "Directly loaded from saved metadata",
+  "per_class_evidence": {
+    "XGBoost V1": "Calculated from saved confusion matrix",
+    "Weighted XGBoost V2": {
+      "source_cell": 22,
+      "measurement_precision": "Rounded to four decimal places",
+      "DoS_Recall": 0.6391,
+      "DoS_F1": 0.4645,
+      "Exploits_Recall": 0.6646
+    },
+    "Conflict-aware XGBoost": {
+      "source_cell": 25,
+      "measurement_precision": "Rounded to four decimal places",
+      "DoS_Recall": 0.0823,
+      "DoS_F1": 0.1443,
+      "Exploits_Recall": 0.9422
+    },
+    "CatBoost": {
+      "source_cell": 18,
+      "measurement_precision": "Rounded to four decimal places",
+      "DoS_Recall": 0.1046,
+      "DoS_F1": 0.1704,
+      "Exploits_Recall": 0.9227
+    }
+  },
+  "sources": [
+    {
+      "model": "XGBoost V1",
+      "path": "Current_Attack_Detection/artifacts/xgboost_20261027_023158_885060/validation_metrics.json",
+      "sha256": "83bae20290c862434f18abbfa8c8c2439d6f25446311ecc5ef002a838f9e4ebd"
+    },
+    {
+      "model": "Weighted XGBoost V2",
+      "path": "Current_Attack_Detection/experiments/weighted_xgb_v2_20261027_035816_500107/metadata.json",
+      "sha256": "283f3a61fc676fffd6a76f74e70c222c33b0e7be15d7ca6776c94d62620c530c"
+    },
+    {
+      "model": "Conflict-aware XGBoost",
+      "path": "Current_Attack_Detection/experiments/conflict_aware_xgb_20261027_042501_508802/metadata.json",
+      "sha256": "feadc10e264bf82e6884b4b85c2b40d88799fbeadb54dad9c8ab7ea19179a81a"
+    },
+    {
+      "model": "CatBoost",
+      "path": "Current_Attack_Detection/experiments/catboost_20261027_034931_720016/metadata.json",
+      "sha256": "6f429491483191d15636412f50eb520fbfa4b9baeba76052592a550fac09bab7"
+    }
+  ],
+  "generated_outputs": [
+    {
+      "path": "Research_Paper/02_Final_Tables/Table_04_Current_Attack_Classification_20261027_080659_311623.pdf",
+      "sha256": "a941cd33a7a43f3bdb994668974a20fbf89922fa3a85c7a8e1e7fec7b26805f8"
+    },
+    {
+      "path": "Research_Paper/02_Final_Tables/Table_04_Current_Attack_Classification_20261027_080659_311623.svg",
+      "sha256": "9d709479b4c134514cfd4968bbf7502e03bdc4df51d0b131034c6d0d8b49fee3"
+    },
+    {
+      "path": "Research_Paper/02_Final_Tables/Table_04_Current_Attack_Classification_20261027_080659_311623.png",
+      "sha256": "bea86d59d36165c292703d4972cd4be1318175cc9c1a15d7134098d799f10460"
+    },
+    {
+      "path": "Research_Paper/02_Final_Tables/Table_04_Current_Attack_Classification_20261027_080659_311623.csv",
+      "sha256": "c31794bf8de30959d36cf8eed983dcebc12eac07be75cc60c69640819f12097d"
+    },
+    {
+      "path": "Research_Paper/02_Final_Tables/Table_04_Current_Attack_Classification_20261027_080659_311623.tex",
+      "sha256": "4deb5076bca29fd1cf3a7696f494f09a5fd8a03d060eb0f36be837379a3f4ada"
+    }
+  ],
+  "limitations": [
+    "Repeatedly examined development validation.",
+    "Per-class scores for experimental models were transcribed from earlier displayed results.",
+    "Class scores are not all reproduced from saved prediction arrays in this table.",
+    "Comparisons are descriptive.",
+    "No independent official TEST assessment."
+  ],
+  "models_retrained": 0,
+  "official_test_accessed": false
+}

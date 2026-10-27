@@ -1,0 +1,25 @@
+% Requires \usepackage{booktabs,multirow}
+\begin{table*}[t]
+\centering
+\caption{Source-dependent forecasting, attack-family classification, and conditional time-to-attack performance.}
+\label{tab:source_family_eta}
+\small
+\begin{tabular}{llrrrrrrrr}
+\toprule
+\multirow{2}{*}{Dataset} & \multirow{2}{*}{Model} & \multirow{2}{*}{Events} & \multicolumn{3}{c}{Forecast AP} & \multicolumn{2}{c}{Attack family} & \multicolumn{1}{c}{ETA} & \multicolumn{1}{c}{Joint fit} \\
+\cmidrule(lr){4-6}\cmidrule(lr){7-8}
+ & & & H5 & H10 & H15 & Accuracy & Macro F1 & MAE (min) & NLL \\
+\midrule
+\multirow{2}{*}{CIC-IDS2017} & CR-LSTM & 1,710 & \textbf{0.7492} & \textbf{0.9034} & \textbf{0.9358} & \textbf{0.9105} & \textbf{0.7252} & 2.470 & \textbf{0.6117} \\
+ & CR-TCN & 1,710 & 0.7256 & 0.8953 & 0.9341 & 0.8643 & 0.6915 & \textbf{2.364} & 0.6256 \\
+\midrule
+\multirow{2}{*}{UNSW-NB15} & CR-LSTM & 1,665 & 0.7288 & 0.9017 & \textbf{0.9396} & 0.7045 & \textbf{0.5309} & 2.605 & 0.6879 \\
+ & CR-TCN & 1,665 & \textbf{0.7332} & \textbf{0.9033} & 0.9383 & \textbf{0.7351} & 0.5139 & \textbf{2.602} & \textbf{0.6712} \\
+\midrule
+\multirow{2}{*}{Pooled} & CR-LSTM & 3,375 & \textbf{0.7248} & \textbf{0.8991} & \textbf{0.9361} & \textbf{0.8089} & \textbf{0.7958} & 2.537 & 0.6493 \\
+ & CR-TCN & 3,375 & 0.7174 & 0.8939 & 0.9318 & 0.8006 & 0.7864 & \textbf{2.482} & \textbf{0.6481} \\
+\bottomrule
+\end{tabular}
+\vspace{2pt}
+\parbox{\textwidth}{\footnotesize AP = average precision; MAE = mean absolute error; NLL = negative log-likelihood. Events reports true future-event windows (1,710 CIC-derived, 1,665 UNSW-derived). Pooled horizon AP uses 18,839 decision windows. Family and ETA metrics are conditional on a true future event. Best values are bold within each dataset. Results are from development validation.}
+\end{table*}

@@ -1,0 +1,12 @@
+{
+  "expected_v8_sha256": {
+    "frontend/src/RagAnalysis.jsx": "74aff3c18f4678fe6828a1ce05707b62d6ef52dc1bdca0568f0fc5c67cf945e2",
+    "frontend/src/ragAnalysis.css": "195f139d98802c7e8d7d37d8ec5c020ef49dc656a8a14a8136397770de378be0",
+    "rag/app/llm.py": "8e82a2726ce55853d10c81ef8d29b1c837960ab5cb9946a813a716b2b46253ef"
+  },
+  "target_v9_sha256": {
+    "frontend/src/RagAnalysis.jsx": "e15268883ae4935cf74c278eeb4725989e093b1a5ef56f450349cf2c69a8803d",
+    "frontend/src/ragAnalysis.css": "907c3e5a06d5ac5156fed47f50607eab637073a0be5ff047c86e686caeb67c45",
+    "rag/app/llm.py": "8bd7b2b4ab4e27bb4c953c7a8aab3453195d553d25240362d1c37ec37cf78fa0"
+  }
+}

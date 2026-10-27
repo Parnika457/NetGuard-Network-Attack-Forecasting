@@ -1,0 +1,27 @@
+/* Scoped to RAG additions; uses only the existing NetGuard theme variables. */
+.ngr-root { margin: 15px 0; min-width:0; }
+.ngr-trigger { display:inline-flex; align-items:center; gap:9px; padding:10px 14px; border:1px solid var(--green); border-radius:9px; background:var(--green-soft); color:var(--green); font-size:12px; font-weight:750; cursor:pointer; transition:opacity .15s; }
+.ngr-trigger:hover { opacity:.86; }
+.ngr-trigger:disabled { opacity:.45; cursor:not-allowed; }
+.ngr-trigger:focus-visible { outline:2px solid var(--green); outline-offset:3px; }
+.ngr-sparkle {font-size:16px;}
+.ngr-caret {font-size:18px; line-height:12px; padding-left:9px;}
+.ngr-panel { margin-top:14px; padding:20px; border:1px solid var(--border); border-radius:13px; background:var(--surface-2); color:var(--text); line-height:1.65; }
+.ngr-heading {display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:12px;}
+.ngr-heading h4 {margin:0; font-size:15px; color:var(--text);}
+.ngr-heading span {font-size:10px; color:var(--text-muted);}
+.ngr-summary {font-size:13px; font-weight:650; margin:0 0 10px; color:var(--text);}
+.ngr-explanation {font-size:12px; margin:0 0 14px; color:var(--text-secondary); overflow-wrap:anywhere;}
+.ngr-section {border-top:1px solid var(--border); padding-top:13px; margin-top:13px;}
+.ngr-section h5 {font-size:12px; margin:0 0 9px; color:var(--text);}
+.ngr-section ol {margin:0; padding-left:20px; color:var(--text-secondary); font-size:12px;}
+.ngr-section li {margin-bottom:7px;}
+.ngr-references {display:grid; gap:8px;}
+.ngr-reference {display:flex; align-items:flex-start; gap:9px; padding:10px; border-radius:8px; background:var(--surface); border:1px solid var(--border); font-size:12px;}
+.ngr-source-id {color:var(--green); font-size:10px; font-weight:800; flex-shrink:0;}
+.ngr-reference strong {font-size:12px; display:block; font-weight:650; color:var(--text);}
+.ngr-reference a,.ngr-reference small {font-size:11px; color:var(--text-muted); margin-top:4px; display:block;}
+.ngr-reference a:hover {color:var(--green);}
+.ngr-status {font-size:12px; color:var(--text-muted); margin:0;}
+.ngr-error {color:var(--red); font-size:12px;}
+.ngr-error button {border:0; background:none; text-decoration:underline; color:inherit; cursor:pointer;}

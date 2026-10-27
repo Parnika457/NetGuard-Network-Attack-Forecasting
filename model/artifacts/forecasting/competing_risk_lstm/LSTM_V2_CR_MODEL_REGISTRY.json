@@ -1,0 +1,40 @@
+{
+  "dataset": "Synthetic_NAF_v2",
+  "dataset_version": "2.0.0",
+  "feature_names": [
+    "Flow_Count",
+    "Flow_Duration_Mean",
+    "Flow_Duration_Std",
+    "Flow_Duration_Max",
+    "Forward_Packets_Sum",
+    "Backward_Packets_Sum",
+    "Total_Packets",
+    "Forward_Bytes_Sum",
+    "Backward_Bytes_Sum",
+    "Total_Bytes",
+    "Packets_Per_Second",
+    "Bytes_Per_Second",
+    "Forward_Backward_Packet_Ratio",
+    "Forward_Backward_Byte_Ratio"
+  ],
+  "forecast_horizons": [
+    5,
+    10,
+    15
+  ],
+  "history_file": "LSTM_V2_CR_FINAL_TRAIN_HISTORY.csv",
+  "history_sha256": "23a03677dd9f693a0a67b5c9cdffe59bbe26776e6c50edaae865295388874e7c",
+  "model_file": "LSTM_V2_CR_STATE.pt",
+  "model_name": "LSTM_V2_COMPETING_RISK",
+  "model_sha256": "062f8dda7b0045c605bb4b2e52de927e576661c88e4c7fb9009fb367fb9717fd",
+  "output_classes": 76,
+  "scaler_file": "LSTM_V2_CR_FULL_TRAIN_SCALER.json",
+  "scaler_sha256": "d826ad37e5bb05396f127217da27251d19ab9687c632bc71ba8796aa8a5513d0",
+  "selected_configuration": "C01",
+  "test_status": "EMBARGOED",
+  "training_epochs": 17,
+  "training_record_file": "LSTM_V2_CR_FINAL_TRAIN_RECORD.json",
+  "training_record_sha256": "a6a18bab676847adc6cdd2ce31328cc031b2d00604b617178a139289ce03857e",
+  "training_status": "FINAL_FULL_TRAIN_COMPLETED",
+  "validation_status": "NOT_STARTED"
+}

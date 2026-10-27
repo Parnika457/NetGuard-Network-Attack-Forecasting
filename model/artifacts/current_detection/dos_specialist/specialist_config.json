@@ -1,0 +1,30 @@
+{
+  "model_name": "NetGuard_DoS_Exploits_Specialist",
+  "status": "experimental_not_deployed",
+  "task": "DoS_vs_Exploits",
+  "base_model": "Current_Attack_Detection/artifacts/xgboost_20261027_023158_885060",
+  "training_dataset": "UNSW-NB15 canonical training partition",
+  "training_classes": [
+    "Exploits",
+    "DoS"
+  ],
+  "positive_class": "DoS",
+  "feature_preprocessor": "Reuse the saved current-attack V1 preprocessor",
+  "f1_threshold": 0.46584856510162354,
+  "high_recall_threshold": 0.3769285976886749,
+  "routing": "Experimental V1.1 two-stage predicted class in {DoS, Exploits}",
+  "evaluation": {
+    "type": "exploratory development validation",
+    "high_recall_dos_recall": 0.857,
+    "high_recall_dos_precision": 0.3427,
+    "high_recall_dos_f1": 0.4896,
+    "high_recall_macro_f1": 0.6422,
+    "official_test_used": false
+  },
+  "limitations": [
+    "High DoS false-positive burden",
+    "Reduced Exploits recall",
+    "Not selected for deployment",
+    "Requires independent final evaluation"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "model": "GraphLSTMForecaster",
+  "selected_config": "C02_wider_graph",
+  "config": {
+    "name": "C02_wider_graph",
+    "graph_hidden": 64,
+    "lstm_hidden": 64,
+    "dropout": 0.1,
+    "lr": 0.001
+  },
+  "epochs": 7,
+  "train_windows": 88186,
+  "train_episodes": 1400,
+  "parameters": 61315,
+  "graph_sha256": "6fac7cca1bd6423b34fccef56a34072a7fff65a43929efd3762b42166b21b94e",
+  "checkpoint_sha256": "56bb048089e0211bf2ce10c970f80b682adda22c8786588ebce903181a98c403",
+  "cv_mean_score": 0.7714304399201166,
+  "cv_mean_h5_ap": 0.6886926712270717,
+  "cv_mean_h10_ap": 0.8852547942997774,
+  "cv_mean_h15_ap": 0.926383988939405,
+  "train_loss_history": [
+    0.2891488011627413,
+    0.12841739839152116,
+    0.1142626279675717,
+    0.1083228865651175,
+    0.10599322099181774,
+    0.10494089201172138,
+    0.10220464772770994
+  ],
+  "final_train_bce": 0.10220464772770994,
+  "validation_accessed": false,
+  "test_accessed": false
+}

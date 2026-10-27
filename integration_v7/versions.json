@@ -1,0 +1,21 @@
+{
+  "expected_original_sha256": {
+    "frontend/src/ModelReplayPanel.jsx": "9477fe4769baa7e5beea16e8bb25ef2b1e78f1491f934fdef3473289041c1271",
+    "frontend/src/HistoryView.jsx": "9fabf8c949b31e5b0e703e863f59396fc01b13ce545c2a6c679dfe22874af391",
+    "rag/app/schemas.py": "26dad7e7a57f15f70f8228149c3287cdb8aa525706b5b8cf2fa53b3c34a03805",
+    "rag/app/service.py": "282676e1fb50aa90b49d08c1633af2daf2197da767b472514360afb170126e70",
+    "rag/app/llm.py": "560c7d3187d79e709b7921d88dfef7e54841f0f157beabda5b3865a6dc6d8bac",
+    "rag/app/config.py": "7f8dcc38588486473e4c0e6cc6371963992c7489c4db778a8af3976196be3a01",
+    "rag/app/retriever.py": "199354c2d713a8d5620aaf9296535a7195d0856f1d37381c87da5bb0db984bb1"
+  },
+  "new_files": [
+    "frontend/src/RagAnalysis.jsx",
+    "frontend/src/ragAnalysis.css",
+    "backend/rag_bridge.py",
+    "rag/knowledge/documents/netguard_forecasting_guidance.md",
+    "rag/tests/test_netguard_forecast_contract.py"
+  ],
+  "allowed_backend_app_sha256": [
+    "e423e58960bcf43569e53cdf686fa51aa4990dc1318f1a85361a17a80c452f18"
+  ]
+}

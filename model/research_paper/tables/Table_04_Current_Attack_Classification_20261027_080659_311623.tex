@@ -1,0 +1,21 @@
+% Requires \usepackage{booktabs}
+\begin{table*}[t]
+\centering
+\caption{Comparison of current network attack-type classifiers.}
+\label{tab:current_attack_models}
+\small
+\begin{tabular}{lrrrrrrr}
+\toprule
+Classifier & \multicolumn{4}{c}{Overall classification} & \multicolumn{2}{c}{DoS} & \multicolumn{1}{c}{Exploits} \\
+\cmidrule(lr){2-5}\cmidrule(lr){6-7}\cmidrule(lr){8-8}
+ & Accuracy & Macro F1 & Balanced acc. & Weighted F1 & Recall & F1 & Recall \\
+\midrule
+XGBoost V1 & 0.8287 & 0.5979 & 0.5918 & 0.8045 & 0.0603 & 0.1113 & \textbf{0.9497} \\
+Weighted XGBoost V2 & 0.8168 & \textbf{0.6431} & \textbf{0.6551} & \textbf{0.8234} & \textbf{0.6391} & \textbf{0.4645} & 0.6646 \\
+Conflict-aware XGBoost & \textbf{0.8306} & 0.6137 & 0.6036 & 0.8091 & 0.0823 & 0.1443 & 0.9422 \\
+CatBoost & 0.8209 & 0.5607 & 0.5388 & 0.8012 & 0.1046 & 0.1704 & 0.9227 \\
+\bottomrule
+\end{tabular}
+\vspace{2pt}
+\parbox{\textwidth}{\footnotesize All scores are fractions. Bold entries are the largest observed values in each column. Overall results are from saved experimental metadata. V1 class scores are recomputed from its saved confusion matrix; the remaining class scores are rounded previously reported diagnostics. UNSW-NB15 development validation: 35,167 records. No independent TEST assessment is implied.}
+\end{table*}

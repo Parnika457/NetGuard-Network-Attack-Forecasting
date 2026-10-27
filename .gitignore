@@ -1,0 +1,37 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+.DS_Store
+.vscode/
+chroma_db/
+vector_store/
+
+# Python virtual environments
+.venv/
+.venv312/
+.venv*/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Frontend dependencies
+node_modules/
+dist/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Local generated data
+chroma_db/
+vector_store/
+.DS_Store

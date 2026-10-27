@@ -1,0 +1,15 @@
+/* NetGuard Settings V4 additions. Existing designer's index.css is unchanged. */
+.ng-connection {margin: 12px 0; font-size: 12px; color: var(--text-secondary);}
+.ng-connected {color: var(--green);}
+.ng-disconnected {color: var(--red);}
+.ng-backend-badge {display:inline-flex; align-items:center; padding:7px 10px; font-size:11px; font-weight:800; border-radius:7px; background:var(--red-soft); color:var(--red); border:1px solid var(--border); white-space:nowrap;}
+.ng-backend-badge.connected {background:var(--green-soft); color:var(--green);}
+.ng-setting-help {margin:13px 0 2px; line-height:1.55; color:var(--text-muted); font-size:12px;}
+.ng-alert-toast {display:flex; align-items:flex-start; justify-content:space-between; gap:14px; margin:15px 0; border:1px solid var(--border); border-left:4px solid var(--yellow); border-radius:10px; background:var(--surface); padding:14px; color:var(--text);}
+.ng-alert-toast p {margin:6px 0; font-size:13px;color:var(--text-secondary)}
+.ng-alert-toast small {color:var(--text-muted);font-size:11px}
+.ng-alert-toast button {padding:4px 9px; border:1px solid var(--border); background:var(--surface-2); color:var(--text);border-radius:7px;cursor:pointer}
+.ng-secondary-button {padding:9px 12px; border:1px solid var(--border);border-radius:7px;background:var(--surface-2);color:var(--text);font-size:11px;cursor:pointer}
+.ng-secondary-button:disabled {opacity:.5;cursor:not-allowed}
+.ng-mode-selector button:disabled {opacity:.4;cursor:not-allowed;}
+.toggle:disabled {opacity:.45;cursor:not-allowed;}

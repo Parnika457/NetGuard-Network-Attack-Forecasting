@@ -1,0 +1,28 @@
+% Requires \usepackage{booktabs,multirow}
+\begin{table*}[t]
+\centering
+\caption{Forecasting performance across attack prediction horizons.}
+\label{tab:forecasting_benchmark}
+\small
+\begin{tabular}{llrrrrrr}
+\toprule
+\multirow{2}{*}{Model} & \multirow{2}{*}{Architecture} & \multicolumn{2}{c}{H5 (5 min)} & \multicolumn{2}{c}{H10 (10 min)} & \multicolumn{2}{c}{H15 (15 min)} \\
+\cmidrule(lr){3-4}\cmidrule(lr){5-6}\cmidrule(lr){7-8}
+ & & AP & $\Delta$ (pp) & AP & $\Delta$ (pp) & AP & $\Delta$ (pp) \\
+\midrule
+Single LSTM & Recurrent & 0.7132 & -4.78 & 0.8963 & -0.97 & 0.9260 & -1.00 \\
+Stacked LSTM & Recurrent & \textbf{0.7610} & +0.00 & \textbf{0.9060} & +0.00 & 0.9359 & -0.02 \\
+XGBoost V2 & Boosted trees & 0.6763 & -8.47 & 0.8751 & -3.09 & \multicolumn{1}{c}{N/A} & N/A \\
+\midrule
+CR-LSTM & Competing risk & 0.7248 & -3.62 & 0.8991 & -0.69 & \textbf{0.9361} & +0.00 \\
+CR-TCN & Competing risk & 0.7174 & -4.36 & 0.8939 & -1.21 & 0.9318 & -0.42 \\
+\midrule
+Original Graph LSTM & Graph-based & 0.7270 & -3.40 & 0.8880 & -1.81 & 0.9240 & -1.21 \\
+Optimized Graph LSTM & Graph-based & 0.7241 & -3.69 & 0.8869 & -1.91 & 0.9275 & -0.86 \\
+GCN-LSTM & Graph-based & 0.7433 & -1.78 & 0.8860 & -2.00 & 0.9190 & -1.70 \\
+GAT-LSTM & Graph-based & 0.7209 & -4.01 & 0.8844 & -2.16 & 0.9181 & -1.80 \\
+\bottomrule
+\end{tabular}
+\vspace{2pt}
+\parbox{\textwidth}{\footnotesize AP = average precision. $\Delta$ is measured relative to the best AP at the same horizon in percentage points. Bold values indicate horizon leaders. N/A means no saved prediction is available. Results use 18,839 synthetic development-validation windows; differences are descriptive.}
+\end{table*}
